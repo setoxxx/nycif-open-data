@@ -38,8 +38,8 @@ jobs:
           SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
         run: python scripts/aggregate.py --dataset 311_service_requests
 
-      - name: Validate scaffold after refresh
-        run: python scripts/validate_project.py
+      - name: Validate generated files after refresh
+        run: python scripts/validate_project.py --strict-refresh
 
       - name: Commit generated files
         run: |
