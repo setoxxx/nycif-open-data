@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "name": "boroughs_development_simplified",
+  "metadata": {
+    "status": "development_placeholder",
+    "warning": "Coarse hand-drawn borough polygons for offline scaffold validation only. Replace with official NYC boundary geometry by running scripts/fetch_boundaries.py before public launch.",
+    "join_field": "id"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "MN",
+      "properties": {"id": "MN", "join_key": "MN", "name": "Manhattan"},
+      "geometry": {"type": "Polygon", "coordinates": [[[-74.02, 40.70], [-74.02, 40.88], [-73.91, 40.88], [-73.93, 40.70], [-74.02, 40.70]]]}
+    },
+    {
+      "type": "Feature",
+      "id": "BX",
+      "properties": {"id": "BX", "join_key": "BX", "name": "Bronx"},
+      "geometry": {"type": "Polygon", "coordinates": [[[-73.93, 40.79], [-73.93, 40.92], [-73.77, 40.92], [-73.78, 40.80], [-73.93, 40.79]]]}
+    },
+    {
+      "type": "Feature",
+      "id": "BK",
+      "properties": {"id": "BK", "join_key": "BK", "name": "Brooklyn"},
+      "geometry": {"type": "Polygon", "coordinates": [[[-74.05, 40.56], [-74.05, 40.73], [-73.86, 40.73], [-73.83, 40.58], [-74.05, 40.56]]]}
+    },
+    {
+      "type": "Feature",
+      "id": "QN",
+      "properties": {"id": "QN", "join_key": "QN", "name": "Queens"},
+      "geometry": {"type": "Polygon", "coordinates": [[[-73.96, 40.54], [-73.96, 40.80], [-73.70, 40.80], [-73.70, 40.55], [-73.96, 40.54]]]}
+    },
+    {
+      "type": "Feature",
+      "id": "SI",
+      "properties": {"id": "SI", "join_key": "SI", "name": "Staten Island"},
+      "geometry": {"type": "Polygon", "coordinates": [[[-74.25, 40.48], [-74.25, 40.65], [-74.05, 40.65], [-74.05, 40.48], [-74.25, 40.48]]]}
+    }
+  ]
+}
