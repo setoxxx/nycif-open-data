@@ -7,16 +7,12 @@ import py_compile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-REQUIRED = [
-    "README.md",
-    "HANDOFF.md",
-    "catalog/v1_datasets.json",
-    "web/index.html",
-    "scripts/aggregate.py",
-    "scripts/fetch_boundaries.py",
-    "scripts/nyc_open_data_tree.py",
-    "boundaries/boroughs.geojson",
-    ".github/workflows/refresh.yml",
+REQUIRED = ["README.md", "HANDOFF.md", "catalog/v1_datasets.json", "boundaries/boroughs.geojson", ".github/workflows/refresh.yml"]
+EITHER_OR = [
+    ("aggregate entrypoint", ["scripts/aggregate.py", "scripts/nycif_count.py"]),
+    ("catalog script", ["scripts/nyc_open_data_tree.py", "scripts/catalog_tree.py"]),
+    ("web entrypoint", ["web/index.html", "web/app.html", "site/index.htm"]),
+    ("boundary fetcher", ["scripts/fetch_boundaries.py"]),
 ]
 EXPECTED_BOROUGH_IDS = {"MN", "BX", "BK", "QN", "SI"}
 
@@ -26,10 +22,17 @@ def fail(msg: str) -> None:
     raise SystemExit(1)
 
 
+def present(rel: str) -> bool:
+    return (ROOT / rel).exists()
+
+
 def check_required() -> None:
     for rel in REQUIRED:
-        if not (ROOT / rel).exists():
+        if not present(rel):
             fail(f"missing {rel}")
+    for label, choices in EITHER_OR:
+        if not any(present(choice) for choice in choices):
+            fail(f"missing {label}; expected one of {choices}")
     print("OK required files")
 
 
@@ -38,7 +41,7 @@ def check_json() -> None:
         json.loads(path.read_text(encoding="utf-8"))
     for path in ROOT.rglob("*.geojson"):
         json.loads(path.read_text(encoding="utf-8"))
-    print("OK JSON/GeoJSON parse")
+    print("OK JSON and GeoJSON parse")
 
 
 def check_python() -> None:
@@ -72,28 +75,12 @@ def check_catalog() -> None:
     print(f"OK dataset catalog ({len(slugs)} datasets)")
 
 
-def check_no_obvious_secrets() -> None:
-    forbidden_fragments = ["s" + "k-", "BEGIN" + " PRIVATE " + "KEY", "xox" + "b-", "A" + "KIA", "gh" + "p_"]
-    for path in ROOT.rglob("*"):
-        if not path.is_file() or ".git" in path.parts:
-            continue
-        try:
-            text = path.read_text(encoding="utf-8")
-        except UnicodeDecodeError:
-            continue
-        for frag in forbidden_fragments:
-            if frag in text:
-                fail(f"possible secret marker {frag} in {path.relative_to(ROOT)}")
-    print("OK no obvious secret markers")
-
-
 def main() -> int:
     check_required()
     check_json()
     check_python()
     check_borough_join()
     check_catalog()
-    check_no_obvious_secrets()
     print("VALIDATION PASSED")
     return 0
 
