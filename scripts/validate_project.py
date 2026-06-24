@@ -4,13 +4,13 @@ from __future__ import annotations
 
 import json
 import py_compile
-import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
     "README.md",
-    "v1_datasets.json",
+    "HANDOFF.md",
+    "catalog/v1_datasets.json",
     "web/index.html",
     "scripts/aggregate.py",
     "scripts/fetch_boundaries.py",
@@ -56,7 +56,7 @@ def check_borough_join() -> None:
 
 
 def check_catalog() -> None:
-    catalog = json.loads((ROOT / "v1_datasets.json").read_text(encoding="utf-8"))
+    catalog = json.loads((ROOT / "catalog/v1_datasets.json").read_text(encoding="utf-8"))
     slugs = set()
     for dataset in catalog.get("datasets", []):
         slug = dataset.get("slug")
@@ -65,19 +65,17 @@ def check_catalog() -> None:
         if slug in slugs:
             fail(f"duplicate slug {slug}")
         slugs.add(slug)
-        if not dataset.get("dataset_id"):
-            fail(f"dataset {slug} missing dataset_id")
+        if not (dataset.get("dataset_id") or dataset.get("resource_id")):
+            fail(f"dataset {slug} missing dataset/resource id")
         if not dataset.get("aggregations"):
             fail(f"dataset {slug} missing aggregations")
     print(f"OK dataset catalog ({len(slugs)} datasets)")
 
 
-def check_no_secrets() -> None:
+def check_no_obvious_secrets() -> None:
     forbidden_fragments = ["s" + "k-", "BEGIN" + " PRIVATE " + "KEY", "xox" + "b-", "A" + "KIA", "gh" + "p_"]
     for path in ROOT.rglob("*"):
-        if not path.is_file():
-            continue
-        if ".git" in path.parts:
+        if not path.is_file() or ".git" in path.parts:
             continue
         try:
             text = path.read_text(encoding="utf-8")
@@ -95,7 +93,7 @@ def main() -> int:
     check_python()
     check_borough_join()
     check_catalog()
-    check_no_secrets()
+    check_no_obvious_secrets()
     print("VALIDATION PASSED")
     return 0
 
