@@ -1,30 +1,34 @@
 # NYCIF Open Data Map — Handoff
 
-Current project percentage: 75% complete.
+Current project percentage: 78% complete.
 
 Completed since previous checkpoint:
 
-- Verified `aggregates/311_service_requests/borough/all.json` was still missing.
-- Verified recent commits showed no `Refresh generated data` commit and no visible workflow runs through the connector.
-- Verified `boundaries/boroughs.geojson` is still development placeholder geometry.
-- Added clearly labeled development aggregate JSON at `aggregates/311_service_requests/borough/all.json` so the frontend can be QA'd before live workflow output exists.
-- Updated `web/index.html` to show a visible warning when sample data is loaded.
-- Updated validation to warn when the aggregate is development sample data.
+- Verified the aggregate is still development sample data, not live generated NYC Open Data output.
+- Verified the borough file is still development placeholder geometry.
+- Improved `web/index.html` launch-safety behavior:
+  - separate warning for development sample aggregate data
+  - separate warning for placeholder borough geometry
+  - visible source/method note
+  - mobile-height adjustment
+  - MapLibre navigation control
+  - status text that says QA data has launch blockers when either blocker is present
+- Updated `scripts/validate_project.py` to warn when borough geometry is still the development placeholder.
+- Kept the existing validation warning for development sample aggregate data.
 
 Current status:
 
-- `web/index.html` can render the MapLibre shell and borough choropleth path.
-- Current aggregate is development sample only, not official NYC Open Data counts.
+- `web/index.html` can render the MapLibre map path with QA data.
+- Current aggregate is development sample only.
 - Current borough geometry is development placeholder only.
-
-Do not publish this map publicly as live data yet.
+- The map remains blocked from public live-data launch until generated aggregate data and official borough geometry are committed.
 
 Still pending:
 
-- Run GitHub Actions or manual refresh to replace the development aggregate with live generated counts.
-- Run the boundary fetcher to replace placeholder borough geometry with official NYC geometry.
-- QA the map after real data and official geometry are committed.
-- Improve map styling, legend scale, popups, mobile behavior, and source/method note.
+- Run GitHub Actions or manual refresh to replace `aggregates/311_service_requests/borough/all.json` with live generated counts.
+- Run the boundary fetcher to replace `boundaries/boroughs.geojson` with official NYC geometry.
+- QA popups, count scale, borough joins, and mobile behavior after real files exist.
+- Improve public source/method copy after live data is confirmed.
 - Stage WordPress only when the WordPress connector is callable.
 
-Next: replace development aggregate and placeholder boundary geometry with workflow-generated data, then QA the public-facing map.
+Next: replace the two QA blockers — development aggregate and placeholder geometry — with generated files, then perform real-data map QA.
