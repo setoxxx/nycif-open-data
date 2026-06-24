@@ -19,6 +19,7 @@ REQUIRED = [
     "web/index.html",
 ]
 EXPECTED_BOROUGH_IDS = {"MN", "BX", "BK", "QN", "SI"}
+AGGREGATE = ROOT / "aggregates/311_service_requests/borough/all.json"
 
 
 def fail(msg: str) -> None:
@@ -72,12 +73,24 @@ def check_catalog() -> None:
     print(f"OK dataset catalog ({len(slugs)} datasets)")
 
 
+def check_aggregate_status() -> None:
+    if not AGGREGATE.exists():
+        print("WARN aggregate not generated yet")
+        return
+    data = json.loads(AGGREGATE.read_text(encoding="utf-8"))
+    if data.get("development_sample") or data.get("status") == "development_sample":
+        print("WARN aggregate is development sample only; replace before public launch")
+    else:
+        print("OK aggregate appears generated")
+
+
 def main() -> int:
     check_required()
     check_json()
     check_python()
     check_borough_join()
     check_catalog()
+    check_aggregate_status()
     print("VALIDATION PASSED")
     return 0
 
