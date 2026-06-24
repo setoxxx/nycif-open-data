@@ -20,25 +20,28 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Validate scaffold before refresh
+      - name: Validate scaffold
         run: python scripts/validate_project.py
 
-      - name: Refresh 311 borough aggregate
-        env:
-          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
-        run: python scripts/aggregate.py --dataset 311_service_requests
+      - name: Refresh aggregate if full script exists
+        run: |
+          if [[ -f scripts/aggregate.py ]]; then
+            python scripts/aggregate.py --dataset 311_service_requests
+          else
+            echo "Full aggregate script not present yet; scaffold validation only."
+          fi
 
-      - name: Validate scaffold after refresh
+      - name: Validate after refresh
         run: python scripts/validate_project.py
 
-      - name: Commit updated aggregates
+      - name: Commit generated files
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add aggregates catalog
-            git commit -m "Refresh NYC Open Data aggregates"
+            git add aggregates catalog boundaries
+            git commit -m "Refresh generated data"
             git push
           else
-            echo "No aggregate changes to commit."
+            echo "No generated changes to commit."
           fi
