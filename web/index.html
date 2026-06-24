@@ -6,7 +6,7 @@
 <title>NYC In Focus Open Data Map</title>
 <link href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css" rel="stylesheet">
 <style>
-body{margin:0;font-family:system-ui,sans-serif;background:#0f172a;color:#f8fafc}.wrap{max-width:1100px;margin:0 auto;padding:28px 18px}.card{background:#111827;border:1px solid #334155;border-radius:16px;padding:18px;margin-top:16px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}.metric{background:#1e293b;border-radius:12px;padding:12px}code{background:#020617;padding:2px 6px;border-radius:6px}.muted{color:#cbd5e1}.warn{background:#78350f;color:#fffbeb;border:1px solid #f59e0b;border-radius:12px;padding:10px 12px;margin-top:10px}#map{height:540px;border-radius:16px;overflow:hidden;border:1px solid #334155;margin-top:16px}.legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.swatch{width:16px;height:16px;border-radius:4px;display:inline-block;margin-right:4px;vertical-align:-3px}
+body{margin:0;font-family:system-ui,sans-serif;background:#0f172a;color:#f8fafc}.wrap{max-width:1120px;margin:0 auto;padding:28px 18px}.card{background:#111827;border:1px solid #334155;border-radius:16px;padding:18px;margin-top:16px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}.metric{background:#1e293b;border-radius:12px;padding:12px}code{background:#020617;padding:2px 6px;border-radius:6px}.muted{color:#cbd5e1}.warn{background:#78350f;color:#fffbeb;border:1px solid #f59e0b;border-radius:12px;padding:10px 12px;margin-top:10px}.method{font-size:14px;line-height:1.45;color:#cbd5e1;border-top:1px solid #334155;margin-top:14px;padding-top:12px}#map{height:540px;border-radius:16px;overflow:hidden;border:1px solid #334155;margin-top:16px}.legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.swatch{width:16px;height:16px;border-radius:4px;display:inline-block;margin-right:4px;vertical-align:-3px}@media(max-width:640px){.wrap{padding:18px 12px}#map{height:420px}.metric{font-size:14px}}
 </style>
 </head>
 <body>
@@ -19,8 +19,9 @@ body{margin:0;font-family:system-ui,sans-serif;background:#0f172a;color:#f8fafc}
 <div id="status" class="muted">Checking data...</div>
 <div id="warning"></div>
 <div id="counts" class="grid"></div>
-<div class="legend"><span><i class="swatch" style="background:#dbeafe"></i>lower</span><span><i class="swatch" style="background:#60a5fa"></i>middle</span><span><i class="swatch" style="background:#1d4ed8"></i>higher</span></div>
-<div id="map"></div>
+<div class="legend" aria-label="Map legend"><span><i class="swatch" style="background:#dbeafe"></i>lower</span><span><i class="swatch" style="background:#60a5fa"></i>middle</span><span><i class="swatch" style="background:#1d4ed8"></i>higher</span></div>
+<div id="map" role="region" aria-label="NYC borough map"></div>
+<div class="method"><strong>Source and method:</strong> This page expects a generated borough aggregate from NYC Open Data 311 Service Requests and a normalized borough GeoJSON file. If the banner says development sample or placeholder geometry, the map is for QA only and must not be published as live data.</div>
 </section>
 </main>
 <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
@@ -29,19 +30,20 @@ const statusEl=document.getElementById('status');
 const warningEl=document.getElementById('warning');
 const countsEl=document.getElementById('counts');
 const map=new maplibregl.Map({container:'map',style:{version:8,sources:{base:{type:'raster',tiles:['https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png','https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'],tileSize:256,attribution:'© OpenStreetMap © CARTO'}},layers:[{id:'base',type:'raster',source:'base'}]},center:[-73.95,40.72],zoom:9});
+map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
 function color(value,max){if(!max)return '#dbeafe';const p=value/max;return p>.66?'#1d4ed8':p>.33?'#60a5fa':'#dbeafe';}
 function addMap(geo,counts){const max=Math.max(...Object.values(counts).map(Number),0);geo.features.forEach(f=>{const id=f.properties.id;f.properties.count=Number(counts[id]||0);f.properties.fill=color(f.properties.count,max);});map.addSource('boroughs',{type:'geojson',data:geo});map.addLayer({id:'borough-fill',type:'fill',source:'boroughs',paint:{'fill-color':['get','fill'],'fill-opacity':0.72}});map.addLayer({id:'borough-line',type:'line',source:'boroughs',paint:{'line-color':'#0f172a','line-width':1.5}});map.on('click','borough-fill',e=>{const p=e.features[0].properties;new maplibregl.Popup().setLngLat(e.lngLat).setHTML(`<strong>${p.name}</strong><br>${Number(p.count||0).toLocaleString()} requests`).addTo(map);});}
+function warnings(data,geo){const out=[];const sample=data.development_sample||data.status==='development_sample';const placeholder=geo.metadata&&geo.metadata.status==='development_placeholder';if(sample)out.push('Development sample aggregate. Replace before public launch with live NYC Open Data output.');if(placeholder)out.push('Development placeholder geometry. Replace before public launch with official NYC borough geometry.');warningEl.innerHTML=out.map(msg=>`<div class="warn">${msg}</div>`).join('');return {sample,placeholder};}
 Promise.all([
   fetch('../boundaries/boroughs.geojson').then(r=>r.json()),
   fetch('../aggregates/311_service_requests/borough/all.json').then(r=>{if(!r.ok)throw new Error('missing aggregate');return r.json();})
 ]).then(([geo,data])=>{
   const counts=data.counts||{};
-  const sample=data.development_sample||data.status==='development_sample';
-  warningEl.innerHTML=sample?`<div class="warn">Development sample only. Replace before public launch with live NYC Open Data output.</div>`:'';
+  const state=warnings(data,geo);
   countsEl.innerHTML=Object.entries(counts).map(([k,v])=>`<div class="metric"><strong>${k}</strong><br>${Number(v).toLocaleString()} requests</div>`).join('');
-  statusEl.textContent=sample?'Loaded development sample aggregate.':'Loaded aggregate generated at '+(data.generated_at||'unknown time')+'.';
+  statusEl.textContent=state.sample||state.placeholder?'Loaded QA data with launch blockers.':'Loaded aggregate generated at '+(data.generated_at||'unknown time')+'.';
   map.on('load',()=>addMap(geo,counts));
-}).catch(()=>{statusEl.textContent='Aggregate file not generated yet. Trigger the refresh workflow or run: python scripts/aggregate.py --dataset 311_service_requests';map.on('load',()=>fetch('../boundaries/boroughs.geojson').then(r=>r.json()).then(geo=>{map.addSource('boroughs',{type:'geojson',data:geo});map.addLayer({id:'borough-line',type:'line',source:'boroughs',paint:{'line-color':'#1d4ed8','line-width':2}});}));});
+}).catch(()=>{statusEl.textContent='Aggregate file not generated yet. Trigger the refresh workflow or run: python scripts/aggregate.py --dataset 311_service_requests';map.on('load',()=>fetch('../boundaries/boroughs.geojson').then(r=>r.json()).then(geo=>{warningEl.innerHTML=geo.metadata&&geo.metadata.status==='development_placeholder'?'<div class="warn">Development placeholder geometry. Replace before public launch.</div>':'';map.addSource('boroughs',{type:'geojson',data:geo});map.addLayer({id:'borough-line',type:'line',source:'boroughs',paint:{'line-color':'#1d4ed8','line-width':2}});}));});
 </script>
 </body>
 </html>
