@@ -7,12 +7,16 @@ import py_compile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-REQUIRED = ["README.md", "HANDOFF.md", "catalog/v1_datasets.json", "boundaries/boroughs.geojson", ".github/workflows/refresh.yml"]
-EITHER_OR = [
-    ("aggregate entrypoint", ["scripts/aggregate.py", "scripts/nycif_count.py"]),
-    ("catalog script", ["scripts/nyc_open_data_tree.py", "scripts/catalog_tree.py"]),
-    ("web entrypoint", ["web/index.html", "web/app.html", "site/index.htm"]),
-    ("boundary fetcher", ["scripts/fetch_boundaries.py"]),
+REQUIRED = [
+    "README.md",
+    "HANDOFF.md",
+    "catalog/v1_datasets.json",
+    "boundaries/boroughs.geojson",
+    ".github/workflows/refresh.yml",
+    "scripts/aggregate.py",
+    "scripts/fetch_boundaries.py",
+    "scripts/nyc_open_data_tree.py",
+    "web/index.html",
 ]
 EXPECTED_BOROUGH_IDS = {"MN", "BX", "BK", "QN", "SI"}
 
@@ -22,17 +26,10 @@ def fail(msg: str) -> None:
     raise SystemExit(1)
 
 
-def present(rel: str) -> bool:
-    return (ROOT / rel).exists()
-
-
 def check_required() -> None:
     for rel in REQUIRED:
-        if not present(rel):
+        if not (ROOT / rel).exists():
             fail(f"missing {rel}")
-    for label, choices in EITHER_OR:
-        if not any(present(choice) for choice in choices):
-            fail(f"missing {label}; expected one of {choices}")
     print("OK required files")
 
 
