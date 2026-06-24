@@ -2,6 +2,7 @@
 """Offline validation for the NYCIF Open Data scaffold."""
 from __future__ import annotations
 
+import argparse
 import json
 import py_compile
 from pathlib import Path
@@ -20,6 +21,7 @@ REQUIRED = [
 ]
 EXPECTED_BOROUGH_IDS = {"MN", "BX", "BK", "QN", "SI"}
 AGGREGATE = ROOT / "aggregates/311_service_requests/borough/all.json"
+BOUNDARIES = ROOT / "boundaries/boroughs.geojson"
 
 
 def fail(msg: str) -> None:
@@ -48,13 +50,16 @@ def check_python() -> None:
     print("OK Python compiles")
 
 
-def check_borough_join() -> None:
-    data = json.loads((ROOT / "boundaries/boroughs.geojson").read_text(encoding="utf-8"))
+def check_borough_join(strict_refresh: bool) -> None:
+    data = json.loads(BOUNDARIES.read_text(encoding="utf-8"))
     ids = {str(feature.get("properties", {}).get("id")) for feature in data.get("features", [])}
     if ids != EXPECTED_BOROUGH_IDS:
         fail(f"borough ids mismatch: {sorted(ids)}")
     if data.get("metadata", {}).get("status") == "development_placeholder":
-        print("WARN borough geometry is development placeholder only")
+        msg = "borough geometry is development placeholder only"
+        if strict_refresh:
+            fail(msg)
+        print(f"WARN {msg}")
     print("OK borough ids")
 
 
@@ -75,24 +80,33 @@ def check_catalog() -> None:
     print(f"OK dataset catalog ({len(slugs)} datasets)")
 
 
-def check_aggregate_status() -> None:
+def check_aggregate_status(strict_refresh: bool) -> None:
     if not AGGREGATE.exists():
-        print("WARN aggregate not generated yet")
+        msg = "aggregate not generated yet"
+        if strict_refresh:
+            fail(msg)
+        print(f"WARN {msg}")
         return
     data = json.loads(AGGREGATE.read_text(encoding="utf-8"))
     if data.get("development_sample") or data.get("status") == "development_sample":
-        print("WARN aggregate is development sample only; replace before public launch")
+        msg = "aggregate is development sample only"
+        if strict_refresh:
+            fail(msg)
+        print(f"WARN {msg}; replace before public launch")
     else:
         print("OK aggregate appears generated")
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--strict-refresh", action="store_true", help="Fail if QA placeholder files remain after refresh.")
+    args = parser.parse_args()
     check_required()
     check_json()
     check_python()
-    check_borough_join()
+    check_borough_join(args.strict_refresh)
     check_catalog()
-    check_aggregate_status()
+    check_aggregate_status(args.strict_refresh)
     print("VALIDATION PASSED")
     return 0
 
