@@ -4,6 +4,13 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "23 9 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "catalog/**"
+      - "boundaries/**"
+      - ".github/workflows/refresh.yml"
 
 permissions:
   contents: write
@@ -20,18 +27,18 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Validate scaffold
+      - name: Validate scaffold before refresh
         run: python scripts/validate_project.py
 
-      - name: Refresh aggregate if full script exists
-        run: |
-          if [[ -f scripts/aggregate.py ]]; then
-            python scripts/aggregate.py --dataset 311_service_requests
-          else
-            echo "Full aggregate script not present yet; scaffold validation only."
-          fi
+      - name: Refresh borough boundaries
+        run: python scripts/fetch_boundaries.py --boundary boroughs --out boundaries
 
-      - name: Validate after refresh
+      - name: Refresh 311 borough aggregate
+        env:
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+        run: python scripts/aggregate.py --dataset 311_service_requests
+
+      - name: Validate scaffold after refresh
         run: python scripts/validate_project.py
 
       - name: Commit generated files
