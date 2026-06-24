@@ -6,54 +6,76 @@
 - Default branch: `main`
 - Project purpose: static-friendly NYC Open Data map for NYC In Focus.
 
-## Access status confirmed
+## Access status confirmed in this session
 
 - GitHub connector reports admin, maintain, pull, push, and triage permissions on the repo.
-- WordPress connector responds for the NYC In Focus site and can read post counts.
+- WordPress was approved by Howard, but the callable tool list in this runtime exposes GitHub only. WordPress draft work is therefore not executed here.
 
-## Seeded project state
+## Current committed state verified
 
-The repository has been initialized with the project README. The next implementation batch should add:
+The repository currently contains at least:
 
-1. `catalog/v1_datasets.json` — curated v1 dataset shortlist.
-2. `scripts/aggregate.py` — Socrata server-side aggregation to small JSON summaries.
-3. `scripts/fetch_boundaries.py` — boundary GeoJSON fetch/normalization helper.
-4. `web/index.html` — MapLibre MVP.
-5. `.github/workflows/refresh.yml` — scheduled/manual aggregate refresh.
-6. `docs/` — project kit docs copied from the uploaded kit.
-7. WordPress draft page: `NYC Open Data Map`, slug `nyc-open-data-map`.
+- `README.md`
+- `HANDOFF.md`
+- `catalog/v1_datasets.json`
 
-## Architecture locked in
+The committed catalog currently seeds the first layer:
 
-- Tier 1: committed boundaries, catalog metadata, and aggregate summaries.
-- Tier 2: raw NYC Open Data rows queried live by the browser or scripts.
-- Tier 3: future PMTiles/vector tiles when GeoJSON gets too heavy.
+- `311_service_requests`
+- NYC Open Data resource id: `erm2-nwe9`
+- Default boundary: `borough`
 
-Raw datasets must not be committed.
+## Local scaffold built and validated outside the repo write step
 
-## Current implementation target
+A fuller scaffold was built locally from Howard's uploaded project kit and passed offline validation before GitHub commit attempts. The local scaffold included:
 
-The first wired map layer is 311 Service Requests by borough.
+- `scripts/aggregate.py`
+- `scripts/fetch_boundaries.py`
+- `scripts/nyc_open_data_tree.py`
+- `scripts/validate_project.py`
+- `web/index.html`
+- `.github/workflows/refresh.yml`
+- `boundaries/boroughs.geojson`
+- aggregate and boundary README files
 
-Expected MVP behavior:
+Validation performed locally:
 
-1. Load borough boundary GeoJSON from the repo when present.
-2. If the repo boundary file is missing, fetch the configured borough boundary source live.
-3. Load cached 311 borough aggregate from `aggregates/311_service_requests/borough/all.json` when present.
-4. If the cache is missing, fetch live 311 borough counts using SoQL in the browser.
+- Required files present
+- JSON/GeoJSON parsed
+- Python scripts compiled
+- Dataset slugs checked
+- Borough join keys checked for the development borough file
 
-## Verification notes
+## GitHub write limitation encountered
 
-- `311_service_requests` uses NYC Open Data dataset ID `erm2-nwe9`.
-- Non-311 layer IDs and boundary source IDs should be verified by running the catalog script before public launch.
-- Do not present unverified layers as confirmed.
+Existing files can be updated through the connector, but new-file creation and bulk tree creation were blocked by the platform safety layer during this session. A temporary `hello.txt` connector test file may remain if deletion is also blocked; remove it manually or in the next tool session.
 
-## Next actions
+## Next implementation batch
 
-1. Add the project files listed above.
-2. Run Python syntax validation on all scripts.
-3. Add `SOCRATA_APP_TOKEN` as a repository secret if available.
-4. Trigger the refresh workflow manually.
-5. Enable GitHub Pages or deploy the `/web/` static map to the chosen distro/static host.
-6. Create a WordPress draft page with map embed placeholder and source/method note.
-7. QA mobile display, join keys, counts, and source links before publication.
+Add the locally validated scaffold files listed above. Then run:
+
+```bash
+python scripts/validate_project.py
+```
+
+After the files exist, run from a networked environment:
+
+```bash
+python scripts/fetch_boundaries.py boroughs
+python scripts/aggregate.py --dataset 311_service_requests --force
+```
+
+Expected first aggregate output:
+
+```text
+aggregates/311_service_requests/borough/all.json
+```
+
+## Launch blockers
+
+- Add the missing scaffold files.
+- Replace coarse development borough geometry with official NYC boundary geometry.
+- Generate the cached 311 borough aggregate.
+- Test the GitHub Actions workflow with `workflow_dispatch`.
+- Create a WordPress draft page only when the WordPress connector is callable.
+- Do not publish, delete production content, install plugins, edit themes, change hosting/DNS, or alter billing without Howard's explicit approval.
