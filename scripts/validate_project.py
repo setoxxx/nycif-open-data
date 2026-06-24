@@ -50,8 +50,18 @@ def check_python() -> None:
     print("OK Python compiles")
 
 
-def check_borough_join(strict_refresh: bool) -> None:
-    data = json.loads(BOUNDARIES.read_text(encoding="utf-8"))
+def read_boundaries() -> dict:
+    return json.loads(BOUNDARIES.read_text(encoding="utf-8"))
+
+
+def read_aggregate() -> dict | None:
+    if not AGGREGATE.exists():
+        return None
+    return json.loads(AGGREGATE.read_text(encoding="utf-8"))
+
+
+def check_borough_join(strict_refresh: bool) -> set[str]:
+    data = read_boundaries()
     ids = {str(feature.get("properties", {}).get("id")) for feature in data.get("features", [])}
     if ids != EXPECTED_BOROUGH_IDS:
         fail(f"borough ids mismatch: {sorted(ids)}")
@@ -61,6 +71,7 @@ def check_borough_join(strict_refresh: bool) -> None:
             fail(msg)
         print(f"WARN {msg}")
     print("OK borough ids")
+    return ids
 
 
 def check_catalog() -> None:
@@ -80,14 +91,14 @@ def check_catalog() -> None:
     print(f"OK dataset catalog ({len(slugs)} datasets)")
 
 
-def check_aggregate_status(strict_refresh: bool) -> None:
-    if not AGGREGATE.exists():
+def check_aggregate_status(strict_refresh: bool) -> dict | None:
+    data = read_aggregate()
+    if data is None:
         msg = "aggregate not generated yet"
         if strict_refresh:
             fail(msg)
         print(f"WARN {msg}")
-        return
-    data = json.loads(AGGREGATE.read_text(encoding="utf-8"))
+        return None
     if data.get("development_sample") or data.get("status") == "development_sample":
         msg = "aggregate is development sample only"
         if strict_refresh:
@@ -95,6 +106,25 @@ def check_aggregate_status(strict_refresh: bool) -> None:
         print(f"WARN {msg}; replace before public launch")
     else:
         print("OK aggregate appears generated")
+    return data
+
+
+def check_map_input_consistency(boundary_ids: set[str], aggregate: dict | None) -> None:
+    if aggregate is None:
+        return
+    counts = aggregate.get("counts")
+    if not isinstance(counts, dict):
+        fail("aggregate missing counts object")
+    count_ids = {str(key) for key in counts}
+    if count_ids != boundary_ids:
+        fail(f"aggregate/boundary key mismatch: aggregate={sorted(count_ids)} boundaries={sorted(boundary_ids)}")
+    for key, value in counts.items():
+        if not isinstance(value, (int, float)) or value < 0:
+            fail(f"aggregate count for {key} is not a non-negative number")
+    total = aggregate.get("total_count")
+    if isinstance(total, (int, float)) and int(total) != int(sum(counts.values())):
+        fail("aggregate total_count does not equal sum of counts")
+    print("OK aggregate keys match boundary ids")
 
 
 def main() -> int:
@@ -104,9 +134,10 @@ def main() -> int:
     check_required()
     check_json()
     check_python()
-    check_borough_join(args.strict_refresh)
+    boundary_ids = check_borough_join(args.strict_refresh)
     check_catalog()
-    check_aggregate_status(args.strict_refresh)
+    aggregate = check_aggregate_status(args.strict_refresh)
+    check_map_input_consistency(boundary_ids, aggregate)
     print("VALIDATION PASSED")
     return 0
 
