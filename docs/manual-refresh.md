@@ -8,13 +8,19 @@ Use this when GitHub Actions cannot be triggered from the current tool session.
 python scripts/validate_project.py
 python scripts/fetch_boundaries.py --boundary boroughs --out boundaries
 python scripts/aggregate.py --dataset 311_service_requests
-python scripts/validate_project.py
+python scripts/validate_project.py --strict-refresh
 ```
 
 Expected generated file:
 
 ```text
 aggregates/311_service_requests/borough/all.json
+```
+
+Expected generated boundary metadata:
+
+```text
+boundaries/boroughs.geojson metadata.status = generated_from_source
 ```
 
 Commit generated files:
@@ -32,3 +38,12 @@ The workflow can also be started manually from GitHub:
 Actions -> Refresh NYC Open Data aggregates -> Run workflow
 
 The workflow also runs on schedule and on relevant pushes to main.
+
+## Launch gate
+
+The map is not launch-ready while either condition remains true:
+
+- aggregate JSON has `development_sample: true`
+- borough GeoJSON has `metadata.status: development_placeholder`
+
+`python scripts/validate_project.py --strict-refresh` must pass before treating the data as launch-ready.
