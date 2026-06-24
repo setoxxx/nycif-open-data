@@ -5,10 +5,12 @@ import argparse, json
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+EXPECTED_BOROUGH_IDS = {"MN", "BX", "BK", "QN", "SI"}
 SOURCES = {
     "boroughs": {
         "url": "https://data.cityofnewyork.us/resource/7t3b-ywvw.geojson?$limit=5000",
         "out": "boroughs.geojson",
+        "dataset_id": "7t3b-ywvw",
         "id_fields": ["boro_code", "borocode", "BoroCode", "boro_name", "BoroName"],
         "name_fields": ["boro_name", "BoroName", "name"],
         "kind": "borough",
@@ -55,13 +57,30 @@ def normalize(data: dict, source: dict, digits: int) -> dict:
             continue
         join_id = norm(raw_id, source.get("kind", "raw"))
         geom = feature.get("geometry") or {}
+        if not geom.get("type") or geom.get("coordinates") is None:
+            continue
         features.append({
             "type": "Feature",
             "id": join_id,
             "properties": {"id": join_id, "join_key": join_id, "name": NAMES.get(join_id, str(raw_id))},
             "geometry": {"type": geom.get("type"), "coordinates": round_coords(geom.get("coordinates"), digits)},
         })
-    return {"type": "FeatureCollection", "name": source["out"].replace(".geojson", ""), "metadata": {"source_url": source["url"], "normalized_for": "NYC In Focus"}, "features": features}
+    ids = {feature["properties"]["id"] for feature in features}
+    if source.get("kind") == "borough" and ids != EXPECTED_BOROUGH_IDS:
+        raise RuntimeError(f"borough ids mismatch after fetch: {sorted(ids)}")
+    return {
+        "type": "FeatureCollection",
+        "name": source["out"].replace(".geojson", ""),
+        "metadata": {
+            "status": "generated_from_source",
+            "source_url": source["url"],
+            "source_dataset_id": source.get("dataset_id"),
+            "normalized_for": "NYC In Focus",
+            "join_field": "id",
+            "feature_count": len(features),
+        },
+        "features": features,
+    }
 
 def main() -> int:
     parser = argparse.ArgumentParser()
