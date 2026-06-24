@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "development_sample",
+  "development_sample": true,
+  "warning": "Development sample only. Not official NYC Open Data counts. Replace by running scripts/aggregate.py or the refresh workflow before public launch.",
+  "dataset_slug": "311_service_requests",
+  "dataset_name": "311 Service Requests",
+  "dataset_id": "erm2-nwe9",
+  "boundary": "borough",
+  "period": "all",
+  "generated_at": "DEVELOPMENT_SAMPLE_NOT_REAL_DATA",
+  "source_query": null,
+  "counts": {
+    "MN": 1200,
+    "BX": 900,
+    "BK": 1500,
+    "QN": 1300,
+    "SI": 300
+  },
+  "raw_values": {
+    "MN": "Manhattan",
+    "BX": "Bronx",
+    "BK": "Brooklyn",
+    "QN": "Queens",
+    "SI": "Staten Island"
+  },
+  "total_count": 5200,
+  "validation": {
+    "public_launch_ready": false,
+    "replace_before_publication": true
+  }
+}
