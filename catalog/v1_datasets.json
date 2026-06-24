@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "generated_by": "manual_mvp_seed",
+  "notes": "Start with 311 by borough. Run the catalog script before adding additional public layers.",
+  "datasets": [
+    {
+      "slug": "311_service_requests",
+      "name": "311 Service Requests",
+      "domain": "data.cityofnewyork.us",
+      "resource_id": "erm2-nwe9",
+      "confirmed": true,
+      "default_boundary": "borough",
+      "aggregations": [
+        {
+          "boundary": "borough",
+          "field": "borough",
+          "value_kind": "borough_name",
+          "periods": ["all"]
+        }
+      ]
+    }
+  ]
+}
