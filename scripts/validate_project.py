@@ -53,6 +53,8 @@ def check_borough_join() -> None:
     ids = {str(feature.get("properties", {}).get("id")) for feature in data.get("features", [])}
     if ids != EXPECTED_BOROUGH_IDS:
         fail(f"borough ids mismatch: {sorted(ids)}")
+    if data.get("metadata", {}).get("status") == "development_placeholder":
+        print("WARN borough geometry is development placeholder only")
     print("OK borough ids")
 
 
