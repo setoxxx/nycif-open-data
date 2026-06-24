@@ -1,0 +1,3 @@
+# Runtime scripts use only Python standard library.
+# Optional future geometry simplification package:
+# shapely>=2.0
