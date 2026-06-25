@@ -8,7 +8,7 @@ from urllib.request import Request, urlopen
 EXPECTED_BOROUGH_IDS = {"MN", "BX", "BK", "QN", "SI"}
 SOURCES = {
     "boroughs": {
-        "url": "https://data.cityofnewyork.us/resource/7t3b-ywvw.geojson?$limit=5000",
+        "url": "https://data.cityofnewyork.us/api/geospatial/7t3b-ywvw?method=export&format=GeoJSON",
         "out": "boroughs.geojson",
         "dataset_id": "7t3b-ywvw",
         "id_fields": ["boro_code", "borocode", "BoroCode", "boro_name", "BoroName"],
