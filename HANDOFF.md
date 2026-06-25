@@ -1,30 +1,30 @@
 # NYCIF Open Data Map — Handoff
 
-Current project percentage: 88% complete.
+Current project percentage: 89% complete.
 
 Completed since previous checkpoint:
 
-- Verified current repo state from the 88% checkpoint.
-- Confirmed `aggregates/311_service_requests/borough/all.json` remains development sample data.
-- Confirmed `boundaries/boroughs.geojson` remains development placeholder geometry.
+- Verified Howard successfully cloned the repo and pushed generated 311 borough aggregate data.
+- Confirmed `aggregates/311_service_requests/borough/all.json` now contains generated 311 counts with generated_at, source_query, dataset_id, and total_count.
+- Confirmed `boundaries/boroughs.geojson` remains development placeholder geometry because the boundary fetch failed with HTTP 404.
 - Did not claim live-data readiness.
-- Confirmed the latest validator/handoff commit had no visible workflow run or status check through the connector.
-- Reviewed Howard's local terminal output: refresh commands were run from the home directory, not the repository root, and the local shell did not have `python` mapped.
-- Updated the local-run instruction: use the cloned repo directory and `python3`.
+- Diagnosed the boundary failure: `scripts/fetch_boundaries.py` used the Socrata resource GeoJSON path, which returned 404 for the geospatial boundary dataset.
+- Updated `scripts/fetch_boundaries.py` to use Socrata's geospatial export endpoint for dataset `7t3b-ywvw`.
 
 Current status:
 
-- The repo is safer for a real refresh run.
-- The frontend remains QA-only until generated files replace the sample/placeholder files.
+- Aggregate data is now generated and committed.
+- Borough boundary data is still pending.
+- The frontend remains QA-only until generated boundaries replace the placeholder file and strict validation passes.
 - No live-data readiness claim should be made yet.
-- The next meaningful progress point is generated data.
 
 Still pending:
 
-- Run the refresh commands from the cloned repository root using `python3`.
+- Pull the latest repo changes locally.
+- Re-run the borough boundary fetch with `python3` from the repo root.
+- Re-run strict validation.
 - Commit generated `boundaries/boroughs.geojson` with non-placeholder metadata.
-- Commit generated `aggregates/311_service_requests/borough/all.json` with real counts, not development sample data.
-- QA borough join IDs, count scale, colors, popups, mobile layout, and warning removal after real generated files exist.
+- QA borough join IDs, count scale, colors, popups, mobile layout, provenance metadata, and warning removal after generated boundaries exist.
 - Stage WordPress only when the WordPress connector is callable.
 
-Next: run the refresh from the repo root with `python3`, commit real generated files, then perform live-data QA.
+Next: pull the patched boundary fetcher, generate borough boundaries, run strict validation, commit the boundary file, then perform live-data QA.
