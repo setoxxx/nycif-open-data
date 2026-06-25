@@ -65,11 +65,19 @@ def check_borough_join(strict_refresh: bool) -> set[str]:
     ids = {str(feature.get("properties", {}).get("id")) for feature in data.get("features", [])}
     if ids != EXPECTED_BOROUGH_IDS:
         fail(f"borough ids mismatch: {sorted(ids)}")
-    if data.get("metadata", {}).get("status") == "development_placeholder":
+    metadata = data.get("metadata", {})
+    if metadata.get("status") == "development_placeholder":
         msg = "borough geometry is development placeholder only"
         if strict_refresh:
             fail(msg)
         print(f"WARN {msg}")
+    if strict_refresh:
+        if metadata.get("status") != "generated_from_source":
+            fail("borough geometry is missing generated_from_source status")
+        if not metadata.get("source_url") or not metadata.get("source_dataset_id"):
+            fail("borough geometry missing source metadata")
+        if metadata.get("feature_count") != len(data.get("features", [])):
+            fail("borough feature_count metadata does not match feature length")
     print("OK borough ids")
     return ids
 
@@ -104,6 +112,14 @@ def check_aggregate_status(strict_refresh: bool) -> dict | None:
         if strict_refresh:
             fail(msg)
         print(f"WARN {msg}; replace before public launch")
+    elif strict_refresh:
+        if not data.get("generated_at"):
+            fail("aggregate missing generated_at")
+        if not data.get("source_query"):
+            fail("aggregate missing source_query")
+        if not data.get("dataset_id"):
+            fail("aggregate missing dataset_id")
+        print("OK aggregate provenance")
     else:
         print("OK aggregate appears generated")
     return data
