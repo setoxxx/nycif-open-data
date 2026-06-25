@@ -1,28 +1,27 @@
 # NYCIF Open Data Map — Handoff
 
-Current project percentage: 85% complete.
+Current project percentage: 86% complete.
 
 Completed since previous checkpoint:
 
-- Verified the prior handoff update is present and includes the validator consistency-check improvement.
-- Confirmed `scripts/validate_project.py` includes aggregate/boundary map-input consistency checks:
-  - aggregate `counts` must be an object
-  - aggregate count keys must match boundary feature IDs
-  - counts must be non-negative numbers
-  - `total_count`, when present, must match the sum of counts
+- Verified current repo state from the 85% checkpoint.
 - Confirmed `aggregates/311_service_requests/borough/all.json` remains development sample data.
 - Confirmed `boundaries/boroughs.geojson` remains development placeholder geometry.
-- Confirmed no `Refresh generated data` commit is visible through the connector.
-- Checked commit status/workflow evidence for recent commits; no visible status checks or workflow runs were available through the connector.
-- Re-checked `scripts/aggregate.py`; its real generated output shape still matches the validator/frontend expectations.
 - Did not claim live-data readiness.
+- Confirmed no `Refresh generated data` commit was visible through the connector.
+- Checked workflow evidence for the latest handoff/workflow-related commits; no visible workflow runs or commit status checks were available through the connector.
+- Improved `.github/workflows/refresh.yml` reliability:
+  - added workflow concurrency group `refresh-nyc-open-data`
+  - set `cancel-in-progress: false` so a running refresh is not interrupted by a later one
+  - added `timeout-minutes: 30` to prevent hung refresh jobs
+- Re-checked `scripts/validate_project.py`; validation remains aligned with current launch blockers and map input consistency checks.
 
 Current status:
 
-- The repo is structurally safer and ready for a real refresh run.
+- The repo is safer for a real refresh run.
 - The frontend remains QA-only until generated files replace the sample/placeholder files.
-- Further sample-data UI polishing should be avoided unless it fixes a concrete launch-safety issue.
-- The next meaningful progress point is generated data, not more scaffold polish.
+- No more sample-data UI polishing is recommended unless it fixes a concrete launch-safety issue.
+- The next meaningful progress point is generated data.
 
 Still pending:
 
