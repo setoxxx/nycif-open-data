@@ -4,20 +4,19 @@ Current project percentage: 87% complete.
 
 Completed since previous checkpoint:
 
-- Verified current repo state from the 86% checkpoint.
+- Verified current repo state from the 87% checkpoint.
 - Confirmed `aggregates/311_service_requests/borough/all.json` remains development sample data.
 - Confirmed `boundaries/boroughs.geojson` remains development placeholder geometry.
 - Did not claim live-data readiness.
-- Confirmed no `Refresh generated data` commit was visible through the connector.
-- Checked workflow evidence for the latest workflow commit; no visible workflow run was available through the connector.
-- Improved `.github/workflows/refresh.yml` reliability with a job-level bot-push guard so generated-data bot pushes do not re-enter the refresh job.
-- Re-checked `scripts/validate_project.py`; validation remains aligned with current launch blockers and map input consistency checks.
+- Checked connector-visible commit evidence for the latest handoff commit; no statuses or workflow runs were visible.
+- Confirmed `.github/workflows/refresh.yml` still has manual and scheduled refresh, strict post-refresh validation, generated-file commit steps, timeout, concurrency, and bot-push guard.
+- No sample-data UI polishing was performed.
 
 Current status:
 
-- The repo is safer for a real refresh run.
+- The repo remains safer for a real refresh run than the original scaffold.
 - The frontend remains QA-only until generated files replace the sample/placeholder files.
-- No more sample-data UI polishing is recommended unless it fixes a concrete launch-safety issue.
+- No live-data readiness claim should be made yet.
 - The next meaningful progress point is generated data.
 
 Still pending:
