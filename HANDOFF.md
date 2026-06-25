@@ -1,19 +1,16 @@
 # NYCIF Open Data Map — Handoff
 
-Current project percentage: 86% complete.
+Current project percentage: 87% complete.
 
 Completed since previous checkpoint:
 
-- Verified current repo state from the 85% checkpoint.
+- Verified current repo state from the 86% checkpoint.
 - Confirmed `aggregates/311_service_requests/borough/all.json` remains development sample data.
 - Confirmed `boundaries/boroughs.geojson` remains development placeholder geometry.
 - Did not claim live-data readiness.
 - Confirmed no `Refresh generated data` commit was visible through the connector.
-- Checked workflow evidence for the latest handoff/workflow-related commits; no visible workflow runs or commit status checks were available through the connector.
-- Improved `.github/workflows/refresh.yml` reliability:
-  - added workflow concurrency group `refresh-nyc-open-data`
-  - set `cancel-in-progress: false` so a running refresh is not interrupted by a later one
-  - added `timeout-minutes: 30` to prevent hung refresh jobs
+- Checked workflow evidence for the latest workflow commit; no visible workflow run was available through the connector.
+- Improved `.github/workflows/refresh.yml` reliability with a job-level bot-push guard so generated-data bot pushes do not re-enter the refresh job.
 - Re-checked `scripts/validate_project.py`; validation remains aligned with current launch blockers and map input consistency checks.
 
 Current status:
