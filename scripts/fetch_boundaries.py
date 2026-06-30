@@ -3,6 +3,7 @@
 from __future__ import annotations
 import argparse, json
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 EXPECTED_BOROUGH_IDS = {"MN", "BX", "BK", "QN", "SI"}
@@ -21,7 +22,7 @@ BORO_NAME = {"MANHATTAN": "MN", "NEW YORK": "MN", "BRONX": "BX", "BROOKLYN": "BK
 NAMES = {"MN": "Manhattan", "BX": "Bronx", "BK": "Brooklyn", "QN": "Queens", "SI": "Staten Island"}
 
 def fetch(url: str) -> dict:
-    req = Request(url, headers={"Accept": "application/geo+json, application/json", "User-Agent": "nycif-boundaries/1.0"})
+    req = Request(url, headers={"Accept": "application/geo+json, application/json", "User-Agent": "nycif-boundaries/1.1"})
     with urlopen(req, timeout=90) as response:
         return json.loads(response.read().decode("utf-8"))
 
@@ -82,6 +83,32 @@ def normalize(data: dict, source: dict, digits: int) -> dict:
         "features": features,
     }
 
+def load_existing(path: Path, source: dict) -> dict | None:
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    if not isinstance(data, dict) or data.get("type") != "FeatureCollection":
+        return None
+    metadata = data.setdefault("metadata", {})
+    metadata["status"] = "kept_existing_source_unavailable"
+    metadata["source_url"] = source["url"]
+    metadata["source_dataset_id"] = source.get("dataset_id")
+    metadata["refresh_warning"] = "Source fetch failed; preserved previous boundary file so aggregate refresh can continue."
+    return data
+
+def fetch_or_existing(source: dict, path: Path, digits: int) -> dict:
+    try:
+        return normalize(fetch(source["url"]), source, digits)
+    except (HTTPError, URLError, TimeoutError, RuntimeError) as error:
+        existing = load_existing(path, source)
+        if existing is not None:
+            print(f"warning: boundary source unavailable for {source['out']}: {error}; kept existing {path}")
+            return existing
+        raise
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--boundary", action="append", choices=sorted(SOURCES), help="Repeatable. Default: all.")
@@ -93,7 +120,7 @@ def main() -> int:
     for key in args.boundary or sorted(SOURCES):
         source = SOURCES[key]
         path = out_dir / source["out"]
-        path.write_text(json.dumps(normalize(fetch(source["url"]), source, args.digits), indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        path.write_text(json.dumps(fetch_or_existing(source, path, args.digits), indent=2, sort_keys=True) + "\n", encoding="utf-8")
         print(f"wrote {path}")
     return 0
 
