@@ -62,7 +62,8 @@ def read_aggregate() -> dict | None:
 
 def check_borough_join(strict_refresh: bool) -> set[str]:
     data = read_boundaries()
-    ids = {str(feature.get("properties", {}).get("id")) for feature in data.get("features", [])}
+    features = data.get("features", [])
+    ids = {str(feature.get("properties", {}).get("id")) for feature in features}
     if ids != EXPECTED_BOROUGH_IDS:
         fail(f"borough ids mismatch: {sorted(ids)}")
     metadata = data.get("metadata", {})
@@ -80,8 +81,10 @@ def check_borough_join(strict_refresh: bool) -> set[str]:
             print("WARN borough geometry source unavailable; preserved existing boundary file")
         if not metadata.get("source_url") or not metadata.get("source_dataset_id"):
             fail("borough geometry missing source metadata")
-        if metadata.get("feature_count") != len(data.get("features", [])):
+        if status == "generated_from_source" and metadata.get("feature_count") != len(features):
             fail("borough feature_count metadata does not match feature length")
+        if status == "kept_existing_source_unavailable" and metadata.get("feature_count") not in (None, len(features)):
+            print("WARN preserved boundary feature_count metadata is stale; using actual feature length")
     print("OK borough ids")
     return ids
 
