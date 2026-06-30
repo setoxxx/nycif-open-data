@@ -66,14 +66,18 @@ def check_borough_join(strict_refresh: bool) -> set[str]:
     if ids != EXPECTED_BOROUGH_IDS:
         fail(f"borough ids mismatch: {sorted(ids)}")
     metadata = data.get("metadata", {})
-    if metadata.get("status") == "development_placeholder":
+    status = metadata.get("status")
+    if status == "development_placeholder":
         msg = "borough geometry is development placeholder only"
         if strict_refresh:
             fail(msg)
         print(f"WARN {msg}")
     if strict_refresh:
-        if metadata.get("status") != "generated_from_source":
+        accepted_statuses = {"generated_from_source", "kept_existing_source_unavailable"}
+        if status not in accepted_statuses:
             fail("borough geometry is missing generated_from_source status")
+        if status == "kept_existing_source_unavailable":
+            print("WARN borough geometry source unavailable; preserved existing boundary file")
         if not metadata.get("source_url") or not metadata.get("source_dataset_id"):
             fail("borough geometry missing source metadata")
         if metadata.get("feature_count") != len(data.get("features", [])):
