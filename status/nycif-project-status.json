@@ -1,0 +1,37 @@
+{
+  "artifact_type": "nycif_project_status",
+  "schema_version": "1.0.0",
+  "project": "nycif-open-data",
+  "repository": "setoxxx/nycif-open-data",
+  "visibility": "public",
+  "current_phase": "Public dataset catalog readiness",
+  "completion_percent": 12,
+  "health": "gray",
+  "status_summary": "Open Data is the public repository for NYCIF open-data references and public dataset catalog work. This status artifact is static, public-safe, and does not change any production feed or map runtime.",
+  "active_prs": [],
+  "recent_prs": [],
+  "blockers": [
+    "Define the public dataset catalog structure without exposing private operating notes.",
+    "Define update cadence, source provenance, and public-safe freshness fields."
+  ],
+  "next_action": "Add a public dataset catalog status plan in a later controlled phase without changing production feeds or public map runtime.",
+  "data_freshness": {
+    "source": "Manual ChatGPT/GitHub connector snapshot",
+    "last_verified_at": "2026-07-02T20:20:00.000Z",
+    "notes": "No recent pull requests were returned by the connector snapshot. This file is static and does not poll GitHub from the browser."
+  },
+  "safety": {
+    "safe_for_public_dashboard": true,
+    "contains_secrets": false,
+    "contains_private_repo_internals": false,
+    "contains_credentials": false,
+    "contains_tokens": false,
+    "browser_side_github_api_polling": false,
+    "write_controls": false,
+    "deploy_controls": false,
+    "public_map_runtime_change": false,
+    "production_feed_mutation": false,
+    "wordpress_change": false
+  },
+  "generated_at": "2026-07-02T20:20:00.000Z"
+}
