@@ -3,23 +3,23 @@
   "failure_codes": [],
   "failure_count": 0,
   "feed_summary": {
-    "areas": 21,
-    "businesses": 27,
-    "matches": 41,
+    "areas": 55,
+    "businesses": 0,
+    "matches": 0,
     "terminal_accounting": {
-      "accounted_business_count": 37,
+      "accounted_business_count": 18924,
       "by_disposition": {
-        "ACCEPTED": 23,
-        "BLOCKED": 2,
-        "REJECTED": 2,
-        "REVIEW_REQUIRED": 6,
-        "UNCLASSIFIED": 4
+        "ACCEPTED": 0,
+        "BLOCKED": 71,
+        "REJECTED": 0,
+        "REVIEW_REQUIRED": 48,
+        "UNCLASSIFIED": 18805
       },
-      "input_business_count": 37
+      "input_business_count": 18924
     }
   },
   "feed_version": "2026-07-30",
-  "generated_at": "2026-07-30T12:35:19.878946+00:00",
+  "generated_at": "2026-07-30T17:36:23.062252+00:00",
   "outputs": {
     "culture_feed": "public/feeds/culture/culture-feed-current.json"
   },
