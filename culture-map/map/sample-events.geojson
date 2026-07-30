@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "name": "NYCIF Sample Events",
+  "metadata": {
+    "generated_by": "NYCIF Web Platform",
+    "status": "sample-data-only",
+    "last_updated": "2026-06-17T13:15:00-04:00",
+    "public_use": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9855, 40.7580]
+      },
+      "properties": {
+        "event_id": "sample-times-square-photo-op-001",
+        "title": "Sample Midtown Photo Opportunity",
+        "description": "Sample listing for testing the NYCIF map interface. Not a real public event.",
+        "category": "Photo Opportunity",
+        "start_date": "2026-06-20",
+        "start_time": "12:00",
+        "end_date": "2026-06-20",
+        "end_time": "14:00",
+        "borough": "Manhattan",
+        "neighborhood": "Times Square",
+        "address": "Times Square, Manhattan, NY",
+        "latitude": 40.7580,
+        "longitude": -73.9855,
+        "source_name": "NYCIF Sample Data",
+        "source_url": "https://nycinfocus.com/",
+        "official_source_url": "https://nycinfocus.com/",
+        "nycif_url": "https://nycinfocus.com/calendar/",
+        "status": "unverified",
+        "public_display_eligible": false,
+        "cost": "unknown",
+        "accessibility": "UNSPECIFIED IN SAMPLE DATA",
+        "street_closure": false,
+        "permit_number": "",
+        "last_checked": "2026-06-17T13:15:00-04:00",
+        "curated_by_nycif": true,
+        "editorial_pick": false,
+        "photo_opportunity": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9683, 40.7851]
+      },
+      "properties": {
+        "event_id": "sample-central-park-culture-002",
+        "title": "Sample Central Park Culture Listing",
+        "description": "Sample listing for testing filters and event cards. Not a real public event.",
+        "category": "Arts & Culture",
+        "start_date": "2026-06-21",
+        "start_time": "15:00",
+        "end_date": "2026-06-21",
+        "end_time": "17:00",
+        "borough": "Manhattan",
+        "neighborhood": "Central Park",
+        "address": "Central Park, Manhattan, NY",
+        "latitude": 40.7851,
+        "longitude": -73.9683,
+        "source_name": "NYCIF Sample Data",
+        "source_url": "https://nycinfocus.com/",
+        "official_source_url": "https://nycinfocus.com/",
+        "nycif_url": "https://nycinfocus.com/calendar/",
+        "status": "unverified",
+        "public_display_eligible": false,
+        "cost": "free",
+        "accessibility": "UNSPECIFIED IN SAMPLE DATA",
+        "street_closure": false,
+        "permit_number": "",
+        "last_checked": "2026-06-17T13:15:00-04:00",
+        "curated_by_nycif": true,
+        "editorial_pick": true,
+        "photo_opportunity": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9442, 40.6782]
+      },
+      "properties": {
+        "event_id": "sample-brooklyn-public-meeting-003",
+        "title": "Sample Brooklyn Civic Meeting",
+        "description": "Sample civic listing for testing source labels and non-photo event categories. Not a real public event.",
+        "category": "Civic / Public Meeting",
+        "start_date": "2026-06-22",
+        "start_time": "18:30",
+        "end_date": "2026-06-22",
+        "end_time": "20:00",
+        "borough": "Brooklyn",
+        "neighborhood": "Bedford-Stuyvesant",
+        "address": "Bedford-Stuyvesant, Brooklyn, NY",
+        "latitude": 40.6782,
+        "longitude": -73.9442,
+        "source_name": "NYCIF Sample Data",
+        "source_url": "https://nycinfocus.com/",
+        "official_source_url": "https://nycinfocus.com/",
+        "nycif_url": "https://nycinfocus.com/calendar/",
+        "status": "unverified",
+        "public_display_eligible": false,
+        "cost": "free",
+        "accessibility": "UNSPECIFIED IN SAMPLE DATA",
+        "street_closure": false,
+        "permit_number": "",
+        "last_checked": "2026-06-17T13:15:00-04:00",
+        "curated_by_nycif": true,
+        "editorial_pick": false,
+        "photo_opportunity": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+.lifecycle-heading {
+  margin: 0.35rem 0 0.65rem;
+}
+
+.lifecycle-badge,
+.experience-status {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.experience-status {
+  margin-top: 0.1rem;
+}
+
+.lifecycle-notice {
+  margin: 0 0 0.9rem;
+  border-left: 4px solid var(--border);
+  border-radius: 0 8px 8px 0;
+  background: var(--surface-muted);
+  padding: 0.65rem 0.75rem;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.lifecycle-critical {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+
+.lifecycle-warning {
+  border-color: #8a6a17;
+  color: #60480e;
+}
+
+.lifecycle-neutral {
+  color: var(--muted);
+}
+
+.lifecycle-normal {
+  border-color: var(--border);
+  color: var(--text);
+}
+
+@media (max-width: 620px) {
+  .lifecycle-badge,
+  .experience-status {
+    white-space: normal;
+  }
+}

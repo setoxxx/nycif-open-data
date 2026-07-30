@@ -1,0 +1,28 @@
+{
+  "contract": "nycif.culture-feed-release.v1",
+  "failure_codes": [],
+  "failure_count": 0,
+  "feed_summary": {
+    "areas": 19,
+    "businesses": 22,
+    "matches": 29,
+    "terminal_accounting": {
+      "accounted_business_count": 29,
+      "by_disposition": {
+        "ACCEPTED": 18,
+        "BLOCKED": 2,
+        "REJECTED": 2,
+        "REVIEW_REQUIRED": 5,
+        "UNCLASSIFIED": 2
+      },
+      "input_business_count": 29
+    }
+  },
+  "feed_version": "2026-07-30",
+  "generated_at": "2026-07-30T01:54:58.531869+00:00",
+  "outputs": {
+    "culture_feed": "public/feeds/culture/culture-feed-current.json"
+  },
+  "release_allowed": true,
+  "scoring_version": "culture-scoring.v1"
+}

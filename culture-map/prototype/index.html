@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NYC In Focus City Engine map foundation prototype.">
+  <title>NYC In Focus City Engine Prototype</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lifecycle-status.css">
+  <link rel="stylesheet" href="map-performance.css">
+</head>
+<body>
+  <a class="skip-link" href="#experience-list">Skip to experience list</a>
+
+  <header class="site-header">
+    <div>
+      <p class="brand">NYC IN FOCUS</p>
+      <h1>City Engine</h1>
+      <p class="subtitle">A place-first prototype for discovering what is happening across New York City.</p>
+    </div>
+    <span class="prototype-badge">Sample data only</span>
+  </header>
+
+  <main>
+    <section class="filters" aria-labelledby="filter-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="filter-heading">Explore the city</h2>
+          <p>Filter the sample Events layer. Selecting a card also selects its map marker.</p>
+        </div>
+        <div class="filter-actions">
+          <button id="reset-filters" class="secondary-button" type="button">Reset filters</button>
+          <button id="culture-toggle" class="secondary-button culture-toggle" type="button"
+                  aria-expanded="false" aria-pressed="false" aria-controls="culture-panel">Culture</button>
+        </div>
+      </div>
+
+      <div class="filter-grid">
+        <label>
+          Search
+          <input id="search-filter" type="search" placeholder="Title, neighborhood, category" autocomplete="off">
+        </label>
+
+        <label>
+          Date
+          <select id="date-filter">
+            <option value="all">All dates</option>
+            <option value="happening-now">Happening now</option>
+            <option value="starting-soon">Starting soon</option>
+            <option value="today">Today</option>
+            <option value="tonight">Tonight</option>
+            <option value="tomorrow">Tomorrow</option>
+            <option value="this-weekend">This weekend</option>
+            <option value="next-week">Next week</option>
+            <option value="upcoming">All upcoming</option>
+            <option value="past">Past</option>
+          </select>
+        </label>
+
+        <label>
+          Borough
+          <select id="borough-filter">
+            <option value="all">All boroughs</option>
+          </select>
+        </label>
+
+        <label>
+          Category
+          <select id="category-filter">
+            <option value="all">All categories</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section id="culture-panel" class="culture-panel" aria-labelledby="culture-heading" hidden>
+      <div class="section-heading">
+        <div>
+          <h2 id="culture-heading">Culture discovery</h2>
+          <p id="culture-status" role="status" aria-live="polite" data-culture-state="loading">Loading Culture feed…</p>
+        </div>
+        <button id="culture-close" class="secondary-button" type="button" aria-label="Close Culture panel">Close</button>
+      </div>
+
+      <div class="culture-grid">
+        <label>
+          Area
+          <select id="culture-area"></select>
+        </label>
+        <p id="culture-area-meta" class="culture-area-meta"></p>
+      </div>
+
+      <fieldset class="culture-categories">
+        <legend>Cultural categories in this area</legend>
+        <div id="culture-categories"></div>
+      </fieldset>
+
+      <p id="culture-count" class="culture-count" aria-live="polite"></p>
+      <p id="culture-explain" class="culture-explain"></p>
+      <details class="culture-sources">
+        <summary>Sources &amp; data vintage</summary>
+        <div id="culture-sources"></div>
+      </details>
+
+      <button id="culture-view-all" class="secondary-button" type="button">← Back to Events</button>
+
+      <div id="culture-list" class="culture-list" aria-label="Culturally relevant businesses"></div>
+    </section>
+
+    <section class="workspace" aria-label="City map and experience list">
+      <div class="map-panel">
+        <div id="map" role="application" aria-label="Interactive map of sample NYC experiences"></div>
+        <p class="map-note">Map tiles © OpenStreetMap contributors. Records are fictional samples and are not public event listings.</p>
+      </div>
+
+      <aside class="list-panel" aria-labelledby="results-heading">
+        <div class="results-header">
+          <div>
+            <h2 id="results-heading">Experiences</h2>
+            <p id="results-summary" aria-live="polite">Loading sample records…</p>
+          </div>
+        </div>
+        <div id="experience-list" class="experience-list" tabindex="-1"></div>
+      </aside>
+    </section>
+
+    <section id="selected-experience" class="detail-panel" aria-live="polite" aria-labelledby="detail-heading">
+      <div class="empty-detail">
+        <h2 id="detail-heading">Select an experience</h2>
+        <p>Choose a marker or list item to see source, timing, place, and editorial context.</p>
+      </div>
+    </section>
+  </main>
+
+  <template id="experience-card-template">
+    <article class="experience-card">
+      <button class="card-button" type="button">
+        <span class="card-category"></span>
+        <strong class="card-title"></strong>
+        <span class="card-meta"></span>
+        <span class="card-description"></span>
+      </button>
+    </article>
+  </template>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2517 @@
+{
+  "areas": [
+    {
+      "area_id": "acp-2e6af3c5038f1673f823d087",
+      "borough": "Queens",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "QN06"
+      ],
+      "geography_id": "rego-park-bukharian",
+      "geography_name": "Rego Park / Forest Hills (Bukharian corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.727,
+        "lng": -73.862
+      },
+      "record_digest": "b331ae772edfc113430ae7ff3f203cca5e5323730dfc91b1361db0da73f58773",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "108th Street Rego Park / Forest Hills \u2014 documented center of the NYC Bukharian Jewish / Central Asian community.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "bukharian_food",
+            "bukharian_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "bukharian_food",
+        "bukharian_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-30054b9aa071c36b803d1f71",
+      "borough": "Manhattan",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "MN12"
+      ],
+      "geography_id": "washington-heights-dominican",
+      "geography_name": "Washington Heights (Dominican corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.8401,
+        "lng": -73.94
+      },
+      "record_digest": "c3da397057627aef69e1fa1f1c5c194e058072f4c94967ea08574c7083fd6f01",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Washington Heights \u2014 documented center of the NYC Dominican community.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "dominican_food",
+            "dominican_grocery"
+          ]
+        },
+        {
+          "acs_dataset": "ACS 5-Year Estimates",
+          "acs_variable_ids": [
+            "B05006_130E",
+            "B16001_003E"
+          ],
+          "acs_vintage": "2019-2023",
+          "source_reference": "Aggregate context: Dominican Republic place of birth; Spanish spoken at home.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "dominican_food",
+            "dominican_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "dominican_food",
+        "dominican_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-39448d33b7f540edf257611b",
+      "borough": "Bronx",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "BX06"
+      ],
+      "geography_id": "belmont-arthur-avenue-italian",
+      "geography_name": "Belmont / Arthur Avenue (Little Italy of the Bronx)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.854,
+        "lng": -73.887
+      },
+      "record_digest": "0cd2d9f5143c370b38d27ca28ee74c63e3456b374626172b7c303a47001f58ae",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Arthur Avenue Belmont \u2014 documented 'Little Italy of the Bronx' with an Arthur Avenue Retail Market and BID.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "italian_food",
+            "italian_grocery",
+            "italian_bakery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "italian_bakery",
+        "italian_food",
+        "italian_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-40c2b83d79bb3d53a72f550a",
+      "borough": "Staten Island",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "SI01"
+      ],
+      "geography_id": "tompkinsville-little-sri-lanka",
+      "geography_name": "Tompkinsville (Little Sri Lanka)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.636,
+        "lng": -74.077
+      },
+      "record_digest": "fc433b168e01a1ea8db21034709152866b81ba51a2e9b09ac81de0d7d4fb21b6",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Victory Boulevard Tompkinsville \u2014 documented 'Little Sri Lanka', one of the largest Sri Lankan communities outside Sri Lanka.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "sri_lankan_food"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "sri_lankan_food"
+      ]
+    },
+    {
+      "area_id": "acp-4820bab8f4042b1b391fd545",
+      "borough": "Queens",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "QN10"
+      ],
+      "geography_id": "richmond-hill-guyanese",
+      "geography_name": "Richmond Hill (Little Guyana)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.688,
+        "lng": -73.827
+      },
+      "record_digest": "744846a47d29306df74da2134ab303bf2e585c3d88d480fe9155fcfc7130af6f",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Liberty Avenue 'Little Guyana' \u2014 documented Guyanese / Indo-Caribbean corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "guyanese_food",
+            "west_indian_grocery",
+            "south_asian_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "guyanese_food",
+        "south_asian_grocery",
+        "west_indian_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-5024446b6f640f9b3dc816b1",
+      "borough": "Brooklyn",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "BK12"
+      ],
+      "geography_id": "borough-park-jewish",
+      "geography_name": "Borough Park (Orthodox Jewish corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.636,
+        "lng": -73.993
+      },
+      "record_digest": "674899b8f413aca60b0937192e1d5ed862f5f5663f5d046d2848a72d77c17c6f",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "13th Avenue Borough Park \u2014 documented center of one of the largest Orthodox Jewish communities in NYC.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "kosher_food",
+            "kosher_grocery",
+            "judaica"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "judaica",
+        "kosher_food",
+        "kosher_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-5af2571e6c7cd3e54f6ded9b",
+      "borough": "Manhattan",
+      "business_count": 1,
+      "context_strength": "moderate",
+      "covers_community_districts": [
+        "MN10"
+      ],
+      "geography_id": "harlem-125th-soul-food",
+      "geography_name": "Central Harlem / 125th Street (African American cultural corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.809,
+        "lng": -73.949
+      },
+      "record_digest": "5a55c775231830d009a609373443b8262046a7a4930107e4fd6e51bb541ba947",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "125th Street Central Harlem \u2014 documented African American cultural and commercial corridor with an established soul-food tradition. Overlaps the Little Senegal corridor.",
+          "source_type": "reviewed_public_source",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "soul_food"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "soul_food"
+      ]
+    },
+    {
+      "area_id": "acp-770afa95e60633dc74654722",
+      "borough": "Queens",
+      "business_count": 1,
+      "context_strength": "moderate",
+      "covers_community_districts": [
+        "QN03"
+      ],
+      "geography_id": "jackson-heights-himalayan",
+      "geography_name": "Jackson Heights / Woodside (Himalayan / Tibetan-Nepali corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.748,
+        "lng": -73.891
+      },
+      "record_digest": "acae9574f1491d0ab487babd89a7e2a251adb0b877edb4e5a32fe5326d70119d",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Jackson Heights / Woodside \u2014 documented Himalayan (Tibetan and Nepali) commercial cluster. Overlaps the Jackson Heights South Asian corridor.",
+          "source_type": "reviewed_public_source",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "himalayan_food"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "himalayan_food"
+      ]
+    },
+    {
+      "area_id": "acp-795ffb81352e2c0ea98380b7",
+      "borough": "Brooklyn",
+      "business_count": 2,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "BK17",
+        "BK18"
+      ],
+      "geography_id": "east-flatbush-canarsie-caribbean",
+      "geography_name": "East Flatbush / Canarsie (Caribbean corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.6456,
+        "lng": -73.949
+      },
+      "record_digest": "4facc8c5dafd05036f96f14be0470207e4b357dc086c9a5db06140c4436b52b4",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Church / Utica / Flatlands Avenues \u2014 documented West Indian / Caribbean commercial corridor across East Flatbush and Canarsie.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "caribbean_bakery",
+        "caribbean_food",
+        "west_indian_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-8cc3cec34e7ac3ccc2587296",
+      "borough": "Brooklyn",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "BK01"
+      ],
+      "geography_id": "greenpoint-polish",
+      "geography_name": "Greenpoint (Little Poland)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.729,
+        "lng": -73.954
+      },
+      "record_digest": "2fdd40615d07972992093e8832adb34698f5c65e5034dd5e66ee62609339e578",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Manhattan Avenue Greenpoint \u2014 documented 'Little Poland' commercial corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "polish_food",
+            "polish_grocery"
+          ]
+        },
+        {
+          "acs_dataset": "ACS 5-Year Estimates",
+          "acs_variable_ids": [
+            "B05006_056E",
+            "B16001_057E"
+          ],
+          "acs_vintage": "2019-2023",
+          "source_reference": "Aggregate context: Poland place of birth; Polish spoken at home.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "polish_food",
+            "polish_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "polish_food",
+        "polish_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-8cd22bfa1844e509dcfd46fa",
+      "borough": "Manhattan",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "MN06"
+      ],
+      "geography_id": "curry-hill-south-asian",
+      "geography_name": "Curry Hill (Lexington Avenue, South Asian corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.743,
+        "lng": -73.982
+      },
+      "record_digest": "0e2031ee9378c3939b04e16390c4f388bf3ba7ef52deb459111e239fc70d72f8",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Lexington Avenue in the upper 20s ('Curry Hill') \u2014 documented South Asian / Indian restaurant and grocery corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "south_asian_food",
+            "south_asian_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "south_asian_food",
+        "south_asian_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-8fc08ad41efbac42a5c4d79b",
+      "borough": "Brooklyn",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "BK08",
+        "BK09"
+      ],
+      "geography_id": "crown-heights-caribbean",
+      "geography_name": "Crown Heights (Caribbean corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.672,
+        "lng": -73.95
+      },
+      "record_digest": "97cb31282fee8e550b22215d482816e8260626a92969ccf4d01eb6e7a3c0c381",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Nostrand / Utica Avenues Crown Heights \u2014 documented West Indian / Caribbean commercial corridor (home of the West Indian American Day Carnival).",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "caribbean_bakery",
+        "caribbean_food",
+        "west_indian_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-9dd4cf2709768eb6d35937c1",
+      "borough": "Queens",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "QN07"
+      ],
+      "geography_id": "flushing-taiwanese",
+      "geography_name": "Flushing (Taiwanese corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.759,
+        "lng": -73.83
+      },
+      "record_digest": "d711b5280b3789506d6b5b3f6fd8309627ac41810a25d4943a7fb9eacf515028",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Downtown Flushing \u2014 documented Taiwanese commercial presence (a historic hub of the NYC Taiwanese community). Overlaps the Flushing Chinatown corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "taiwanese_food"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "taiwanese_food"
+      ]
+    },
+    {
+      "area_id": "acp-b9518e635e3f30c38e98d2c6",
+      "borough": "Brooklyn",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "BK13"
+      ],
+      "geography_id": "brighton-beach-russian",
+      "geography_name": "Brighton Beach (Little Odessa)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.5775,
+        "lng": -73.961
+      },
+      "record_digest": "60168be0bc94afb68c6d028d08871d367128d8735ebad266e1c2d364954015f1",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Brighton Beach 'Little Odessa' \u2014 documented Russian/Ukrainian/post-Soviet commercial district.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "russian_ukrainian_food",
+            "russian_grocery"
+          ]
+        },
+        {
+          "acs_dataset": "ACS 5-Year Estimates",
+          "acs_variable_ids": [
+            "B05006_058E",
+            "B16001_078E"
+          ],
+          "acs_vintage": "2019-2023",
+          "source_reference": "Aggregate context: Russia/Ukraine place of birth; Russian spoken at home.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "russian_ukrainian_food",
+            "russian_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "russian_grocery",
+        "russian_ukrainian_food"
+      ]
+    },
+    {
+      "area_id": "acp-ba41881a8d21b36dc8b14366",
+      "borough": "Brooklyn",
+      "business_count": 3,
+      "context_strength": "moderate",
+      "covers_community_districts": [
+        "BK14",
+        "BK15"
+      ],
+      "geography_id": "little-pakistan-midwood",
+      "geography_name": "Little Pakistan (Midwood / Coney Island Avenue)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.6298,
+        "lng": -73.96672
+      },
+      "record_digest": "e5539aca5e64438dc9566257c8d780ed84c11e75ddfae3e0976ad3f141bdaab2",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Documented 'Little Pakistan' commercial corridor along Coney Island Avenue, Midwood \u2014 established in public reporting and community documentation.",
+          "source_type": "reviewed_public_source",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "pakistani_food",
+            "south_asian_grocery",
+            "pakistani_clothing",
+            "south_asian_jewelry",
+            "south_asian_travel"
+          ]
+        },
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Community organization documentation for the Coney Island Avenue South Asian / Pakistani corridor.",
+          "source_type": "community_organization",
+          "source_url": null,
+          "supports_tags": [
+            "halal_food",
+            "halal_grocery"
+          ]
+        },
+        {
+          "acs_dataset": "ACS 5-Year Estimates",
+          "acs_variable_ids": [
+            "B05006_071E",
+            "B16001_069E"
+          ],
+          "acs_vintage": "2019-2023",
+          "source_reference": "Aggregate context: Pakistan place of birth and Urdu language spoken at home. Aggregate only; never proof of religion.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "pakistani_food",
+            "south_asian_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "halal_food",
+        "halal_grocery",
+        "pakistani_clothing",
+        "pakistani_food",
+        "south_asian_grocery",
+        "south_asian_jewelry",
+        "south_asian_travel"
+      ]
+    },
+    {
+      "area_id": "acp-c55cde6ca2809d37b8961549",
+      "borough": "Brooklyn",
+      "business_count": 5,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "BK14",
+        "BK17"
+      ],
+      "geography_id": "little-caribbean-flatbush",
+      "geography_name": "Little Caribbean (Flatbush)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.64466,
+        "lng": -73.9572
+      },
+      "record_digest": "895bf817c79391f7fdf46f9a91f238d2d189bc76a3045ec1cb6d64eefc960f23",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Little Caribbean cultural district, Flatbush \u2014 publicly documented and recognized cultural-district designation (community-led designation, 2017).",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.iamcaribbeing.com/littlecaribbean",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery",
+            "caribbean_music",
+            "caribbean_salon"
+          ]
+        },
+        {
+          "acs_dataset": "ACS 5-Year Estimates",
+          "acs_variable_ids": [
+            "B04006_094E",
+            "B05006_140E",
+            "B05006_142E"
+          ],
+          "acs_vintage": "2019-2023",
+          "source_reference": "Aggregate neighborhood context: West Indian ancestry and Caribbean place of birth. Used only for aggregate context, not individual identity.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "caribbean_bakery",
+        "caribbean_food",
+        "caribbean_music",
+        "caribbean_salon",
+        "west_indian_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-cd4ba16eac26fa4c86586870",
+      "borough": "Brooklyn",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "BK17"
+      ],
+      "geography_id": "east-flatbush-haitian",
+      "geography_name": "East Flatbush / Flatbush (Haitian corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.63,
+        "lng": -73.948
+      },
+      "record_digest": "af23c585a6d081abcf3934b26ae21293904149abb2c67458a529d2a5255f5739",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Nostrand / Flatbush Avenues \u2014 documented Haitian commercial corridor (Little Haiti BK). Overlaps the Caribbean corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "haitian_food"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "haitian_food"
+      ]
+    },
+    {
+      "area_id": "acp-e2ba466cc666456a84ebf7f9",
+      "borough": "Queens",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "QN04"
+      ],
+      "geography_id": "elmhurst-thai",
+      "geography_name": "Elmhurst (Thai corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.742,
+        "lng": -73.882
+      },
+      "record_digest": "902c49c18f5614587c36eec76351899c50cfaa2175367998f9f3ec5ff2361d6b",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Woodside Avenue Elmhurst \u2014 documented Thai commercial cluster ('Little Thailand') anchored by Thai temples and markets.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "thai_food",
+            "thai_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "thai_food",
+        "thai_grocery"
+      ]
+    },
+    {
+      "area_id": "acp-f214906f14b5630493a140a0",
+      "borough": "Manhattan",
+      "business_count": 1,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "MN02"
+      ],
+      "geography_id": "little-italy-manhattan",
+      "geography_name": "Little Italy (Mulberry Street, Manhattan)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.721,
+        "lng": -73.9965
+      },
+      "record_digest": "a2fe4422c28619470660d64759fd9b2c593c1e95f1e02aff4f923bdd4f6b5a9a",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Mulberry Street Little Italy \u2014 long-documented historic Italian cultural district and BID.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "italian_food",
+            "italian_grocery",
+            "italian_bakery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "italian_bakery",
+        "italian_food",
+        "italian_grocery"
+      ]
+    }
+  ],
+  "businesses": [
+    {
+      "address": "4823 13th Ave, Brooklyn, NY, 11219",
+      "business_category": "Grocery-Retail",
+      "business_id": "biz-0586e806acdc01a30f747dd0",
+      "business_name": "Sample Borough Park Bakery",
+      "community_district": "BK12",
+      "confidence": "verified",
+      "coordinates": {
+        "lat": 40.636,
+        "lng": -73.993
+      },
+      "cultural_tags": [
+        "kosher_food"
+      ],
+      "dietary_tags": [
+        "kosher_food"
+      ],
+      "record_digest": "7289e18434f2bc3ffe22cb034a90749252347aedfc2098fa25db01d1eed0e556",
+      "review_status": "manually_reviewed"
+    },
+    {
+      "address": "2015 Church Ave, Brooklyn, NY, 11226",
+      "business_category": "Grocery-Retail",
+      "business_id": "biz-0675276318acf21ae5fa5720",
+      "business_name": "Sample West Indian Bakery",
+      "community_district": "BK14",
+      "confidence": "reviewed",
+      "coordinates": {
+        "lat": 40.6501,
+        "lng": -73.9585
+      },
+      "cultural_tags": [
+        "caribbean_bakery"
+      ],
+      "dietary_tags": [],
+      "record_digest": "df9bc2a6feaba5faf3e05bfe391bc9abcdad7cc66f80a929060c4f0c476e3d7e",
+      "review_status": "manually_reviewed"
+    },
+    {
+      "address": "1440 Cortelyou Rd, Brooklyn, NY, 11226",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-1117e4c0edbf4e909af49d25",
+      "business_name": "Sample Fusion Spot",
+      "community_district": "BK14",
+      "confidence": "ambiguous",
+      "coordinates": {
+        "lat": 40.6405,
+        "lng": -73.966
+      },
+      "cultural_tags": [
+        "caribbean_food",
+        "pakistani_food",
+        "south_asian_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "ceb858ec9fc2b5b4cce32c6399d724078b1a78efa07cc9a5be8dd5e9e5d36ddc",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "1310 Coney Island Ave, Brooklyn, NY, 11230",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-28a1ce8ba2128558800e0425",
+      "business_name": "Sample Desi Restaurant",
+      "community_district": "BK15",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.6245,
+        "lng": -73.9672
+      },
+      "cultural_tags": [
+        "pakistani_food",
+        "south_asian_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "10db9ff6ce807b5934d72c83abf4b4021171fd9209ac088b841af64e533f3a8f",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "195 Mulberry St, New York, NY, 10012",
+      "business_category": "Grocery-Retail",
+      "business_id": "biz-41f09202d81a4016557289df",
+      "business_name": "Sample Mulberry St Pasticceria",
+      "community_district": "MN02",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.721,
+        "lng": -73.9965
+      },
+      "cultural_tags": [
+        "italian_bakery"
+      ],
+      "dietary_tags": [],
+      "record_digest": "a8b55f774764fb549076b79eec1c3d719a7cfa7fd5311e6473e1b3b8c9a12f72",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "266 W 125th St, New York, NY, 10027",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-5087e87a3ff0ca1009789540",
+      "business_name": "Sample Harlem Soul Kitchen",
+      "community_district": "MN10",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.809,
+        "lng": -73.949
+      },
+      "cultural_tags": [
+        "soul_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "4ecec52d95c15bb9f72c5349764917dd8da85052e2721c2ea0f7297c7f3f56c9",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "1201 Nostrand Ave, Brooklyn, NY, 11225",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-5877870c2ef16be300044b47",
+      "business_name": "Sample Caribbean Kitchen",
+      "community_district": "BK17",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.6612,
+        "lng": -73.95
+      },
+      "cultural_tags": [
+        "caribbean_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "6b8908fbb0a60c483322e90388fbad01bf80eafb231cf8cac333827be20ee632",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "9803 63rd Dr, Queens, NY, 11374",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-5a06b47d75d27278b111b30d",
+      "business_name": "Sample Rego Park Plov House",
+      "community_district": "QN06",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.727,
+        "lng": -73.862
+      },
+      "cultural_tags": [
+        "bukharian_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "2d56123a8760efa36fb6de97dfdb8d613d5def59c7a36f224d500e38346e9477",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "1120 Coney Island Ave, Brooklyn, NY, 11230",
+      "business_category": "Grocery-Retail",
+      "business_id": "biz-5b71405476e3f01ad42f6dfb",
+      "business_name": "Sample Halal Market",
+      "community_district": "BK15",
+      "confidence": "verified",
+      "coordinates": {
+        "lat": 40.628,
+        "lng": -73.9668
+      },
+      "cultural_tags": [
+        "halal_food",
+        "halal_grocery",
+        "south_asian_grocery"
+      ],
+      "dietary_tags": [
+        "halal_food",
+        "halal_grocery"
+      ],
+      "record_digest": "08b847275b5152718ef7af1e60a70692942cb1319c101bee4168e996b9335b7c",
+      "review_status": "manually_reviewed"
+    },
+    {
+      "address": "635 Manhattan Ave, Brooklyn, NY, 11222",
+      "business_category": "Grocery-Retail",
+      "business_id": "biz-62d20bc5f37a574b86c2d70a",
+      "business_name": "Sample Greenpoint Polish Deli",
+      "community_district": "BK01",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.729,
+        "lng": -73.954
+      },
+      "cultural_tags": [
+        "polish_food",
+        "polish_grocery"
+      ],
+      "dietary_tags": [],
+      "record_digest": "cce3e021e4cb432f2ecffced1ac76aa9783093622bde43662d8f51d1096da829",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "11820 Liberty Ave, Queens, NY, 11419",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-6eb8a0111763fc89d22ead96",
+      "business_name": "Sample Guyanese Roti Shop",
+      "community_district": "QN10",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.688,
+        "lng": -73.827
+      },
+      "cultural_tags": [
+        "caribbean_food",
+        "guyanese_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "026db0a7d0da8b535097ef0e57ccb66f472b80f40bd2e0cb75e0a59fbc7903c1",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "3745 74th St, Queens, NY, 11372",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-7d0f56d175911bd1d8846156",
+      "business_name": "Sample JH Momo House",
+      "community_district": "QN03",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.748,
+        "lng": -73.891
+      },
+      "cultural_tags": [
+        "himalayan_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "9a539ebd659da07a04cb1d4a46795ca9eccb19980c01716d3d93653ec9dd4153",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "8102 Woodside Ave, Queens, NY, 11373",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-8b2790c44241d7af6b7dc612",
+      "business_name": "Sample Elmhurst Thai Kitchen",
+      "community_district": "QN04",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.742,
+        "lng": -73.882
+      },
+      "cultural_tags": [
+        "thai_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "d580c465cc515655ef73b78eec1d9433f9e00fe248bfa0929b6153ba1f887e8e",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "789 Nostrand Ave, Brooklyn, NY, 11216",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-9668a93b543eb2aeab46972d",
+      "business_name": "Sample Crown Heights Roti",
+      "community_district": "BK08",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.672,
+        "lng": -73.95
+      },
+      "cultural_tags": [
+        "caribbean_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "9810cfb5d12bdaf2ca2cc6adad6c7585718913f6b83db83a7a1b4f84422eb814",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "2101 Nostrand Ave, Brooklyn, NY, 11210",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-998b6bf5cf1822be11548371",
+      "business_name": "Sample Flatbush Griot House",
+      "community_district": "BK17",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.63,
+        "lng": -73.948
+      },
+      "cultural_tags": [
+        "caribbean_food",
+        "haitian_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "ce43c5a0ef89ddf002a3b2c1300c49f578cff257072a304e996b4244b09c1a8d",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "1401 St Nicholas Ave, New York, NY, 10033",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-a1cdc3d95efd831c30b7b355",
+      "business_name": "Sample Dominican Comedor",
+      "community_district": "MN12",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.8401,
+        "lng": -73.94
+      },
+      "cultural_tags": [
+        "dominican_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "cadd46936e4565d2ce8c836a54a1ab8167ba0122aad39b50dacaa87206541014",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "12 Dorchester Rd, Brooklyn, NY, 11226",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-af099568ba2545746817abea",
+      "business_name": "Sample No-Geo Restaurant",
+      "community_district": "BK14",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.6415,
+        "lng": -73.9635
+      },
+      "cultural_tags": [
+        "caribbean_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "84245a512a7c61416ee5b2810eae3a50f255a856804c69c1efea16f587149e70",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "2344 Arthur Ave, Bronx, NY, 10458",
+      "business_category": "Grocery-Retail",
+      "business_id": "biz-b6e11a6d2c1e6e788c4c7515",
+      "business_name": "Sample Arthur Ave Salumeria",
+      "community_district": "BX06",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.854,
+        "lng": -73.887
+      },
+      "cultural_tags": [
+        "italian_grocery"
+      ],
+      "dietary_tags": [],
+      "record_digest": "f65070c3bcfadda2ecce398773b78b5de101d9e3e37ab090c2cffc7226b3a882",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "330 Victory Blvd, Staten Island, NY, 10301",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-bb5c9051192587a19e544e0e",
+      "business_name": "Sample Victory Blvd Kitchen",
+      "community_district": "SI01",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.636,
+        "lng": -74.077
+      },
+      "cultural_tags": [
+        "sri_lankan_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "3eb71e3564858a60b307cb3204e493d4a6b3d047c7fa9015bd1802e744cdbd16",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "290 Brighton Beach Ave, Brooklyn, NY, 11235",
+      "business_category": "Grocery-Retail",
+      "business_id": "biz-c5432dff085d75f85ae404c5",
+      "business_name": "Sample Brighton Deli",
+      "community_district": "BK13",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.5775,
+        "lng": -73.961
+      },
+      "cultural_tags": [
+        "russian_grocery"
+      ],
+      "dietary_tags": [],
+      "record_digest": "3769fee9cdb5704e0b2e51d30432b39a1b5f1cf5b162fe815f6701e3f1d972de",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "4009 Main St, Queens, NY, 11354",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-cb6044f9de46a1947c81b710",
+      "business_name": "Sample Flushing Beef Noodle",
+      "community_district": "QN07",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.759,
+        "lng": -73.83
+      },
+      "cultural_tags": [
+        "taiwanese_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "652ef2d765258be1d17453d56947c2536b1a62ab360d80f097e65c1b925ce501",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "128 Lexington Ave, New York, NY, 10016",
+      "business_category": "Eating and Drinking Places",
+      "business_id": "biz-e5b253bfa133a467c4eec847",
+      "business_name": "Sample Lexington Dosa House",
+      "community_district": "MN06",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.743,
+        "lng": -73.982
+      },
+      "cultural_tags": [
+        "pakistani_food",
+        "south_asian_food"
+      ],
+      "dietary_tags": [],
+      "record_digest": "f4cafecb7272a970d2ae2f1d1e4d31d7341b98a41e38f496f0186cbbd5859f6d",
+      "review_status": "auto_evidence"
+    }
+  ],
+  "contract": "nycif.culture-feed.v1",
+  "feed_version": "2026-07-30",
+  "generated_at": "2026-07-30T01:54:58.515259+00:00",
+  "input_business_count": 29,
+  "manifest_digest": "c40c5d5e973f03d2d4addb0699aef5d7f2b747ddecabff2fa6c993519414be01",
+  "matches": [
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "13th Avenue Borough Park \u2014 documented center of one of the largest Orthodox Jewish communities in NYC.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "kosher_food",
+            "kosher_grocery",
+            "judaica"
+          ]
+        }
+      ],
+      "area_id": "acp-5024446b6f640f9b3dc816b1",
+      "business_id": "biz-0586e806acdc01a30f747dd0",
+      "classification_evidence": [
+        {
+          "certification_authority": "OU",
+          "detail": "glatt kosher certification (kosher)",
+          "evidence_source": "certificate_on_file",
+          "retrieved_at": "2026-07-26",
+          "signal": "verified_certification",
+          "tag": "kosher_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-99b03d3d6561d18f3bd984b4",
+      "matched_tag": "kosher_food",
+      "reason_code": "ACCEPTED_VERIFIED_CERTIFICATION",
+      "record_digest": "26b42d6bb716dc2da418c8560f85b6f64c14f548905d885f55e3e6ad04ff4a68",
+      "relevance_score": 1.0,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Little Caribbean cultural district, Flatbush \u2014 publicly documented and recognized cultural-district designation (community-led designation, 2017).",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.iamcaribbeing.com/littlecaribbean",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery",
+            "caribbean_music",
+            "caribbean_salon"
+          ]
+        }
+      ],
+      "area_id": "acp-c55cde6ca2809d37b8961549",
+      "business_id": "biz-0675276318acf21ae5fa5720",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "caribbean_bakery",
+          "evidence_source": "nycif_editor_review",
+          "retrieved_at": "2026-07-21",
+          "signal": "manual_cultural_tag",
+          "tag": "caribbean_bakery"
+        },
+        {
+          "certification_authority": null,
+          "detail": "hard dough bread, coco bread, beef patty",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-21",
+          "signal": "menu_terms",
+          "tag": "caribbean_bakery"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-0402a1c988e89435bbfe7719",
+      "matched_tag": "caribbean_bakery",
+      "reason_code": "ACCEPTED_REVIEWED_CULTURAL_TAG",
+      "record_digest": "46e28f71a4d990fdeef0f1b9faf7e9ea3fbe1eaf7699fb0a4fa28d2ad3852045",
+      "relevance_score": 0.9,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Community organization documentation for the Coney Island Avenue South Asian / Pakistani corridor.",
+          "source_type": "community_organization",
+          "source_url": null,
+          "supports_tags": [
+            "halal_food",
+            "halal_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-ba41881a8d21b36dc8b14366",
+      "business_id": "biz-5b71405476e3f01ad42f6dfb",
+      "classification_evidence": [
+        {
+          "certification_authority": "HFSAA",
+          "detail": "halal market certification (halal)",
+          "evidence_source": "certificate_on_file",
+          "retrieved_at": "2026-07-18",
+          "signal": "verified_certification",
+          "tag": "halal_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-65f65c95d1f6a93ee4a848a7",
+      "matched_tag": "halal_food",
+      "reason_code": "ACCEPTED_VERIFIED_CERTIFICATION",
+      "record_digest": "6235fae0fcee781e4510a43bc8269ade774435328f6c499f7a9ebbad85d04574",
+      "relevance_score": 0.9,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Community organization documentation for the Coney Island Avenue South Asian / Pakistani corridor.",
+          "source_type": "community_organization",
+          "source_url": null,
+          "supports_tags": [
+            "halal_food",
+            "halal_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-ba41881a8d21b36dc8b14366",
+      "business_id": "biz-5b71405476e3f01ad42f6dfb",
+      "classification_evidence": [
+        {
+          "certification_authority": "HFSAA",
+          "detail": "halal market certification (halal)",
+          "evidence_source": "certificate_on_file",
+          "retrieved_at": "2026-07-18",
+          "signal": "verified_certification",
+          "tag": "halal_grocery"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-bcde74582861af2dbd02da3e",
+      "matched_tag": "halal_grocery",
+      "reason_code": "ACCEPTED_VERIFIED_CERTIFICATION",
+      "record_digest": "229448df26b703509728872bbbe655a7d1c534aa0298bdcc42e2c1e8e30cb663",
+      "relevance_score": 0.9,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Manhattan Avenue Greenpoint \u2014 documented 'Little Poland' commercial corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "polish_food",
+            "polish_grocery"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Aggregate corroboration only; pending committed pull.",
+            "variable_ids": [
+              "B05006_056E",
+              "B16001_057E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate context: Poland place of birth; Polish spoken at home.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "polish_food",
+            "polish_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-8cc3cec34e7ac3ccc2587296",
+      "business_id": "biz-62d20bc5f37a574b86c2d70a",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "pierogi, kielbasa counter, polish imports, polish deli",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-23",
+          "signal": "merchandise",
+          "tag": "polish_grocery"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-05febee6655a6dab46f72aa7",
+      "matched_tag": "polish_grocery",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "cb0012b34c4f052cf135012c38bd0b7530a3f3d71839f7420b47aed75743797a",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Nostrand / Utica Avenues Crown Heights \u2014 documented West Indian / Caribbean commercial corridor (home of the West Indian American Day Carnival).",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery"
+          ]
+        }
+      ],
+      "area_id": "acp-8fc08ad41efbac42a5c4d79b",
+      "business_id": "biz-9668a93b543eb2aeab46972d",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "roti, doubles, jerk chicken, curry goat",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-26",
+          "signal": "menu_terms",
+          "tag": "caribbean_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-132d63c387186b401a3fd614",
+      "matched_tag": "caribbean_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "d622d63aeefc4158775b4468cf60cfbddfcfcf0e1e2c4338ba4a4b2a06ee61dd",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Woodside Avenue Elmhurst \u2014 documented Thai commercial cluster ('Little Thailand') anchored by Thai temples and markets.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "thai_food",
+            "thai_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-e2ba466cc666456a84ebf7f9",
+      "business_id": "biz-8b2790c44241d7af6b7dc612",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "pad thai, tom yum, khao soi, green curry",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-24",
+          "signal": "menu_terms",
+          "tag": "thai_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-16bbb13e50dd2d803fc6cc9a",
+      "matched_tag": "thai_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "24d26b3a1c0d6c090d3f78fa68d96f173e7f96847ecc87001cd6bce1e9d719d7",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Little Caribbean cultural district, Flatbush \u2014 publicly documented and recognized cultural-district designation (community-led designation, 2017).",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.iamcaribbeing.com/littlecaribbean",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery",
+            "caribbean_music",
+            "caribbean_salon"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Variable references pending verification against Census API metadata and a committed pull. Context strength here is established primarily by the documented cultural-district source above, not by these estimates.",
+            "variable_ids": [
+              "B04006_094E",
+              "B05006_140E",
+              "B05006_142E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate neighborhood context: West Indian ancestry and Caribbean place of birth. Used only for aggregate context, not individual identity.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-c55cde6ca2809d37b8961549",
+      "business_id": "biz-af099568ba2545746817abea",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "jerk chicken, roti, doubles, oxtail",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-20",
+          "signal": "menu_terms",
+          "tag": "caribbean_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-1a1bfb9e2d325b8c37c124c7",
+      "matched_tag": "caribbean_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "83f9948c9d306ab77ea06d16999a60d0b0d1cbe6264a440bb0a7ac635d56545a",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Liberty Avenue 'Little Guyana' \u2014 documented Guyanese / Indo-Caribbean corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "guyanese_food",
+            "west_indian_grocery",
+            "south_asian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-4820bab8f4042b1b391fd545",
+      "business_id": "biz-6eb8a0111763fc89d22ead96",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "Guyanese",
+          "evidence_source": "storefront_signage_review",
+          "retrieved_at": "2026-07-22",
+          "signal": "advertised_cuisine",
+          "tag": "guyanese_food"
+        },
+        {
+          "certification_authority": null,
+          "detail": "pepperpot, cook-up rice, guyanese roti",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-22",
+          "signal": "menu_terms",
+          "tag": "guyanese_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-1acc6525138b427b72ce81cd",
+      "matched_tag": "guyanese_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "99129c19967b3e605e99de2afe0613f94bba3a96eca57091b7a1f973ac3c93ce",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Victory Boulevard Tompkinsville \u2014 documented 'Little Sri Lanka', one of the largest Sri Lankan communities outside Sri Lanka.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "sri_lankan_food"
+          ]
+        }
+      ],
+      "area_id": "acp-40c2b83d79bb3d53a72f550a",
+      "business_id": "biz-bb5c9051192587a19e544e0e",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "Sri Lankan",
+          "evidence_source": "storefront_signage_review",
+          "retrieved_at": "2026-07-23",
+          "signal": "advertised_cuisine",
+          "tag": "sri_lankan_food"
+        },
+        {
+          "certification_authority": null,
+          "detail": "hoppers, string hoppers, lamprais, pol sambol",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-23",
+          "signal": "menu_terms",
+          "tag": "sri_lankan_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-2f7bcbe810f9185aa2943f2a",
+      "matched_tag": "sri_lankan_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "aa3300f00e3efdaca7af990ca630f433c5ec28467934cab2b0eacbbfc42d086f",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-30",
+          "source_reference": "Church / Utica / Flatlands Avenues \u2014 documented West Indian / Caribbean commercial corridor across East Flatbush and Canarsie.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery"
+          ]
+        }
+      ],
+      "area_id": "acp-795ffb81352e2c0ea98380b7",
+      "business_id": "biz-998b6bf5cf1822be11548371",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "griot, diri ak djon djon, legim, pikliz",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-30",
+          "signal": "menu_terms",
+          "tag": "caribbean_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-3a1cd7404864c04e87b35fdf",
+      "matched_tag": "caribbean_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "5589facd9342d4ae8e1fa4a2b4ac88c31b28763b5edc9db9b1fa7fb4661bfc51",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-30",
+          "source_reference": "Downtown Flushing \u2014 documented Taiwanese commercial presence (a historic hub of the NYC Taiwanese community). Overlaps the Flushing Chinatown corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "taiwanese_food"
+          ]
+        }
+      ],
+      "area_id": "acp-9dd4cf2709768eb6d35937c1",
+      "business_id": "biz-cb6044f9de46a1947c81b710",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "beef noodle soup, gua bao, xiao long bao",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-30",
+          "signal": "menu_terms",
+          "tag": "taiwanese_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-3a4498d9b597094fb62b3c41",
+      "matched_tag": "taiwanese_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "cdfe00c7e80fc4552aab492db9a0d5ca5f613ff13c34e09dc4a6ef51e030fcb0",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Washington Heights \u2014 documented center of the NYC Dominican community.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "dominican_food",
+            "dominican_grocery"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Aggregate corroboration only; pending committed pull.",
+            "variable_ids": [
+              "B05006_130E",
+              "B16001_003E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate context: Dominican Republic place of birth; Spanish spoken at home.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "dominican_food",
+            "dominican_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-30054b9aa071c36b803d1f71",
+      "business_id": "biz-a1cdc3d95efd831c30b7b355",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "Dominican",
+          "evidence_source": "storefront_signage_review",
+          "retrieved_at": "2026-07-22",
+          "signal": "advertised_cuisine",
+          "tag": "dominican_food"
+        },
+        {
+          "certification_authority": null,
+          "detail": "mangu, mofongo, sancocho, la bandera",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-22",
+          "signal": "menu_terms",
+          "tag": "dominican_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-3e0eb868ffcac487ea77e8df",
+      "matched_tag": "dominican_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "e9bf707bddd1931b84afeff21d4b80a84a50009d0f0f9e141ab5fc5f9960557a",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-30",
+          "source_reference": "Nostrand / Flatbush Avenues \u2014 documented Haitian commercial corridor (Little Haiti BK). Overlaps the Caribbean corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "haitian_food"
+          ]
+        }
+      ],
+      "area_id": "acp-cd4ba16eac26fa4c86586870",
+      "business_id": "biz-998b6bf5cf1822be11548371",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "Haitian",
+          "evidence_source": "storefront_signage_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "advertised_cuisine",
+          "tag": "haitian_food"
+        },
+        {
+          "certification_authority": null,
+          "detail": "griot, diri ak djon djon, legim, pikliz",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-30",
+          "signal": "menu_terms",
+          "tag": "haitian_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-4189b9db63e4d76797b706c2",
+      "matched_tag": "haitian_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "2faf79f7bc37e57afd8349924edc9738005bc5f352563c00cc08b9b79b17d5e3",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Brighton Beach 'Little Odessa' \u2014 documented Russian/Ukrainian/post-Soviet commercial district.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "russian_ukrainian_food",
+            "russian_grocery"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Aggregate corroboration only; pending committed pull.",
+            "variable_ids": [
+              "B05006_058E",
+              "B16001_078E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate context: Russia/Ukraine place of birth; Russian spoken at home.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "russian_ukrainian_food",
+            "russian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-b9518e635e3f30c38e98d2c6",
+      "business_id": "biz-c5432dff085d75f85ae404c5",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "smoked fish caviar, kefir imported, eastern european deli",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-22",
+          "signal": "merchandise",
+          "tag": "russian_grocery"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-438523142132c9e3f71b99c7",
+      "matched_tag": "russian_grocery",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "107336e3e9a32f69c4068253ee05710a8257b4af57999da0b12bfaa246ac0e96",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "108th Street Rego Park / Forest Hills \u2014 documented center of the NYC Bukharian Jewish / Central Asian community.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "bukharian_food",
+            "bukharian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-2e6af3c5038f1673f823d087",
+      "business_id": "biz-5a06b47d75d27278b111b30d",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "plov, samsa, lagman, shashlik",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-24",
+          "signal": "menu_terms",
+          "tag": "bukharian_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-46d379728fb5fb882a19e800",
+      "matched_tag": "bukharian_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "1937726d0191abbee4e7f698c00098e6fc9ca2a555398494fc7b25ffaebbc132",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-30",
+          "source_reference": "Mulberry Street Little Italy \u2014 long-documented historic Italian cultural district and BID.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "italian_food",
+            "italian_grocery",
+            "italian_bakery"
+          ]
+        }
+      ],
+      "area_id": "acp-f214906f14b5630493a140a0",
+      "business_id": "biz-41f09202d81a4016557289df",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "cannoli, sfogliatella, pasticceria, biscotti",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "italian_bakery"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-4a7dd4abe3841fb5ec6871b0",
+      "matched_tag": "italian_bakery",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "47fcf57d236bc26b3928706c9735f5e181d7e64073f789e0f4b515651bd2da0e",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-30",
+          "source_reference": "Church / Utica / Flatlands Avenues \u2014 documented West Indian / Caribbean commercial corridor across East Flatbush and Canarsie.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery"
+          ]
+        }
+      ],
+      "area_id": "acp-795ffb81352e2c0ea98380b7",
+      "business_id": "biz-5877870c2ef16be300044b47",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "Trinidadian and Jamaican",
+          "evidence_source": "storefront_signage_review",
+          "retrieved_at": "2026-07-20",
+          "signal": "advertised_cuisine",
+          "tag": "caribbean_food"
+        },
+        {
+          "certification_authority": null,
+          "detail": "doubles, roti, jerk chicken, callaloo, oxtail",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-20",
+          "signal": "menu_terms",
+          "tag": "caribbean_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-583660ffd25e8c472be59d22",
+      "matched_tag": "caribbean_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "fd128008d0e7074ec0530a078d7a0616f3a50f2cf4b867212feec93640fdec95",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-30",
+          "source_reference": "Lexington Avenue in the upper 20s ('Curry Hill') \u2014 documented South Asian / Indian restaurant and grocery corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "south_asian_food",
+            "south_asian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-8cd22bfa1844e509dcfd46fa",
+      "business_id": "biz-e5b253bfa133a467c4eec847",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "dosa, biryani, paneer tikka, thali",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-30",
+          "signal": "menu_terms",
+          "tag": "south_asian_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-89fd5846cf997a2b68954c5b",
+      "matched_tag": "south_asian_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "e11d741e404afbb48d48b3e687f564f89ab7988e9ca8108a90f69b7792597d8f",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Manhattan Avenue Greenpoint \u2014 documented 'Little Poland' commercial corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "polish_food",
+            "polish_grocery"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Aggregate corroboration only; pending committed pull.",
+            "variable_ids": [
+              "B05006_056E",
+              "B16001_057E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate context: Poland place of birth; Polish spoken at home.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "polish_food",
+            "polish_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-8cc3cec34e7ac3ccc2587296",
+      "business_id": "biz-62d20bc5f37a574b86c2d70a",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "pierogi, kielbasa counter, polish imports, polish deli",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-23",
+          "signal": "merchandise",
+          "tag": "polish_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-94e90644ef031487232fad1d",
+      "matched_tag": "polish_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "19107b0d32338d6bdf6c5d67edd9619b49825b5474ef6ff0ad528fbc9f697290",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Little Caribbean cultural district, Flatbush \u2014 publicly documented and recognized cultural-district designation (community-led designation, 2017).",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.iamcaribbeing.com/littlecaribbean",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery",
+            "caribbean_music",
+            "caribbean_salon"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Variable references pending verification against Census API metadata and a committed pull. Context strength here is established primarily by the documented cultural-district source above, not by these estimates.",
+            "variable_ids": [
+              "B04006_094E",
+              "B05006_140E",
+              "B05006_142E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate neighborhood context: West Indian ancestry and Caribbean place of birth. Used only for aggregate context, not individual identity.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-c55cde6ca2809d37b8961549",
+      "business_id": "biz-5877870c2ef16be300044b47",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "Trinidadian and Jamaican",
+          "evidence_source": "storefront_signage_review",
+          "retrieved_at": "2026-07-20",
+          "signal": "advertised_cuisine",
+          "tag": "caribbean_food"
+        },
+        {
+          "certification_authority": null,
+          "detail": "doubles, roti, jerk chicken, callaloo, oxtail",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-20",
+          "signal": "menu_terms",
+          "tag": "caribbean_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-9f51a2803e0c65607ffa4c8f",
+      "matched_tag": "caribbean_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "21de380efe463e5461ab966b92d0398d2a039bee9f0c8db4717a790be5d1147e",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Little Caribbean cultural district, Flatbush \u2014 publicly documented and recognized cultural-district designation (community-led designation, 2017).",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.iamcaribbeing.com/littlecaribbean",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery",
+            "caribbean_music",
+            "caribbean_salon"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Variable references pending verification against Census API metadata and a committed pull. Context strength here is established primarily by the documented cultural-district source above, not by these estimates.",
+            "variable_ids": [
+              "B04006_094E",
+              "B05006_140E",
+              "B05006_142E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate neighborhood context: West Indian ancestry and Caribbean place of birth. Used only for aggregate context, not individual identity.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-c55cde6ca2809d37b8961549",
+      "business_id": "biz-998b6bf5cf1822be11548371",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "griot, diri ak djon djon, legim, pikliz",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-30",
+          "signal": "menu_terms",
+          "tag": "caribbean_food"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-c713f61f05d6311f622c33ee",
+      "matched_tag": "caribbean_food",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "f24a9774bbecd4b4aadd8ce0479f1b00d273b176e3e25610bb052bc3f43e626a",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Arthur Avenue Belmont \u2014 documented 'Little Italy of the Bronx' with an Arthur Avenue Retail Market and BID.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "italian_food",
+            "italian_grocery",
+            "italian_bakery"
+          ]
+        }
+      ],
+      "area_id": "acp-39448d33b7f540edf257611b",
+      "business_id": "biz-b6e11a6d2c1e6e788c4c7515",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "imported prosciutto, fresh mozzarella, cured salumi, italian deli",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-23",
+          "signal": "merchandise",
+          "tag": "italian_grocery"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-ee10fb4f5fb0d81d8ad80cb5",
+      "matched_tag": "italian_grocery",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "db563b2c4fceba70386092f9dd63b55d683463b783ab29f86dac4d741b293223",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-30",
+          "source_reference": "Jackson Heights / Woodside \u2014 documented Himalayan (Tibetan and Nepali) commercial cluster. Overlaps the Jackson Heights South Asian corridor.",
+          "source_type": "reviewed_public_source",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "himalayan_food"
+          ]
+        }
+      ],
+      "area_id": "acp-770afa95e60633dc74654722",
+      "business_id": "biz-7d0f56d175911bd1d8846156",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "Himalayan",
+          "evidence_source": "storefront_signage_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "advertised_cuisine",
+          "tag": "himalayan_food"
+        },
+        {
+          "certification_authority": null,
+          "detail": "thukpa, momos, sha phaley",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-30",
+          "signal": "menu_terms",
+          "tag": "himalayan_food"
+        }
+      ],
+      "disposition": "REVIEW_REQUIRED",
+      "match_id": "cbm-48d8d3689f09f4e2a85eb02a",
+      "matched_tag": "himalayan_food",
+      "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
+      "record_digest": "52487db8f525c26b2a5778c1504da0284d24cecf546cce65e0de7d278ba474bf",
+      "relevance_score": 0.7,
+      "review_required": true
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-30",
+          "source_reference": "125th Street Central Harlem \u2014 documented African American cultural and commercial corridor with an established soul-food tradition. Overlaps the Little Senegal corridor.",
+          "source_type": "reviewed_public_source",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "soul_food"
+          ]
+        }
+      ],
+      "area_id": "acp-5af2571e6c7cd3e54f6ded9b",
+      "business_id": "biz-5087e87a3ff0ca1009789540",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "collard greens, candied yams, fried catfish, smothered chicken",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-30",
+          "signal": "menu_terms",
+          "tag": "soul_food"
+        }
+      ],
+      "disposition": "REVIEW_REQUIRED",
+      "match_id": "cbm-4bb81745d2d75d147519d66e",
+      "matched_tag": "soul_food",
+      "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
+      "record_digest": "17114d3f24166b2acb9a21ed0ba797006c21682d769413c79d363dcb51c74b9f",
+      "relevance_score": 0.7,
+      "review_required": true
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Documented 'Little Pakistan' commercial corridor along Coney Island Avenue, Midwood \u2014 established in public reporting and community documentation.",
+          "source_type": "reviewed_public_source",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "pakistani_food",
+            "south_asian_grocery",
+            "pakistani_clothing",
+            "south_asian_jewelry",
+            "south_asian_travel"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Language/place-of-birth are aggregate community characteristics. They corroborate a cultural corridor; they are NOT used to assign religion to residents. Dietary (halal) tags on businesses come only from business-level certification/designation evidence, never from this area context.",
+            "variable_ids": [
+              "B05006_071E",
+              "B16001_069E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate context: Pakistan place of birth and Urdu language spoken at home. Aggregate only; never proof of religion.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "pakistani_food",
+            "south_asian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-ba41881a8d21b36dc8b14366",
+      "business_id": "biz-28a1ce8ba2128558800e0425",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "Pakistani cuisine",
+          "evidence_source": "storefront_signage_review",
+          "retrieved_at": "2026-07-19",
+          "signal": "advertised_cuisine",
+          "tag": "pakistani_food"
+        },
+        {
+          "certification_authority": null,
+          "detail": "nihari, haleem, biryani, karahi",
+          "evidence_source": "posted_menu_photo",
+          "retrieved_at": "2026-07-19",
+          "signal": "menu_terms",
+          "tag": "pakistani_food"
+        }
+      ],
+      "disposition": "REVIEW_REQUIRED",
+      "match_id": "cbm-714f32985d61d5b5b998b8a4",
+      "matched_tag": "pakistani_food",
+      "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
+      "record_digest": "af2d80c953c326244ebb1f14a87d8bca69c8642e3e33c55c687f791851ee67fc",
+      "relevance_score": 0.7,
+      "review_required": true
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Documented 'Little Pakistan' commercial corridor along Coney Island Avenue, Midwood \u2014 established in public reporting and community documentation.",
+          "source_type": "reviewed_public_source",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "pakistani_food",
+            "south_asian_grocery",
+            "pakistani_clothing",
+            "south_asian_jewelry",
+            "south_asian_travel"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Language/place-of-birth are aggregate community characteristics. They corroborate a cultural corridor; they are NOT used to assign religion to residents. Dietary (halal) tags on businesses come only from business-level certification/designation evidence, never from this area context.",
+            "variable_ids": [
+              "B05006_071E",
+              "B16001_069E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate context: Pakistan place of birth and Urdu language spoken at home. Aggregate only; never proof of religion.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "pakistani_food",
+            "south_asian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-ba41881a8d21b36dc8b14366",
+      "business_id": "biz-5b71405476e3f01ad42f6dfb",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "basmati, atta, spice bazaar aisle",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-18",
+          "signal": "merchandise",
+          "tag": "south_asian_grocery"
+        }
+      ],
+      "disposition": "REVIEW_REQUIRED",
+      "match_id": "cbm-9a1f348584c619d3e53e7cf0",
+      "matched_tag": "south_asian_grocery",
+      "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
+      "record_digest": "d8ad19d90bdb976d3afaa17562e723a26a93ff5c47d0084d61ea089d7344d150",
+      "relevance_score": 0.7,
+      "review_required": true
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Little Caribbean cultural district, Flatbush \u2014 publicly documented and recognized cultural-district designation (community-led designation, 2017).",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.iamcaribbeing.com/littlecaribbean",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery",
+            "caribbean_bakery",
+            "caribbean_music",
+            "caribbean_salon"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Variable references pending verification against Census API metadata and a committed pull. Context strength here is established primarily by the documented cultural-district source above, not by these estimates.",
+            "variable_ids": [
+              "B04006_094E",
+              "B05006_140E",
+              "B05006_142E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate neighborhood context: West Indian ancestry and Caribbean place of birth. Used only for aggregate context, not individual identity.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "caribbean_food",
+            "west_indian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-c55cde6ca2809d37b8961549",
+      "business_id": "biz-1117e4c0edbf4e909af49d25",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "neighborhood spot serving jerk chicken and biryani and tacos",
+          "evidence_source": "self_reported_listing",
+          "retrieved_at": "2026-07-15",
+          "signal": "business_description",
+          "tag": "caribbean_food"
+        }
+      ],
+      "disposition": "REVIEW_REQUIRED",
+      "match_id": "cbm-2408abf0f20fa8bb998972ff",
+      "matched_tag": "caribbean_food",
+      "reason_code": "REVIEW_AMBIGUOUS_BUSINESS_DESCRIPTION",
+      "record_digest": "f445e2f9074614fb8fa1cc7bc82f8c5b8b60f90c2e94716ff3c157bfa4ccb560",
+      "relevance_score": 0.6,
+      "review_required": true
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "Documented 'Little Pakistan' commercial corridor along Coney Island Avenue, Midwood \u2014 established in public reporting and community documentation.",
+          "source_type": "reviewed_public_source",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "pakistani_food",
+            "south_asian_grocery",
+            "pakistani_clothing",
+            "south_asian_jewelry",
+            "south_asian_travel"
+          ]
+        },
+        {
+          "acs": {
+            "dataset": "ACS 5-Year Estimates",
+            "estimates": null,
+            "margins_of_error": null,
+            "note": "Language/place-of-birth are aggregate community characteristics. They corroborate a cultural corridor; they are NOT used to assign religion to residents. Dietary (halal) tags on businesses come only from business-level certification/designation evidence, never from this area context.",
+            "variable_ids": [
+              "B05006_071E",
+              "B16001_069E"
+            ],
+            "vintage": "2019-2023"
+          },
+          "retrieved_at": null,
+          "source_reference": "Aggregate context: Pakistan place of birth and Urdu language spoken at home. Aggregate only; never proof of religion.",
+          "source_type": "acs_aggregate",
+          "source_url": "https://data.census.gov/",
+          "supports_tags": [
+            "pakistani_food",
+            "south_asian_grocery"
+          ]
+        }
+      ],
+      "area_id": "acp-ba41881a8d21b36dc8b14366",
+      "business_id": "biz-1117e4c0edbf4e909af49d25",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "neighborhood spot serving jerk chicken and biryani and tacos",
+          "evidence_source": "self_reported_listing",
+          "retrieved_at": "2026-07-15",
+          "signal": "business_description",
+          "tag": "pakistani_food"
+        }
+      ],
+      "disposition": "REVIEW_REQUIRED",
+      "match_id": "cbm-70b2604884d5bbd482fa1fa2",
+      "matched_tag": "pakistani_food",
+      "reason_code": "REVIEW_AMBIGUOUS_BUSINESS_DESCRIPTION",
+      "record_digest": "3ddf826b15e53003f07f2743040b487b79021cf240985e98797e58030859ff7e",
+      "relevance_score": 0.5,
+      "review_required": true
+    }
+  ],
+  "scoring_version": "culture-scoring.v1",
+  "terminal_accounting": {
+    "accounted_business_count": 29,
+    "by_disposition": {
+      "ACCEPTED": 18,
+      "BLOCKED": 2,
+      "REJECTED": 2,
+      "REVIEW_REQUIRED": 5,
+      "UNCLASSIFIED": 2
+    },
+    "input_business_count": 29
+  }
+}

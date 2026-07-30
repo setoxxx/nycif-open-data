@@ -1,0 +1,62 @@
+{
+  "type": "FeatureCollection",
+  "name": "NYCIF Sample Editorial",
+  "metadata": {
+    "generated_by": "NYCIF Web Platform",
+    "status": "sample-data-only",
+    "last_updated": "2026-07-26T14:30:00-04:00",
+    "public_use": false
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "sample-editorial-williamsburg-001",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9617, 40.7165]
+      },
+      "properties": {
+        "story_id": "sample-editorial-williamsburg-001",
+        "headline": "Sample Williamsburg Waterfront Rezoning Report",
+        "title": "Sample Williamsburg Waterfront Rezoning Report",
+        "description": "Sample NYC In Focus editorial record for testing mixed-layer rendering. Not a published news report.",
+        "category": "Land Use",
+        "published_at": "2026-07-20T09:00:00-04:00",
+        "updated_at": "2026-07-20T12:00:00-04:00",
+        "borough": "Brooklyn",
+        "neighborhood": "Williamsburg",
+        "address": "200 Kent Avenue, Brooklyn, NY",
+        "place_id": "place_200_kent_avenue",
+        "place_name": "200 Kent Avenue",
+        "publisher_name": "NYC In Focus Sample Data",
+        "canonical_url": "https://nycinfocus.com/",
+        "editorial_status": "sample",
+        "nycif_url": "https://nycinfocus.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sample-editorial-central-park-002",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9683, 40.7851]
+      },
+      "properties": {
+        "story_id": "sample-editorial-central-park-002",
+        "headline": "Sample Central Park Civic Reporting",
+        "title": "Sample Central Park Civic Reporting",
+        "description": "Sample editorial record sharing a location with an event to verify deterministic renderer priority.",
+        "category": "Civic Reporting",
+        "published_at": "2026-07-21T10:00:00-04:00",
+        "updated_at": "2026-07-21T11:30:00-04:00",
+        "borough": "Manhattan",
+        "neighborhood": "Central Park",
+        "address": "Central Park, Manhattan, NY",
+        "publisher_name": "NYC In Focus Sample Data",
+        "canonical_url": "https://nycinfocus.com/",
+        "editorial_status": "sample",
+        "nycif_url": "https://nycinfocus.com/"
+      }
+    }
+  ]
+}

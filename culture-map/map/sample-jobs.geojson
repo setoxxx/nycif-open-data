@@ -1,0 +1,92 @@
+{
+  "type": "FeatureCollection",
+  "name": "NYCIF Jobs Layer – NYSDOL Calendar Samples",
+  "metadata": {
+    "source": "NYS Department of Labor Career Center Events",
+    "source_url": "https://dol.ny.gov/career-calendar",
+    "calendar_url": "https://www.trumba.com/events-calendar/eastern-time/nys-department-of-labor",
+    "status": "official-source-snapshot",
+    "last_updated": "2026-07-27T16:45:00-04:00",
+    "public_use": true
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.89238, 40.86139]
+      },
+      "properties": {
+        "event_id": "nysdol-bronx-mini-job-fair-2026-07-30",
+        "title": "Bronx Mini Job Fair",
+        "description": "New York State Department of Labor mini recruiting event connecting New York City job seekers with employers scheduled to include FDNY, NYPD, New York Life, Hot Bread Kitchen and other organizations. Employer participation is subject to change.",
+        "category": "Jobs",
+        "job_event_type": "job-fair",
+        "organizer": "New York State Department of Labor",
+        "start_date": "2026-07-30",
+        "start_time": "11:00",
+        "end_date": "2026-07-30",
+        "end_time": "14:00",
+        "borough": "Bronx",
+        "neighborhood": "Fordham",
+        "venue": "Bronx Workforce1 Career Center",
+        "address": "400 E. Fordham Rd., Bronx, NY 10458",
+        "latitude": 40.86139,
+        "longitude": -73.89238,
+        "source_name": "NYS Department of Labor Career Center Events",
+        "source_url": "https://dol.ny.gov/career-calendar",
+        "official_source_url": "https://www.trumba.com/events-calendar/eastern-time/nys-department-of-labor",
+        "registration_url": "https://forms.cloud.microsoft/g/ssH1bKVDej",
+        "source_updated_at": "2026-07-27T16:45:00-04:00",
+        "ingested_at": "2026-07-27T16:45:00-04:00",
+        "last_checked": "2026-07-27T16:45:00-04:00",
+        "status": "confirmed",
+        "public_display_eligible": true,
+        "cost": "free",
+        "accessibility": "Contact the organizer for accommodation details.",
+        "curated_by_nycif": false,
+        "editorial_pick": false,
+        "photo_opportunity": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7992865, 40.7028088]
+      },
+      "properties": {
+        "event_id": "nysdol-queens-civil-service-101-2026-07-30-1030",
+        "title": "New York State Civil Service 101",
+        "description": "In-person workshop covering the New York State Civil Service Merit System, state-agency career paths, examinations, applications and the NY HELPS program.",
+        "category": "Jobs",
+        "job_event_type": "workshop",
+        "organizer": "New York State Department of Civil Service and New York State Department of Labor",
+        "start_date": "2026-07-30",
+        "start_time": "10:30",
+        "end_date": "2026-07-30",
+        "end_time": "12:00",
+        "borough": "Queens",
+        "neighborhood": "Jamaica",
+        "venue": "SUNY Queens Educational Opportunity Center",
+        "address": "158-29 Archer Ave., Jamaica, NY 11433",
+        "latitude": 40.7028088,
+        "longitude": -73.7992865,
+        "source_name": "NYS Department of Labor Career Center Events",
+        "source_url": "https://dol.ny.gov/career-calendar",
+        "official_source_url": "https://www.trumba.com/events-calendar/eastern-time/nys-department-of-labor",
+        "registration_url": "https://www.eventbrite.com/e/suny-queens-eoc-new-york-state-civil-service-101-tickets-1992377327219",
+        "source_updated_at": "2026-07-27T16:45:00-04:00",
+        "ingested_at": "2026-07-27T16:45:00-04:00",
+        "last_checked": "2026-07-27T16:45:00-04:00",
+        "status": "confirmed",
+        "public_display_eligible": true,
+        "cost": "free",
+        "accessibility": "Contact the organizer for accommodation details.",
+        "curated_by_nycif": false,
+        "editorial_pick": false,
+        "photo_opportunity": false
+      }
+    }
+  ]
+}
