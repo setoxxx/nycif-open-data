@@ -127,13 +127,18 @@ export function createCulturePanel(options) {
     return String(area.geography_name || "").split("(")[0].trim();
   }
 
+  function boroughSlug(borough) {
+    return "hood-" + String(borough || "").trim().toLowerCase().replace(/\s+/g, "-");
+  }
+
   function estimateSize(name) {
-    const charW = 6.6;
-    const maxW = 128;
+    // Sized for the big/bold uppercase poster-style labels.
+    const charW = 9.2;
+    const maxW = 150;
     const full = name.length * charW;
-    const w = Math.min(maxW, full) + 8;
+    const w = Math.min(maxW, full) + 10;
     const lines = Math.max(1, Math.ceil(full / maxW));
-    return { w, h: lines * 13 + 4 };
+    return { w, h: lines * 18 + 6 };
   }
 
   function renderNeighborhoodLabels() {
@@ -145,7 +150,11 @@ export function createCulturePanel(options) {
       if (!p || p.lat == null || p.lng == null) continue;
       const name = labelName(area);
       const marker = L.marker([p.lat, p.lng], { opacity: 0, interactive: false, keyboard: false })
-        .bindTooltip(name, { permanent: true, direction: "center", className: "culture-hood-label" })
+        .bindTooltip(name, {
+          permanent: true,
+          direction: "center",
+          className: `culture-hood-label ${boroughSlug(area.borough)}`,
+        })
         .addTo(neighborhoodLayer);
       hoodLabels.push({
         marker,
