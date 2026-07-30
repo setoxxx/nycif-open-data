@@ -51,6 +51,8 @@ export function createCulturePanel(options) {
   const businessLayer = hasLeaflet ? L.layerGroup() : null;
   // Floating neighborhood-name labels (Apple-Maps style) for every area in the feed.
   const neighborhoodLayer = hasLeaflet ? L.layerGroup() : null;
+  // Universal amenities (pet stores + pet parks) shown in every neighborhood.
+  const universalLayer = hasLeaflet ? L.layerGroup() : null;
   let feed = null;
   let areaId = null;
   let hoodLabels = [];
@@ -73,7 +75,9 @@ export function createCulturePanel(options) {
     toggleButton.setAttribute("aria-label", "Switch back to Events");
     onEnterCulture();
     if (businessLayer && map) businessLayer.addTo(map);
+    if (universalLayer && map) universalLayer.addTo(map);
     if (neighborhoodLayer && map) neighborhoodLayer.addTo(map);
+    renderUniversal();
     renderNeighborhoodLabels();
     if (map) {
       map.on("moveend zoomend", declutterLabels);
@@ -93,6 +97,8 @@ export function createCulturePanel(options) {
     toggleButton.setAttribute("aria-label", "Switch to Culture");
     if (businessLayer) businessLayer.clearLayers();
     if (businessLayer && map) map.removeLayer(businessLayer);
+    if (universalLayer) universalLayer.clearLayers();
+    if (universalLayer && map) map.removeLayer(universalLayer);
     if (map) map.off("moveend zoomend", declutterLabels);
     hoodLabels = [];
     if (neighborhoodLayer) neighborhoodLayer.clearLayers();
@@ -112,6 +118,7 @@ export function createCulturePanel(options) {
     populateAreas();
     setStatus("ready");
     if (!panel.hidden) {
+      renderUniversal();
       renderNeighborhoodLabels();
       if (map) requestAnimationFrame(declutterLabels);
       render();
@@ -139,6 +146,29 @@ export function createCulturePanel(options) {
     const w = Math.min(maxW, full) + 10;
     const lines = Math.max(1, Math.ceil(full / maxW));
     return { w, h: lines * 18 + 6 };
+  }
+
+  // Universal "everyone uses them" places (pet stores + pet parks) in every
+  // neighborhood, styled neutrally so they read as shared amenities.
+  function renderUniversal() {
+    if (!universalLayer || !map || !feed) return;
+    universalLayer.clearLayers();
+    for (const place of feed.universal_places || []) {
+      const c = place.coordinates;
+      if (!c || c.lat == null || c.lng == null) continue;
+      const isPark = place.place_type === "pet_park";
+      const icon = L.divIcon({
+        className: "culture-universal-pin",
+        html: isPark ? "🐾" : "🐾",
+        iconSize: [22, 22],
+        iconAnchor: [11, 11],
+      });
+      L.marker([c.lat, c.lng], { icon, keyboard: false })
+        .bindPopup(
+          `<strong>${escapeHtml(place.name || "")}</strong><br>${isPark ? "Pet park / dog run" : "Pet store"} · for everyone`,
+        )
+        .addTo(universalLayer);
+    }
   }
 
   function renderNeighborhoodLabels() {

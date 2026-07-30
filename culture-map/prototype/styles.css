@@ -363,3 +363,15 @@ input, select {
 .leaflet-tooltip.hood-queens { color: #c2255c; }
 .leaflet-tooltip.hood-bronx { color: #2f9e44; }
 .leaflet-tooltip.hood-staten-island { color: #7048e8; }
+
+/* Universal amenity pins (pet stores + pet parks) — neutral shared-layer look. */
+.culture-universal-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  background: #ffffff;
+  border: 1.5px solid #6b7280;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}

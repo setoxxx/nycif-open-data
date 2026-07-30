@@ -15,7 +15,7 @@
         "lat": 40.727,
         "lng": -73.862
       },
-      "record_digest": "b331ae772edfc113430ae7ff3f203cca5e5323730dfc91b1361db0da73f58773",
+      "record_digest": "ff9bd0e2243ed3e0f5017e67f361171d329cec70adaf98f8ced7e206e58ee802",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -33,13 +33,20 @@
       ],
       "supported_cultural_tags": [
         "bukharian_food",
-        "bukharian_grocery"
+        "bukharian_grocery",
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods"
       ]
     },
     {
       "area_id": "acp-30054b9aa071c36b803d1f71",
       "borough": "Manhattan",
-      "business_count": 1,
+      "business_count": 2,
       "context_strength": "strong",
       "covers_community_districts": [
         "MN12"
@@ -48,10 +55,10 @@
       "geography_name": "Washington Heights (Dominican corridor)",
       "geography_type": "curated_cultural_district",
       "label_point": {
-        "lat": 40.8401,
-        "lng": -73.94
+        "lat": 40.8402,
+        "lng": -73.9399
       },
-      "record_digest": "c3da397057627aef69e1fa1f1c5c194e058072f4c94967ea08574c7083fd6f01",
+      "record_digest": "1383a314164d8b88f5e749e85d6facf5667aae7f1a9046efbdbb5dc7099ba1ba",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -83,8 +90,15 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
         "dominican_food",
-        "dominican_grocery"
+        "dominican_grocery",
+        "religious_goods"
       ]
     },
     {
@@ -102,7 +116,7 @@
         "lat": 40.854,
         "lng": -73.887
       },
-      "record_digest": "0cd2d9f5143c370b38d27ca28ee74c63e3456b374626172b7c303a47001f58ae",
+      "record_digest": "673579832b00a5440e189558756657bb22b980ec33512e647edcbc1cc0c0f4bc",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -120,9 +134,16 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
         "italian_bakery",
         "italian_food",
-        "italian_grocery"
+        "italian_grocery",
+        "religious_goods"
       ]
     },
     {
@@ -140,7 +161,7 @@
         "lat": 40.636,
         "lng": -74.077
       },
-      "record_digest": "fc433b168e01a1ea8db21034709152866b81ba51a2e9b09ac81de0d7d4fb21b6",
+      "record_digest": "5cb42b1a89e115d61daed6409462765fd80cbebf6ce86ec1383a8492492a41bf",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -156,13 +177,20 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods",
         "sri_lankan_food"
       ]
     },
     {
       "area_id": "acp-4820bab8f4042b1b391fd545",
       "borough": "Queens",
-      "business_count": 1,
+      "business_count": 2,
       "context_strength": "strong",
       "covers_community_districts": [
         "QN10"
@@ -171,10 +199,10 @@
       "geography_name": "Richmond Hill (Little Guyana)",
       "geography_type": "curated_cultural_district",
       "label_point": {
-        "lat": 40.688,
-        "lng": -73.827
+        "lat": 40.6881,
+        "lng": -73.82675
       },
-      "record_digest": "744846a47d29306df74da2134ab303bf2e585c3d88d480fe9155fcfc7130af6f",
+      "record_digest": "051d61fd3a4ee2b8d5d32d71a61b6d7b7bc5941141b61afd4527bac60ef47402",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -192,7 +220,14 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
         "guyanese_food",
+        "religious_goods",
         "south_asian_grocery",
         "west_indian_grocery"
       ]
@@ -212,7 +247,7 @@
         "lat": 40.636,
         "lng": -73.993
       },
-      "record_digest": "674899b8f413aca60b0937192e1d5ed862f5f5663f5d046d2848a72d77c17c6f",
+      "record_digest": "f50b8537fcaeeac40187435e79f3e00e8b46e0629e2b869b42ca1a4e4c7025f6",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -230,9 +265,16 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
         "judaica",
         "kosher_food",
-        "kosher_grocery"
+        "kosher_grocery",
+        "religious_goods"
       ]
     },
     {
@@ -250,7 +292,7 @@
         "lat": 40.809,
         "lng": -73.949
       },
-      "record_digest": "5a55c775231830d009a609373443b8262046a7a4930107e4fd6e51bb541ba947",
+      "record_digest": "f4f3088b0e467b7b3ddfc9b84445ac07931e75537ba66637084a9e081935179b",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -266,13 +308,63 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods",
         "soul_food"
+      ]
+    },
+    {
+      "area_id": "acp-76f6f3c33d5889ac2e686446",
+      "borough": "Queens",
+      "business_count": 2,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "QN03"
+      ],
+      "geography_id": "jackson-heights-latin",
+      "geography_name": "Jackson Heights (Little Colombia / Latin American corridor)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.7477,
+        "lng": -73.8913
+      },
+      "record_digest": "247f13fd32ade33fd4197c04029daf7b54793b0ca7879303c93f7c96873cd26a",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "Roosevelt Avenue / 82nd Street Jackson Heights \u2014 documented Colombian / Ecuadorian / pan-Latin American commercial corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "latin_american_food",
+            "latin_american_grocery"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "latin_american_food",
+        "latin_american_grocery",
+        "religious_goods"
       ]
     },
     {
       "area_id": "acp-770afa95e60633dc74654722",
       "borough": "Queens",
-      "business_count": 1,
+      "business_count": 3,
       "context_strength": "moderate",
       "covers_community_districts": [
         "QN03"
@@ -281,10 +373,10 @@
       "geography_name": "Jackson Heights / Woodside (Himalayan / Tibetan-Nepali corridor)",
       "geography_type": "curated_cultural_district",
       "label_point": {
-        "lat": 40.748,
-        "lng": -73.891
+        "lat": 40.7478,
+        "lng": -73.8912
       },
-      "record_digest": "acae9574f1491d0ab487babd89a7e2a251adb0b877edb4e5a32fe5326d70119d",
+      "record_digest": "878fe8912b8ccb319ed997d5a0477ecd22bd75e7300b6adea79f19133e5cffbf",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -300,13 +392,20 @@
         }
       ],
       "supported_cultural_tags": [
-        "himalayan_food"
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "himalayan_food",
+        "religious_goods"
       ]
     },
     {
       "area_id": "acp-795ffb81352e2c0ea98380b7",
       "borough": "Brooklyn",
-      "business_count": 2,
+      "business_count": 3,
       "context_strength": "strong",
       "covers_community_districts": [
         "BK17",
@@ -316,10 +415,10 @@
       "geography_name": "East Flatbush / Canarsie (Caribbean corridor)",
       "geography_type": "curated_cultural_district",
       "label_point": {
-        "lat": 40.6456,
-        "lng": -73.949
+        "lat": 40.651067,
+        "lng": -73.949267
       },
-      "record_digest": "4facc8c5dafd05036f96f14be0470207e4b357dc086c9a5db06140c4436b52b4",
+      "record_digest": "662c5e4b2a4791ff5d56fce086c652aebe1d0554392ffaa15f1b1704d3350193",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -339,6 +438,13 @@
       "supported_cultural_tags": [
         "caribbean_bakery",
         "caribbean_food",
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods",
         "west_indian_grocery"
       ]
     },
@@ -357,7 +463,7 @@
         "lat": 40.729,
         "lng": -73.954
       },
-      "record_digest": "2fdd40615d07972992093e8832adb34698f5c65e5034dd5e66ee62609339e578",
+      "record_digest": "4fcb5635b9bee77b9fa987fa7ecdbd7a948dfb373896644835105b89969ca591",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -389,8 +495,15 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
         "polish_food",
-        "polish_grocery"
+        "polish_grocery",
+        "religious_goods"
       ]
     },
     {
@@ -408,7 +521,7 @@
         "lat": 40.743,
         "lng": -73.982
       },
-      "record_digest": "0e2031ee9378c3939b04e16390c4f388bf3ba7ef52deb459111e239fc70d72f8",
+      "record_digest": "c822343031d33192caac7d7456e41d0da6ab9cfa93be1e95c354ac19730f0d07",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -425,6 +538,13 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods",
         "south_asian_food",
         "south_asian_grocery"
       ]
@@ -445,7 +565,7 @@
         "lat": 40.672,
         "lng": -73.95
       },
-      "record_digest": "97cb31282fee8e550b22215d482816e8260626a92969ccf4d01eb6e7a3c0c381",
+      "record_digest": "e23772637da7f2a589f5d3ae45331ace007a6e2fa61f0a80a61b05f3a94fe376",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -465,6 +585,13 @@
       "supported_cultural_tags": [
         "caribbean_bakery",
         "caribbean_food",
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods",
         "west_indian_grocery"
       ]
     },
@@ -483,7 +610,7 @@
         "lat": 40.759,
         "lng": -73.83
       },
-      "record_digest": "d711b5280b3789506d6b5b3f6fd8309627ac41810a25d4943a7fb9eacf515028",
+      "record_digest": "4e8f92c0ea1262db901e24c812c6b2346eaf44b0fefa67f81bb8aff66e9acc22",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -499,6 +626,13 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods",
         "taiwanese_food"
       ]
     },
@@ -517,7 +651,7 @@
         "lat": 40.5775,
         "lng": -73.961
       },
-      "record_digest": "60168be0bc94afb68c6d028d08871d367128d8735ebad266e1c2d364954015f1",
+      "record_digest": "e17d7807b1f56106da91cf4deffa875a6dab517939cff1a01c908f7ac22ef336",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -549,6 +683,13 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods",
         "russian_grocery",
         "russian_ukrainian_food"
       ]
@@ -569,7 +710,7 @@
         "lat": 40.6298,
         "lng": -73.96672
       },
-      "record_digest": "e5539aca5e64438dc9566257c8d780ed84c11e75ddfae3e0976ad3f141bdaab2",
+      "record_digest": "b19b22751818b01baa6bab58ade0b276bf834a71f8aa63be32ee45cf59d67b53",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -616,10 +757,17 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
         "halal_food",
         "halal_grocery",
         "pakistani_clothing",
         "pakistani_food",
+        "religious_goods",
         "south_asian_grocery",
         "south_asian_jewelry",
         "south_asian_travel"
@@ -628,7 +776,7 @@
     {
       "area_id": "acp-c55cde6ca2809d37b8961549",
       "borough": "Brooklyn",
-      "business_count": 5,
+      "business_count": 6,
       "context_strength": "strong",
       "covers_community_districts": [
         "BK14",
@@ -638,10 +786,10 @@
       "geography_name": "Little Caribbean (Flatbush)",
       "geography_type": "curated_cultural_district",
       "label_point": {
-        "lat": 40.64466,
-        "lng": -73.9572
+        "lat": 40.64755,
+        "lng": -73.955967
       },
-      "record_digest": "895bf817c79391f7fdf46f9a91f238d2d189bc76a3045ec1cb6d64eefc960f23",
+      "record_digest": "4e4300104a2fdcb659d0f7806cde88dbd356b6884e9a72f1bc91eb51ae6cb7c3",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -681,13 +829,20 @@
         "caribbean_food",
         "caribbean_music",
         "caribbean_salon",
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods",
         "west_indian_grocery"
       ]
     },
     {
       "area_id": "acp-cd4ba16eac26fa4c86586870",
       "borough": "Brooklyn",
-      "business_count": 1,
+      "business_count": 2,
       "context_strength": "strong",
       "covers_community_districts": [
         "BK17"
@@ -696,10 +851,10 @@
       "geography_name": "East Flatbush / Flatbush (Haitian corridor)",
       "geography_type": "curated_cultural_district",
       "label_point": {
-        "lat": 40.63,
-        "lng": -73.948
+        "lat": 40.646,
+        "lng": -73.9489
       },
-      "record_digest": "af23c585a6d081abcf3934b26ae21293904149abb2c67458a529d2a5255f5739",
+      "record_digest": "e27c0897225b218a8ce53aa4bfcd078d8b1f09d187a7b556b55d7c32f72cd8d8",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -715,7 +870,14 @@
         }
       ],
       "supported_cultural_tags": [
-        "haitian_food"
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "haitian_food",
+        "religious_goods"
       ]
     },
     {
@@ -733,7 +895,7 @@
         "lat": 40.742,
         "lng": -73.882
       },
-      "record_digest": "902c49c18f5614587c36eec76351899c50cfaa2175367998f9f3ec5ff2361d6b",
+      "record_digest": "309b2c3153f263725f1b93187170d40d7b5530d911266d2cd9d306a8af98e40a",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -750,6 +912,13 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "religious_goods",
         "thai_food",
         "thai_grocery"
       ]
@@ -769,7 +938,7 @@
         "lat": 40.721,
         "lng": -73.9965
       },
-      "record_digest": "a2fe4422c28619470660d64759fd9b2c593c1e95f1e02aff4f923bdd4f6b5a9a",
+      "record_digest": "937e02d481082da11ee729be86fac09cb2a9f5c47997d96151fbaa41a4b37344",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -787,9 +956,65 @@
         }
       ],
       "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
         "italian_bakery",
         "italian_food",
-        "italian_grocery"
+        "italian_grocery",
+        "religious_goods"
+      ]
+    },
+    {
+      "area_id": "acp-f2b4b6a8311085ac7bf48042",
+      "borough": "Queens",
+      "business_count": 2,
+      "context_strength": "strong",
+      "covers_community_districts": [
+        "QN03"
+      ],
+      "geography_id": "jackson-heights-south-asian",
+      "geography_name": "Jackson Heights (South Asian corridor / Little India)",
+      "geography_type": "curated_cultural_district",
+      "label_point": {
+        "lat": 40.747667,
+        "lng": -73.891333
+      },
+      "record_digest": "3205abefea21d8657c002e82a36b39a3ad25b75e503998e9d5f41b8e37dbe219",
+      "review_status": "manually_reviewed",
+      "sources": [
+        {
+          "acs_dataset": null,
+          "acs_variable_ids": [],
+          "acs_vintage": null,
+          "source_reference": "74th Street Jackson Heights \u2014 documented South Asian commercial corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "south_asian_grocery",
+            "pakistani_food",
+            "pakistani_clothing",
+            "south_asian_jewelry",
+            "south_asian_travel"
+          ]
+        }
+      ],
+      "supported_cultural_tags": [
+        "cultural_beauty",
+        "cultural_books",
+        "cultural_clothing",
+        "cultural_music_media",
+        "cultural_sporting_goods",
+        "cultural_sweets",
+        "pakistani_clothing",
+        "pakistani_food",
+        "religious_goods",
+        "south_asian_grocery",
+        "south_asian_jewelry",
+        "south_asian_travel"
       ]
     }
   ],
@@ -811,7 +1036,7 @@
       "dietary_tags": [
         "kosher_food"
       ],
-      "record_digest": "7289e18434f2bc3ffe22cb034a90749252347aedfc2098fa25db01d1eed0e556",
+      "record_digest": "2df5e359cf913973116602ee32aa7d6a74118dc7fdbeff8f1f4f1e93be72c288",
       "review_status": "manually_reviewed"
     },
     {
@@ -829,7 +1054,7 @@
         "caribbean_bakery"
       ],
       "dietary_tags": [],
-      "record_digest": "df9bc2a6feaba5faf3e05bfe391bc9abcdad7cc66f80a929060c4f0c476e3d7e",
+      "record_digest": "564c0e369d92b35e3f0464447cd8ada56ab49ebb2b285dee000d2fe6725b39de",
       "review_status": "manually_reviewed"
     },
     {
@@ -849,7 +1074,7 @@
         "south_asian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "ceb858ec9fc2b5b4cce32c6399d724078b1a78efa07cc9a5be8dd5e9e5d36ddc",
+      "record_digest": "62bd678fb87a6d2a35e904d722bd304d93a2bab0f4374d39db324c65a9edba40",
       "review_status": "auto_evidence"
     },
     {
@@ -868,7 +1093,7 @@
         "south_asian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "10db9ff6ce807b5934d72c83abf4b4021171fd9209ac088b841af64e533f3a8f",
+      "record_digest": "91748b5825e1dd47fda3a5ac87991d95482c03b020f846ebe2c866bf3a18c9ea",
       "review_status": "auto_evidence"
     },
     {
@@ -886,7 +1111,7 @@
         "italian_bakery"
       ],
       "dietary_tags": [],
-      "record_digest": "a8b55f774764fb549076b79eec1c3d719a7cfa7fd5311e6473e1b3b8c9a12f72",
+      "record_digest": "dc9b884f31eb5bd3101c0102e8c48bce87f66a6b9c960c2b930b94ed1afcc1cc",
       "review_status": "auto_evidence"
     },
     {
@@ -904,7 +1129,7 @@
         "soul_food"
       ],
       "dietary_tags": [],
-      "record_digest": "4ecec52d95c15bb9f72c5349764917dd8da85052e2721c2ea0f7297c7f3f56c9",
+      "record_digest": "5ba2aa7f71387d63516d05eadfd0a29345b4d83f382961bb9451b765c4ceb780",
       "review_status": "auto_evidence"
     },
     {
@@ -922,7 +1147,7 @@
         "caribbean_food"
       ],
       "dietary_tags": [],
-      "record_digest": "6b8908fbb0a60c483322e90388fbad01bf80eafb231cf8cac333827be20ee632",
+      "record_digest": "77866d0a8d7455e485d6ea4c591dd037c0a6851a50472c336ed487d0265310dd",
       "review_status": "auto_evidence"
     },
     {
@@ -940,7 +1165,7 @@
         "bukharian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "2d56123a8760efa36fb6de97dfdb8d613d5def59c7a36f224d500e38346e9477",
+      "record_digest": "b862fd195e0c63a997b572ff02180618a0a260edd3efee23c11b79ea7628b5c7",
       "review_status": "auto_evidence"
     },
     {
@@ -963,7 +1188,7 @@
         "halal_food",
         "halal_grocery"
       ],
-      "record_digest": "08b847275b5152718ef7af1e60a70692942cb1319c101bee4168e996b9335b7c",
+      "record_digest": "a56bad075752a915b81f37a0223c954afb624a7d5708cc82ec923b9a9246abad",
       "review_status": "manually_reviewed"
     },
     {
@@ -982,7 +1207,25 @@
         "polish_grocery"
       ],
       "dietary_tags": [],
-      "record_digest": "cce3e021e4cb432f2ecffced1ac76aa9783093622bde43662d8f51d1096da829",
+      "record_digest": "1d25c409040a747c466c8985e4b63441dab389346ddf05cacfa3f4e6f7e5c6e4",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "1010 Nostrand Ave, Brooklyn, NY, 11225",
+      "business_category": "Misc-Retail",
+      "business_id": "biz-6313f8e4b8e2340c437daad0",
+      "business_name": "Sample Reggae Records",
+      "community_district": "BK17",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.662,
+        "lng": -73.9498
+      },
+      "cultural_tags": [
+        "cultural_music_media"
+      ],
+      "dietary_tags": [],
+      "record_digest": "f16d24471cf36ae24c16ceee03345578711c864fab3ed788ed20530d0bf1120d",
       "review_status": "auto_evidence"
     },
     {
@@ -1001,7 +1244,7 @@
         "guyanese_food"
       ],
       "dietary_tags": [],
-      "record_digest": "026db0a7d0da8b535097ef0e57ccb66f472b80f40bd2e0cb75e0a59fbc7903c1",
+      "record_digest": "fb39a431032f829587fb399ec2601ec0fb46e26e6c60b211f4ca2d47b4b6e3e4",
       "review_status": "auto_evidence"
     },
     {
@@ -1019,7 +1262,7 @@
         "himalayan_food"
       ],
       "dietary_tags": [],
-      "record_digest": "9a539ebd659da07a04cb1d4a46795ca9eccb19980c01716d3d93653ec9dd4153",
+      "record_digest": "9d40f1acd48b4916692a43fb6d45dbe60d5bea62b36d9f0fbb20f838fbe16394",
       "review_status": "auto_evidence"
     },
     {
@@ -1037,7 +1280,25 @@
         "thai_food"
       ],
       "dietary_tags": [],
-      "record_digest": "d580c465cc515655ef73b78eec1d9433f9e00fe248bfa0929b6153ba1f887e8e",
+      "record_digest": "eb9b2cdd4be4d9934b1df83a9c0dd9a2366b32bb31e54b80cae10a8c90db77fd",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "12110 Liberty Ave, Queens, NY, 11419",
+      "business_category": "Sporting Goods-Retail",
+      "business_id": "biz-8eea2dfed3b69675616f8f7b",
+      "business_name": "Sample Liberty Cricket Shop",
+      "community_district": "QN10",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.6882,
+        "lng": -73.8265
+      },
+      "cultural_tags": [
+        "cultural_sporting_goods"
+      ],
+      "dietary_tags": [],
+      "record_digest": "7240f7a8d5a3975620636687565207e2a5e5915b5cf87fcd08096912a1f8d208",
       "review_status": "auto_evidence"
     },
     {
@@ -1055,7 +1316,7 @@
         "caribbean_food"
       ],
       "dietary_tags": [],
-      "record_digest": "9810cfb5d12bdaf2ca2cc6adad6c7585718913f6b83db83a7a1b4f84422eb814",
+      "record_digest": "446cc2a98dd55bfbaca49400ed2d369ed791d2932f85d7f42f95b69db507931f",
       "review_status": "auto_evidence"
     },
     {
@@ -1074,7 +1335,7 @@
         "haitian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "ce43c5a0ef89ddf002a3b2c1300c49f578cff257072a304e996b4244b09c1a8d",
+      "record_digest": "de0fc95d7f214837b7ded87cf8c1549e1925ce5402e44856c9d1545f84829789",
       "review_status": "auto_evidence"
     },
     {
@@ -1092,7 +1353,7 @@
         "dominican_food"
       ],
       "dietary_tags": [],
-      "record_digest": "cadd46936e4565d2ce8c836a54a1ab8167ba0122aad39b50dacaa87206541014",
+      "record_digest": "792af5fffadfc0da11d65eadc680a34742fe183c5dfe2cdf1224190d5b9d3aa6",
       "review_status": "auto_evidence"
     },
     {
@@ -1110,7 +1371,7 @@
         "caribbean_food"
       ],
       "dietary_tags": [],
-      "record_digest": "84245a512a7c61416ee5b2810eae3a50f255a856804c69c1efea16f587149e70",
+      "record_digest": "4ea9d331c4c4c5c2d8c0fbd92f0c12d0113334d0d273a6a13efdefda93ed742f",
       "review_status": "auto_evidence"
     },
     {
@@ -1128,7 +1389,7 @@
         "italian_grocery"
       ],
       "dietary_tags": [],
-      "record_digest": "f65070c3bcfadda2ecce398773b78b5de101d9e3e37ab090c2cffc7226b3a882",
+      "record_digest": "c12abddfaf0e10b8c47e53e045091c43a4fff9d368fc38d79f80922a6faac4f6",
       "review_status": "auto_evidence"
     },
     {
@@ -1146,7 +1407,25 @@
         "sri_lankan_food"
       ],
       "dietary_tags": [],
-      "record_digest": "3eb71e3564858a60b307cb3204e493d4a6b3d047c7fa9015bd1802e744cdbd16",
+      "record_digest": "58fe44839a23f33eb2febfcfa85629079fc0e4c10615572d2e988983861739de",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "1405 St Nicholas Ave, New York, NY, 10033",
+      "business_category": "Misc-Retail",
+      "business_id": "biz-c1784feef5f434def7ddcbbe",
+      "business_name": "Sample Botanica San Lazaro",
+      "community_district": "MN12",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.8403,
+        "lng": -73.9398
+      },
+      "cultural_tags": [
+        "religious_goods"
+      ],
+      "dietary_tags": [],
+      "record_digest": "93acc40e34e7553ec2d91bb81b82de9d198639d1626c5af14efac841b6995516",
       "review_status": "auto_evidence"
     },
     {
@@ -1164,7 +1443,7 @@
         "russian_grocery"
       ],
       "dietary_tags": [],
-      "record_digest": "3769fee9cdb5704e0b2e51d30432b39a1b5f1cf5b162fe815f6701e3f1d972de",
+      "record_digest": "fbb92261ada33a52e99c4be2dbc151fdef9e586ebe761fdeafd939b0f335785f",
       "review_status": "auto_evidence"
     },
     {
@@ -1182,7 +1461,25 @@
         "taiwanese_food"
       ],
       "dietary_tags": [],
-      "record_digest": "652ef2d765258be1d17453d56947c2536b1a62ab360d80f097e65c1b925ce501",
+      "record_digest": "4d2a720e04c27cbc8516d6ff134c7eaecc9139459c2746f9eea2c8225fc16d7a",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "3740 74th St, Queens, NY, 11372",
+      "business_category": "Grocery-Retail",
+      "business_id": "biz-cb7a83a03ce72914b08f0843",
+      "business_name": "Sample Mithai Sweets",
+      "community_district": "QN03",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.7478,
+        "lng": -73.8912
+      },
+      "cultural_tags": [
+        "cultural_sweets"
+      ],
+      "dietary_tags": [],
+      "record_digest": "5700801ebfc2ecdde969766585ec6fc479992b2e07159552724e010a8d4b892f",
       "review_status": "auto_evidence"
     },
     {
@@ -1201,15 +1498,34 @@
         "south_asian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "f4cafecb7272a970d2ae2f1d1e4d31d7341b98a41e38f496f0186cbbd5859f6d",
+      "record_digest": "2471618a86a3d5bc04a8d4ed8f5d7ecc0289285a0ab2d04e3ea7dcdc7b747c11",
+      "review_status": "auto_evidence"
+    },
+    {
+      "address": "3728 74th St, Queens, NY, 11372",
+      "business_category": "Clothing-Retail",
+      "business_id": "biz-e5bff4298d7743b7af080bd2",
+      "business_name": "Sample Sari Palace",
+      "community_district": "QN03",
+      "confidence": "probable",
+      "coordinates": {
+        "lat": 40.7476,
+        "lng": -73.8914
+      },
+      "cultural_tags": [
+        "cultural_clothing",
+        "pakistani_clothing"
+      ],
+      "dietary_tags": [],
+      "record_digest": "e7a86299277dea3c156d25dd76dc8fa372c7a533f14ae109d63f8a5a666c5df8",
       "review_status": "auto_evidence"
     }
   ],
   "contract": "nycif.culture-feed.v1",
   "feed_version": "2026-07-30",
-  "generated_at": "2026-07-30T01:54:58.515259+00:00",
-  "input_business_count": 29,
-  "manifest_digest": "c40c5d5e973f03d2d4addb0699aef5d7f2b747ddecabff2fa6c993519414be01",
+  "generated_at": "2026-07-30T11:56:50.266737+00:00",
+  "input_business_count": 36,
+  "manifest_digest": "c91b41e0f8eac6ec2700c2b8088881a545e1d400946e83e98a38f2ae941d7f5d",
   "matches": [
     {
       "area_context_evidence": [
@@ -1241,7 +1557,7 @@
       "match_id": "cbm-99b03d3d6561d18f3bd984b4",
       "matched_tag": "kosher_food",
       "reason_code": "ACCEPTED_VERIFIED_CERTIFICATION",
-      "record_digest": "26b42d6bb716dc2da418c8560f85b6f64c14f548905d885f55e3e6ad04ff4a68",
+      "record_digest": "e632e57be83ae98ec8eae3e6902f55821453ce5ea8a031b965020b0d27c98a89",
       "relevance_score": 1.0,
       "review_required": false
     },
@@ -1285,7 +1601,7 @@
       "match_id": "cbm-0402a1c988e89435bbfe7719",
       "matched_tag": "caribbean_bakery",
       "reason_code": "ACCEPTED_REVIEWED_CULTURAL_TAG",
-      "record_digest": "46e28f71a4d990fdeef0f1b9faf7e9ea3fbe1eaf7699fb0a4fa28d2ad3852045",
+      "record_digest": "0a8dba74c68696e671a3b83e83490bc5736fd3a8313413f475a0dd449e97ea21",
       "relevance_score": 0.9,
       "review_required": false
     },
@@ -1318,7 +1634,7 @@
       "match_id": "cbm-65f65c95d1f6a93ee4a848a7",
       "matched_tag": "halal_food",
       "reason_code": "ACCEPTED_VERIFIED_CERTIFICATION",
-      "record_digest": "6235fae0fcee781e4510a43bc8269ade774435328f6c499f7a9ebbad85d04574",
+      "record_digest": "2ae1d6bb27e9b3cfc601c1d11830f208a4843fd912c1afaf9d6af22d77eab61a",
       "relevance_score": 0.9,
       "review_required": false
     },
@@ -1351,7 +1667,7 @@
       "match_id": "cbm-bcde74582861af2dbd02da3e",
       "matched_tag": "halal_grocery",
       "reason_code": "ACCEPTED_VERIFIED_CERTIFICATION",
-      "record_digest": "229448df26b703509728872bbbe655a7d1c534aa0298bdcc42e2c1e8e30cb663",
+      "record_digest": "4d956792a3783293ffeb871b7a7d6a99924be898d8d850c070d0bda072137c60",
       "relevance_score": 0.9,
       "review_required": false
     },
@@ -1405,7 +1721,51 @@
       "match_id": "cbm-05febee6655a6dab46f72aa7",
       "matched_tag": "polish_grocery",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "cb0012b34c4f052cf135012c38bd0b7530a3f3d71839f7420b47aed75743797a",
+      "record_digest": "fb6240d28dfa96c8ef6409a2c232731bd2434d97cc0c50b0657a72a1c12b3e49",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-4820bab8f4042b1b391fd545",
+      "business_id": "biz-8eea2dfed3b69675616f8f7b",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "cricket gear, cricket bats, cricket shop",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_sporting_goods"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-08c510006e1b5bf548adbebb",
+      "matched_tag": "cultural_sporting_goods",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "c999949ae598d91b5fe85c34a7b08bc8ff474b46ec02c995fb2db586d2014e34",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-76f6f3c33d5889ac2e686446",
+      "business_id": "biz-cb7a83a03ce72914b08f0843",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "mithai, indian sweets, barfi",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_sweets"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-1008b2d2b2ace7a9f1f9eddc",
+      "matched_tag": "cultural_sweets",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "dd3da4a01c1c13fd5150a0b00b6d7a173e8da7c9e0ca71af6e1e9c77246f7e29",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1439,7 +1799,7 @@
       "match_id": "cbm-132d63c387186b401a3fd614",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "d622d63aeefc4158775b4468cf60cfbddfcfcf0e1e2c4338ba4a4b2a06ee61dd",
+      "record_digest": "3eee1d230cc37535a58be8511662e2e113168bffbb2ac85529bbd7925036c898",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1472,7 +1832,7 @@
       "match_id": "cbm-16bbb13e50dd2d803fc6cc9a",
       "matched_tag": "thai_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "24d26b3a1c0d6c090d3f78fa68d96f173e7f96847ecc87001cd6bce1e9d719d7",
+      "record_digest": "d1670db11da35955fbb253c2004da377cbadb542534a9dcfed151a465f543fb7",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1530,7 +1890,7 @@
       "match_id": "cbm-1a1bfb9e2d325b8c37c124c7",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "83f9948c9d306ab77ea06d16999a60d0b0d1cbe6264a440bb0a7ac635d56545a",
+      "record_digest": "01373f80a241df80a2543c0d5c20a3da14d18f6c31edf2c22ff962f50c634810",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1572,7 +1932,29 @@
       "match_id": "cbm-1acc6525138b427b72ce81cd",
       "matched_tag": "guyanese_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "99129c19967b3e605e99de2afe0613f94bba3a96eca57091b7a1f973ac3c93ce",
+      "record_digest": "e5f86ddd486f80ab87a590d85de40c72f3fd62eb649d6bba85b06d14472fc5ab",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-cd4ba16eac26fa4c86586870",
+      "business_id": "biz-6313f8e4b8e2340c437daad0",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "reggae vinyl, record shop, cultural instruments",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_music_media"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-2c4605d3ed413cf7d67b19dc",
+      "matched_tag": "cultural_music_media",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "1ff234ec569275142e3b2f086e279ee2347fdcc0ad4ca342d4c5e4075ee46b72",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1612,7 +1994,7 @@
       "match_id": "cbm-2f7bcbe810f9185aa2943f2a",
       "matched_tag": "sri_lankan_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "aa3300f00e3efdaca7af990ca630f433c5ec28467934cab2b0eacbbfc42d086f",
+      "record_digest": "e7b3eaf02e00c32eae9e33179b03a9ab705e0d71e0aa51c6eb570d876a230d6d",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1646,7 +2028,7 @@
       "match_id": "cbm-3a1cd7404864c04e87b35fdf",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "5589facd9342d4ae8e1fa4a2b4ac88c31b28763b5edc9db9b1fa7fb4661bfc51",
+      "record_digest": "ee7f48743f1e7169f6ff89bceb6f4cfdce88fb7d31cc343adc0eac3afcbc42ac",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1678,7 +2060,7 @@
       "match_id": "cbm-3a4498d9b597094fb62b3c41",
       "matched_tag": "taiwanese_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "cdfe00c7e80fc4552aab492db9a0d5ca5f613ff13c34e09dc4a6ef51e030fcb0",
+      "record_digest": "64899e9a749931d56474906fc8c747f9c792f864d7ed1e722229336fb0eb4ed0",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1740,7 +2122,29 @@
       "match_id": "cbm-3e0eb868ffcac487ea77e8df",
       "matched_tag": "dominican_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "e9bf707bddd1931b84afeff21d4b80a84a50009d0f0f9e141ab5fc5f9960557a",
+      "record_digest": "c71304144fb827c3652afb143eb3cad3c2200cb4c5fda9957b46c05b1d8bd31c",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-30054b9aa071c36b803d1f71",
+      "business_id": "biz-c1784feef5f434def7ddcbbe",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "botanica, prayer rugs, church goods",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "religious_goods"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-40f273b4372b29025cd997a1",
+      "matched_tag": "religious_goods",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "34d923efba5d0bee5916158039380f02db904d2eb5a6f2000ba5a0c2dfb410be",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1780,7 +2184,7 @@
       "match_id": "cbm-4189b9db63e4d76797b706c2",
       "matched_tag": "haitian_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "2faf79f7bc37e57afd8349924edc9738005bc5f352563c00cc08b9b79b17d5e3",
+      "record_digest": "8252d2f137aa776eef1aba0ab5311fe7223469b60f437cdc3e3ae327e728e982",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1834,7 +2238,7 @@
       "match_id": "cbm-438523142132c9e3f71b99c7",
       "matched_tag": "russian_grocery",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "107336e3e9a32f69c4068253ee05710a8257b4af57999da0b12bfaa246ac0e96",
+      "record_digest": "f89518f706b02f19344b8615fba5f991f4bd660fd129f41d6f7ad823391558ec",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1867,7 +2271,7 @@
       "match_id": "cbm-46d379728fb5fb882a19e800",
       "matched_tag": "bukharian_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "1937726d0191abbee4e7f698c00098e6fc9ca2a555398494fc7b25ffaebbc132",
+      "record_digest": "2b71a1a45c62b055abdb183d88ff4f2a5bb846bce02763f8e19ac1e9d8c5ed24",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1901,7 +2305,7 @@
       "match_id": "cbm-4a7dd4abe3841fb5ec6871b0",
       "matched_tag": "italian_bakery",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "47fcf57d236bc26b3928706c9735f5e181d7e64073f789e0f4b515651bd2da0e",
+      "record_digest": "81464f72bef1d8949c74be7d04fe34fe62cdd1c3bf5075349a497eb6ef766cbf",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1943,7 +2347,29 @@
       "match_id": "cbm-583660ffd25e8c472be59d22",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "fd128008d0e7074ec0530a078d7a0616f3a50f2cf4b867212feec93640fdec95",
+      "record_digest": "e7db88c0169761107c5c5dc5591c6e34ffc36668c44e5c6e775bd0a4d1bf2504",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-795ffb81352e2c0ea98380b7",
+      "business_id": "biz-6313f8e4b8e2340c437daad0",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "reggae vinyl, record shop, cultural instruments",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_music_media"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-711e19f8e518acbf1955f5dc",
+      "matched_tag": "cultural_music_media",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "a4cc7f07819ac4a1979ee7aca51de525a05482f73ea8a51e630ca4a17efc59bd",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1976,7 +2402,7 @@
       "match_id": "cbm-89fd5846cf997a2b68954c5b",
       "matched_tag": "south_asian_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "e11d741e404afbb48d48b3e687f564f89ab7988e9ca8108a90f69b7792597d8f",
+      "record_digest": "4d4776caea50217cb81697d197d123239c4b2a952bf37431a8ff644a46033d90",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2030,7 +2456,29 @@
       "match_id": "cbm-94e90644ef031487232fad1d",
       "matched_tag": "polish_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "19107b0d32338d6bdf6c5d67edd9619b49825b5474ef6ff0ad528fbc9f697290",
+      "record_digest": "e6e00be0d07e0d7029412d821c0bf26813b57a07a6956de353fabba198bb22ab",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-c55cde6ca2809d37b8961549",
+      "business_id": "biz-6313f8e4b8e2340c437daad0",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "reggae vinyl, record shop, cultural instruments",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_music_media"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-97c81d01fc17601836bdacf9",
+      "matched_tag": "cultural_music_media",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "7e9d2c63fa58254b2a054d9fd6531e9a26f1ad066d33656227408729859d841a",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2096,7 +2544,43 @@
       "match_id": "cbm-9f51a2803e0c65607ffa4c8f",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "21de380efe463e5461ab966b92d0398d2a039bee9f0c8db4717a790be5d1147e",
+      "record_digest": "dfc133e0f2b280c64fc06f96b67b8bae4c3dbf1c194a35b914cb3b867b7e109c",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [
+        {
+          "retrieved_at": "2026-07-29",
+          "source_reference": "74th Street Jackson Heights \u2014 documented South Asian commercial corridor.",
+          "source_type": "documented_cultural_district",
+          "source_url": "https://www.nyc.gov/",
+          "supports_tags": [
+            "south_asian_grocery",
+            "pakistani_food",
+            "pakistani_clothing",
+            "south_asian_jewelry",
+            "south_asian_travel"
+          ]
+        }
+      ],
+      "area_id": "acp-f2b4b6a8311085ac7bf48042",
+      "business_id": "biz-e5bff4298d7743b7af080bd2",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "saris, kurta, salwar, traditional dress",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "pakistani_clothing"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-a14b0eaed903c7dd6d0e774e",
+      "matched_tag": "pakistani_clothing",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "bee4a8bf279e264c6c101f630a073c8692864bac6aaab278398713e686c3364d",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2154,7 +2638,73 @@
       "match_id": "cbm-c713f61f05d6311f622c33ee",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "f24a9774bbecd4b4aadd8ce0479f1b00d273b176e3e25610bb052bc3f43e626a",
+      "record_digest": "7c95d324d5ba04cb1b4ae06c1e4d73f3390d3ef5ffd174c776b5b97ebb95782f",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-f2b4b6a8311085ac7bf48042",
+      "business_id": "biz-cb7a83a03ce72914b08f0843",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "mithai, indian sweets, barfi",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_sweets"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-c9c0e560a00ee0002a39a7c4",
+      "matched_tag": "cultural_sweets",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "44fa0735cbfd95becc9174b096bbfacad386b605d909853699c1dbe0b0970398",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-f2b4b6a8311085ac7bf48042",
+      "business_id": "biz-e5bff4298d7743b7af080bd2",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "saris, kurta, salwar, traditional dress",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_clothing"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-cdb4743fc700d1c9f670796c",
+      "matched_tag": "cultural_clothing",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "7ae358329a379eeee9d1a0d8d325eae2d8de7827be3bf4f671154cb9bcd73344",
+      "relevance_score": 0.8,
+      "review_required": false
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-76f6f3c33d5889ac2e686446",
+      "business_id": "biz-e5bff4298d7743b7af080bd2",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "saris, kurta, salwar, traditional dress",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_clothing"
+        }
+      ],
+      "disposition": "ACCEPTED",
+      "match_id": "cbm-da9dadb4038de41a779d0dd7",
+      "matched_tag": "cultural_clothing",
+      "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
+      "record_digest": "225840ce31568a18cd650219b7b674fcb6c5c3082ca0df8cc90c1f94fd83e69e",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2188,7 +2738,7 @@
       "match_id": "cbm-ee10fb4f5fb0d81d8ad80cb5",
       "matched_tag": "italian_grocery",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "db563b2c4fceba70386092f9dd63b55d683463b783ab29f86dac4d741b293223",
+      "record_digest": "1d67f24f43f7dc405a122065d4722dcdf2af2270f07d8d117acd04a635b39ffb",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2228,7 +2778,7 @@
       "match_id": "cbm-48d8d3689f09f4e2a85eb02a",
       "matched_tag": "himalayan_food",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "52487db8f525c26b2a5778c1504da0284d24cecf546cce65e0de7d278ba474bf",
+      "record_digest": "0ae381e02d02973dd8aeff69a6d8679e728397cdd2fc0c7ea554e6967df50ddc",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -2260,7 +2810,29 @@
       "match_id": "cbm-4bb81745d2d75d147519d66e",
       "matched_tag": "soul_food",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "17114d3f24166b2acb9a21ed0ba797006c21682d769413c79d363dcb51c74b9f",
+      "record_digest": "8fbaa0d75ce5a97c75a3b8ab4132f820d5568ebe67818bc2289324344a62cbcb",
+      "relevance_score": 0.7,
+      "review_required": true
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-770afa95e60633dc74654722",
+      "business_id": "biz-cb7a83a03ce72914b08f0843",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "mithai, indian sweets, barfi",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_sweets"
+        }
+      ],
+      "disposition": "REVIEW_REQUIRED",
+      "match_id": "cbm-6a32847bc911cdcaab5b5ada",
+      "matched_tag": "cultural_sweets",
+      "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
+      "record_digest": "e83afe681e52eccd6e50cb9c832099dc3346b4f84620597f95d117331329c8f6",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -2325,7 +2897,7 @@
       "match_id": "cbm-714f32985d61d5b5b998b8a4",
       "matched_tag": "pakistani_food",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "af2d80c953c326244ebb1f14a87d8bca69c8642e3e33c55c687f791851ee67fc",
+      "record_digest": "341169172a3f98cb0621ad94642ab35d4e44714df6257757f778830a5e066bba",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -2382,7 +2954,29 @@
       "match_id": "cbm-9a1f348584c619d3e53e7cf0",
       "matched_tag": "south_asian_grocery",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "d8ad19d90bdb976d3afaa17562e723a26a93ff5c47d0084d61ea089d7344d150",
+      "record_digest": "51e2da32a90f33cdee450218bc73eee73445d060c51351d9d51b80cef208528f",
+      "relevance_score": 0.7,
+      "review_required": true
+    },
+    {
+      "area_context_evidence": [],
+      "area_id": "acp-770afa95e60633dc74654722",
+      "business_id": "biz-e5bff4298d7743b7af080bd2",
+      "classification_evidence": [
+        {
+          "certification_authority": null,
+          "detail": "saris, kurta, salwar, traditional dress",
+          "evidence_source": "storefront_inventory_review",
+          "retrieved_at": "2026-07-30",
+          "signal": "merchandise",
+          "tag": "cultural_clothing"
+        }
+      ],
+      "disposition": "REVIEW_REQUIRED",
+      "match_id": "cbm-de701e069fbab40c7d85a01d",
+      "matched_tag": "cultural_clothing",
+      "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
+      "record_digest": "cb6f6c93b2a1753ae69bf7ad603bc71a34c72532da94354dfb3926a91269f632",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -2440,7 +3034,7 @@
       "match_id": "cbm-2408abf0f20fa8bb998972ff",
       "matched_tag": "caribbean_food",
       "reason_code": "REVIEW_AMBIGUOUS_BUSINESS_DESCRIPTION",
-      "record_digest": "f445e2f9074614fb8fa1cc7bc82f8c5b8b60f90c2e94716ff3c157bfa4ccb560",
+      "record_digest": "dafef68fae5a8c3166d04ad2ced1a0f7c287c295c70a47c6ca270ec57c9c055d",
       "relevance_score": 0.6,
       "review_required": true
     },
@@ -2497,21 +3091,167 @@
       "match_id": "cbm-70b2604884d5bbd482fa1fa2",
       "matched_tag": "pakistani_food",
       "reason_code": "REVIEW_AMBIGUOUS_BUSINESS_DESCRIPTION",
-      "record_digest": "3ddf826b15e53003f07f2743040b487b79021cf240985e98797e58030859ff7e",
+      "record_digest": "2903a09455a9b6f51235745e664986f3107de9e07599cfb52ad0484de5d6f419",
       "relevance_score": 0.5,
       "review_required": true
     }
   ],
   "scoring_version": "culture-scoring.v1",
   "terminal_accounting": {
-    "accounted_business_count": 29,
+    "accounted_business_count": 36,
     "by_disposition": {
-      "ACCEPTED": 18,
+      "ACCEPTED": 23,
       "BLOCKED": 2,
       "REJECTED": 2,
       "REVIEW_REQUIRED": 5,
-      "UNCLASSIFIED": 2
+      "UNCLASSIFIED": 4
     },
-    "input_business_count": 29
-  }
+    "input_business_count": 36
+  },
+  "universal_places": [
+    {
+      "borough": "Queens",
+      "community_district": "QN01",
+      "coordinates": {
+        "lat": 40.779,
+        "lng": -73.925
+      },
+      "name": "Astoria Park Dog Run",
+      "place_id": "upk-f8570454134624388a84bc9c",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Queens",
+      "community_district": "QN09",
+      "coordinates": {
+        "lat": 40.702,
+        "lng": -73.86
+      },
+      "name": "Forest Park Dog Run",
+      "place_id": "upk-de23a4151895924597799949",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Bronx",
+      "community_district": "BX04",
+      "coordinates": {
+        "lat": 40.825,
+        "lng": -73.925
+      },
+      "name": "Franz Sigel Park Dog Run",
+      "place_id": "upk-823fbc07bbf3d579eac087cf",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Brooklyn",
+      "community_district": "BK02",
+      "coordinates": {
+        "lat": 40.701,
+        "lng": -73.996
+      },
+      "name": "Hillside Dog Park",
+      "place_id": "upk-acef5ab840c1d976276c4668",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Brooklyn",
+      "community_district": "BK01",
+      "coordinates": {
+        "lat": 40.7205,
+        "lng": -73.951
+      },
+      "name": "McCarren Park Dog Run",
+      "place_id": "upk-b44d5a4ff066275cbca23333",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Bronx",
+      "community_district": "BX10",
+      "coordinates": {
+        "lat": 40.858,
+        "lng": -73.81
+      },
+      "name": "Pelham Bay Park Dog Run",
+      "place_id": "upk-932565fffb52d12b7c41e01f",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Brooklyn",
+      "community_district": "BK06",
+      "coordinates": {
+        "lat": 40.662,
+        "lng": -73.969
+      },
+      "name": "Prospect Park Dog Beach",
+      "place_id": "upk-8116d5045478e694cb48bee4",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Manhattan",
+      "community_district": "MN07",
+      "coordinates": {
+        "lat": 40.801,
+        "lng": -73.97
+      },
+      "name": "Riverside Park Dog Run (W 105th)",
+      "place_id": "upk-8142c51c3a6ebca897228a1a",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Staten Island",
+      "community_district": "SI01",
+      "coordinates": {
+        "lat": 40.625,
+        "lng": -74.093
+      },
+      "name": "Silver Lake Park Dog Run",
+      "place_id": "upk-2931a12bf423a89fadf06062",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Manhattan",
+      "community_district": "MN03",
+      "coordinates": {
+        "lat": 40.7263,
+        "lng": -73.9815
+      },
+      "name": "Tompkins Square Dog Run",
+      "place_id": "upk-fa673623f6fde5f2253a9569",
+      "place_type": "pet_park",
+      "source": "nyc_parks_dog_runs"
+    },
+    {
+      "borough": "Brooklyn",
+      "community_district": "BK17",
+      "coordinates": {
+        "lat": 40.6505,
+        "lng": -73.949
+      },
+      "name": "Sample Flatbush Pet Shop",
+      "place_id": "biz-e12c57b99502cc96314b4323",
+      "place_type": "pet_store",
+      "source": "nyc_dcwp_legally_operating_businesses"
+    },
+    {
+      "borough": "Queens",
+      "community_district": "QN03",
+      "coordinates": {
+        "lat": 40.7475,
+        "lng": -73.8915
+      },
+      "name": "Sample Neighborhood Pet Supply",
+      "place_id": "biz-4e5dfd3f37998ff5167bbc99",
+      "place_type": "pet_store",
+      "source": "nyc_dcwp_legally_operating_businesses"
+    }
+  ]
 }
