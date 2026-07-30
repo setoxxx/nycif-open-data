@@ -12,9 +12,11 @@ export function createMapView({ elementId = "map", onSelectPlace, rendererRegist
   }
 
   const map = L.map(elementId, { zoomControl: true, scrollWheelZoom: true }).setView(NYC_CENTER, 11);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  // Clean "day" basemap (CARTO Positron) — minimal light canvas so cultural
+  // context and neighborhood labels read clearly.
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
     maxZoom: 19,
-    attribution: "&copy; OpenStreetMap contributors",
+    attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
   }).addTo(map);
 
   const markerLayer = L.layerGroup().addTo(map);

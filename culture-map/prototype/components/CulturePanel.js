@@ -53,6 +53,7 @@ export function createCulturePanel(options) {
   const neighborhoodLayer = hasLeaflet ? L.layerGroup() : null;
   let feed = null;
   let areaId = null;
+  let hoodLabels = [];
   const selectedTags = new Set();
   let lastTrigger = null;
 
@@ -74,6 +75,10 @@ export function createCulturePanel(options) {
     if (businessLayer && map) businessLayer.addTo(map);
     if (neighborhoodLayer && map) neighborhoodLayer.addTo(map);
     renderNeighborhoodLabels();
+    if (map) {
+      map.on("moveend zoomend", declutterLabels);
+      requestAnimationFrame(declutterLabels); // ensure tooltip DOM is measured
+    }
     render();
     const focusTarget = panel.querySelector("select, button, input");
     if (focusTarget) focusTarget.focus();
@@ -88,6 +93,8 @@ export function createCulturePanel(options) {
     toggleButton.setAttribute("aria-label", "Switch to Culture");
     if (businessLayer) businessLayer.clearLayers();
     if (businessLayer && map) map.removeLayer(businessLayer);
+    if (map) map.off("moveend zoomend", declutterLabels);
+    hoodLabels = [];
     if (neighborhoodLayer) neighborhoodLayer.clearLayers();
     if (neighborhoodLayer && map) map.removeLayer(neighborhoodLayer);
     onExitCulture();
@@ -106,25 +113,72 @@ export function createCulturePanel(options) {
     setStatus("ready");
     if (!panel.hidden) {
       renderNeighborhoodLabels();
+      if (map) requestAnimationFrame(declutterLabels);
       render();
     }
   }
 
   // Float each cultural neighborhood's name over its section of the map, so a
   // user can scroll around and see what each area is called (Apple-Maps style).
+  const STRENGTH_RANK = { strong: 3, moderate: 2, weak: 1 };
+
+  function labelName(area) {
+    // Drop the parenthetical qualifier for a cleaner map label.
+    return String(area.geography_name || "").split("(")[0].trim();
+  }
+
+  function estimateSize(name) {
+    const charW = 6.6;
+    const maxW = 128;
+    const full = name.length * charW;
+    const w = Math.min(maxW, full) + 8;
+    const lines = Math.max(1, Math.ceil(full / maxW));
+    return { w, h: lines * 13 + 4 };
+  }
+
   function renderNeighborhoodLabels() {
     if (!neighborhoodLayer || !map || !feed) return;
     neighborhoodLayer.clearLayers();
+    hoodLabels = [];
     for (const area of feed.areas || []) {
       const p = area.label_point;
       if (!p || p.lat == null || p.lng == null) continue;
-      L.marker([p.lat, p.lng], { opacity: 0, interactive: false, keyboard: false })
-        .bindTooltip(area.geography_name, {
-          permanent: true,
-          direction: "center",
-          className: "culture-hood-label",
-        })
+      const name = labelName(area);
+      const marker = L.marker([p.lat, p.lng], { opacity: 0, interactive: false, keyboard: false })
+        .bindTooltip(name, { permanent: true, direction: "center", className: "culture-hood-label" })
         .addTo(neighborhoodLayer);
+      hoodLabels.push({
+        marker,
+        latlng: [p.lat, p.lng],
+        size: estimateSize(name),
+        // Priority: busier + better-documented corridors win a contested spot.
+        priority: (area.business_count || 0) * 10 + (STRENGTH_RANK[area.context_strength] || 0),
+      });
+    }
+    declutterLabels();
+  }
+
+  // Apple-style declutter: place labels by priority, hiding any that would
+  // overlap one already placed. Re-run on every pan/zoom so more names reveal
+  // as you zoom in.
+  function declutterLabels() {
+    if (!map || !hoodLabels.length) return;
+    const placed = [];
+    const overlaps = (b) =>
+      placed.some(
+        (p) => !(b.x + b.w < p.x || b.x > p.x + p.w || b.y + b.h < p.y || b.y > p.y + p.h),
+      );
+    for (const item of [...hoodLabels].sort((a, b) => b.priority - a.priority)) {
+      const el = item.marker.getTooltip() && item.marker.getTooltip().getElement();
+      if (!el) continue;
+      const pt = map.latLngToContainerPoint(item.latlng);
+      const box = { x: pt.x - item.size.w / 2, y: pt.y - item.size.h / 2, w: item.size.w, h: item.size.h };
+      if (overlaps(box)) {
+        el.style.display = "none";
+      } else {
+        el.style.display = "";
+        placed.push(box);
+      }
     }
   }
 

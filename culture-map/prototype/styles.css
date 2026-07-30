@@ -331,26 +331,25 @@ input, select {
 .culture-badge.is-tag { border-color: var(--accent); color: var(--accent); }
 .culture-why { font-size: 0.82rem; color: var(--muted); border-left: 3px solid var(--accent); padding-left: 8px; margin-top: 6px; }
 
-/* Floating neighborhood-name labels (Apple-Maps style) over Culture areas. */
+/* Floating neighborhood-name labels over Culture areas — clean day-map styling,
+   decluttered in JS so names never stack (Apple-Maps approach). */
 .leaflet-tooltip.culture-hood-label {
   background: transparent;
   border: none;
   box-shadow: none;
   padding: 0;
-  color: #1b1b1b;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  font-size: 0.72rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  color: #2b2f36;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.74rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
   white-space: normal;
-  max-width: 130px;
+  max-width: 128px;
   text-align: center;
-  line-height: 1.05;
-  text-shadow: 0 1px 2px #fff, 0 0 3px #fff, 0 0 6px #fff;
+  line-height: 1.1;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 1px 2px rgba(255, 255, 255, 0.9);
   pointer-events: none;
+  transition: opacity 0.15s ease;
 }
 .leaflet-tooltip.culture-hood-label::before { display: none; } /* no tooltip arrow */
-@media (prefers-color-scheme: dark) {
-  .leaflet-tooltip.culture-hood-label { color: #f4f4f5; text-shadow: 0 1px 2px #000, 0 0 4px #000; }
-}
