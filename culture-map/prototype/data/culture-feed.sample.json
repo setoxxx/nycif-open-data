@@ -15,7 +15,7 @@
         "lat": 40.727,
         "lng": -73.862
       },
-      "record_digest": "ff9bd0e2243ed3e0f5017e67f361171d329cec70adaf98f8ced7e206e58ee802",
+      "record_digest": "b28c2b882cb6d63447187963e6c700f18fd527b25f39e12b2813ef8a084f8f84",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -58,7 +58,7 @@
         "lat": 40.8402,
         "lng": -73.9399
       },
-      "record_digest": "1383a314164d8b88f5e749e85d6facf5667aae7f1a9046efbdbb5dc7099ba1ba",
+      "record_digest": "3d09cc7ecbbc671a753d913eef9143d77ef62559f752d2ddda386e568d08a2b6",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -116,7 +116,7 @@
         "lat": 40.854,
         "lng": -73.887
       },
-      "record_digest": "673579832b00a5440e189558756657bb22b980ec33512e647edcbc1cc0c0f4bc",
+      "record_digest": "428c22ab24f67fd7ec5adf1fd7645cc0d8bdcbb495f560ba4d68fb8cb4705bd9",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -161,7 +161,7 @@
         "lat": 40.636,
         "lng": -74.077
       },
-      "record_digest": "5cb42b1a89e115d61daed6409462765fd80cbebf6ce86ec1383a8492492a41bf",
+      "record_digest": "2f561df6cd3cf243524e2410021747abeb7065fc83feec605d3f258ca66702db",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -202,7 +202,7 @@
         "lat": 40.6881,
         "lng": -73.82675
       },
-      "record_digest": "051d61fd3a4ee2b8d5d32d71a61b6d7b7bc5941141b61afd4527bac60ef47402",
+      "record_digest": "49d8283a831fccfbe712ea2a0e8979df7c76c21f24894a0293262c70f6679a58",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -247,7 +247,7 @@
         "lat": 40.636,
         "lng": -73.993
       },
-      "record_digest": "f50b8537fcaeeac40187435e79f3e00e8b46e0629e2b869b42ca1a4e4c7025f6",
+      "record_digest": "42c19feca9bf1999d5813bb9c6c0ab343455a86ea6ccdd218b5a11de083298b4",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -292,7 +292,7 @@
         "lat": 40.809,
         "lng": -73.949
       },
-      "record_digest": "f4f3088b0e467b7b3ddfc9b84445ac07931e75537ba66637084a9e081935179b",
+      "record_digest": "0afcbd9eb84c1115531c2e68b6d7cbff2015cc702902b7da8cfa5e318f3da32a",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -333,7 +333,7 @@
         "lat": 40.7477,
         "lng": -73.8913
       },
-      "record_digest": "247f13fd32ade33fd4197c04029daf7b54793b0ca7879303c93f7c96873cd26a",
+      "record_digest": "108c9591e11c661f607745e1c587a89c436affed4b8baba444c53e1d80423535",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -376,7 +376,7 @@
         "lat": 40.7478,
         "lng": -73.8912
       },
-      "record_digest": "878fe8912b8ccb319ed997d5a0477ecd22bd75e7300b6adea79f19133e5cffbf",
+      "record_digest": "d90a8016e242514532ad03e96e316aad4283d3ac50b6c7767e5d182a43366a95",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -418,7 +418,7 @@
         "lat": 40.651067,
         "lng": -73.949267
       },
-      "record_digest": "662c5e4b2a4791ff5d56fce086c652aebe1d0554392ffaa15f1b1704d3350193",
+      "record_digest": "b946928c406b597d941d78b9bbbe2c7fd00336b0791459ef15a9304a232383f5",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -463,7 +463,7 @@
         "lat": 40.729,
         "lng": -73.954
       },
-      "record_digest": "4fcb5635b9bee77b9fa987fa7ecdbd7a948dfb373896644835105b89969ca591",
+      "record_digest": "8c7c98c2a5102177e1357f01bb5432449e9bee9e440ac769b0ac9c6161fd37b3",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -521,7 +521,7 @@
         "lat": 40.743,
         "lng": -73.982
       },
-      "record_digest": "c822343031d33192caac7d7456e41d0da6ab9cfa93be1e95c354ac19730f0d07",
+      "record_digest": "9520fece6a45f3de9642256a0b42f33bf9634ef76cb98db843df8e8c8d34f000",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -565,7 +565,7 @@
         "lat": 40.672,
         "lng": -73.95
       },
-      "record_digest": "e23772637da7f2a589f5d3ae45331ace007a6e2fa61f0a80a61b05f3a94fe376",
+      "record_digest": "a5e7e049e287137e7204ea6db562d8618f2a7012c6d25781a38b5a1a5ef3908d",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -610,7 +610,7 @@
         "lat": 40.759,
         "lng": -73.83
       },
-      "record_digest": "4e8f92c0ea1262db901e24c812c6b2346eaf44b0fefa67f81bb8aff66e9acc22",
+      "record_digest": "95927f2aa5f1aeefdab92f70ef360b12250357af50c2a90edb890fa160e388b8",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -651,7 +651,7 @@
         "lat": 40.5775,
         "lng": -73.961
       },
-      "record_digest": "e17d7807b1f56106da91cf4deffa875a6dab517939cff1a01c908f7ac22ef336",
+      "record_digest": "e852f2fbfc628430b58b366c185062a27122044124e27f442742a1d59c5601ce",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -710,7 +710,7 @@
         "lat": 40.6298,
         "lng": -73.96672
       },
-      "record_digest": "b19b22751818b01baa6bab58ade0b276bf834a71f8aa63be32ee45cf59d67b53",
+      "record_digest": "cce8b5d6e6fded812215fef350fc326e94df7523eb0b07b751c080000f5b27d3",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -789,7 +789,7 @@
         "lat": 40.64755,
         "lng": -73.955967
       },
-      "record_digest": "4e4300104a2fdcb659d0f7806cde88dbd356b6884e9a72f1bc91eb51ae6cb7c3",
+      "record_digest": "55fd05ff1147ca775996255a9eaa85e1499196e6002b7374508fbf1ba6ae11de",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -854,7 +854,7 @@
         "lat": 40.646,
         "lng": -73.9489
       },
-      "record_digest": "e27c0897225b218a8ce53aa4bfcd078d8b1f09d187a7b556b55d7c32f72cd8d8",
+      "record_digest": "219c3795b1e1e77955db909901971cf54f574b77312494639ec1931332f226b6",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -895,7 +895,7 @@
         "lat": 40.742,
         "lng": -73.882
       },
-      "record_digest": "309b2c3153f263725f1b93187170d40d7b5530d911266d2cd9d306a8af98e40a",
+      "record_digest": "9fbc9f63530dd3e5a3d9b3c6ec03c3582ff8198deace4ea9f512c6dcadb3e0ba",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -938,7 +938,7 @@
         "lat": 40.721,
         "lng": -73.9965
       },
-      "record_digest": "937e02d481082da11ee729be86fac09cb2a9f5c47997d96151fbaa41a4b37344",
+      "record_digest": "2aa974ffe09bb3699e70c68475305d5a39c56d68a5e3ff31e6bad6c36af8450e",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -983,7 +983,7 @@
         "lat": 40.747667,
         "lng": -73.891333
       },
-      "record_digest": "3205abefea21d8657c002e82a36b39a3ad25b75e503998e9d5f41b8e37dbe219",
+      "record_digest": "d9cd82338bcdc7c217555335b262bebb0c6d1ea5310d9062811c426c26136d24",
       "review_status": "manually_reviewed",
       "sources": [
         {
@@ -1036,7 +1036,7 @@
       "dietary_tags": [
         "kosher_food"
       ],
-      "record_digest": "2df5e359cf913973116602ee32aa7d6a74118dc7fdbeff8f1f4f1e93be72c288",
+      "record_digest": "8f0acaeb5fcf5d209470a76a67ca313ca4caca978b5fb449a9e6723d8afc92e6",
       "review_status": "manually_reviewed"
     },
     {
@@ -1054,7 +1054,7 @@
         "caribbean_bakery"
       ],
       "dietary_tags": [],
-      "record_digest": "564c0e369d92b35e3f0464447cd8ada56ab49ebb2b285dee000d2fe6725b39de",
+      "record_digest": "3f3f0cabda095650fd529a107e79d6850bdff56c9472158b5d428525a24720a0",
       "review_status": "manually_reviewed"
     },
     {
@@ -1074,7 +1074,7 @@
         "south_asian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "62bd678fb87a6d2a35e904d722bd304d93a2bab0f4374d39db324c65a9edba40",
+      "record_digest": "fca01c4d2f32fab86914562473e99103486bf16f9ae031bf28a71f518d572c67",
       "review_status": "auto_evidence"
     },
     {
@@ -1093,7 +1093,7 @@
         "south_asian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "91748b5825e1dd47fda3a5ac87991d95482c03b020f846ebe2c866bf3a18c9ea",
+      "record_digest": "17b8c96c38896cc28e9fbc95c4b9905d0cb6a5c5cda902f5b4e696096310757d",
       "review_status": "auto_evidence"
     },
     {
@@ -1111,7 +1111,7 @@
         "italian_bakery"
       ],
       "dietary_tags": [],
-      "record_digest": "dc9b884f31eb5bd3101c0102e8c48bce87f66a6b9c960c2b930b94ed1afcc1cc",
+      "record_digest": "040a1ca29e435492c1ac436aac6fcc4c18b554abeb680fe2cb39bbeb3e91423f",
       "review_status": "auto_evidence"
     },
     {
@@ -1129,7 +1129,7 @@
         "soul_food"
       ],
       "dietary_tags": [],
-      "record_digest": "5ba2aa7f71387d63516d05eadfd0a29345b4d83f382961bb9451b765c4ceb780",
+      "record_digest": "3f20e11cf69007d7c4ae04a4c5984e2eb06d9b97f8f1844e554cb3f07cce73af",
       "review_status": "auto_evidence"
     },
     {
@@ -1147,7 +1147,7 @@
         "caribbean_food"
       ],
       "dietary_tags": [],
-      "record_digest": "77866d0a8d7455e485d6ea4c591dd037c0a6851a50472c336ed487d0265310dd",
+      "record_digest": "73852503e32b52985c281dbb478176a86d38cc1b5857cc7a732af3836c9b25c5",
       "review_status": "auto_evidence"
     },
     {
@@ -1165,7 +1165,7 @@
         "bukharian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "b862fd195e0c63a997b572ff02180618a0a260edd3efee23c11b79ea7628b5c7",
+      "record_digest": "c9951558ceebb4cee19415a1de0f3895942366f9c0d512fcf08eb13f5750ab1e",
       "review_status": "auto_evidence"
     },
     {
@@ -1188,7 +1188,7 @@
         "halal_food",
         "halal_grocery"
       ],
-      "record_digest": "a56bad075752a915b81f37a0223c954afb624a7d5708cc82ec923b9a9246abad",
+      "record_digest": "ea67bd36e70afcded5cb1e2f89106cc5576c20922c705ebe1e45ed96fa0d8812",
       "review_status": "manually_reviewed"
     },
     {
@@ -1207,7 +1207,7 @@
         "polish_grocery"
       ],
       "dietary_tags": [],
-      "record_digest": "1d25c409040a747c466c8985e4b63441dab389346ddf05cacfa3f4e6f7e5c6e4",
+      "record_digest": "d5cb5295aaa5a2defd705265a500f074f7a838aeb371bc4a60dcd27998f9bcee",
       "review_status": "auto_evidence"
     },
     {
@@ -1225,7 +1225,7 @@
         "cultural_music_media"
       ],
       "dietary_tags": [],
-      "record_digest": "f16d24471cf36ae24c16ceee03345578711c864fab3ed788ed20530d0bf1120d",
+      "record_digest": "1106e0f255e4d8770a59d496ac347d35af7ad38e7ee6e20824778bbd24229bad",
       "review_status": "auto_evidence"
     },
     {
@@ -1244,7 +1244,7 @@
         "guyanese_food"
       ],
       "dietary_tags": [],
-      "record_digest": "fb39a431032f829587fb399ec2601ec0fb46e26e6c60b211f4ca2d47b4b6e3e4",
+      "record_digest": "eef00fe04948d8b4a4eaeae2db2921f7d88616207ce0388da5f491ab9c5ad295",
       "review_status": "auto_evidence"
     },
     {
@@ -1262,7 +1262,7 @@
         "himalayan_food"
       ],
       "dietary_tags": [],
-      "record_digest": "9d40f1acd48b4916692a43fb6d45dbe60d5bea62b36d9f0fbb20f838fbe16394",
+      "record_digest": "fd9a76a04afde2bf77fcdef24ead4dcc88168b2e00b1d17eab8dc546f521f656",
       "review_status": "auto_evidence"
     },
     {
@@ -1280,7 +1280,7 @@
         "thai_food"
       ],
       "dietary_tags": [],
-      "record_digest": "eb9b2cdd4be4d9934b1df83a9c0dd9a2366b32bb31e54b80cae10a8c90db77fd",
+      "record_digest": "219a163ba36ee16648df23399560345367925a9452288407d91f1ff59793e7e2",
       "review_status": "auto_evidence"
     },
     {
@@ -1298,7 +1298,7 @@
         "cultural_sporting_goods"
       ],
       "dietary_tags": [],
-      "record_digest": "7240f7a8d5a3975620636687565207e2a5e5915b5cf87fcd08096912a1f8d208",
+      "record_digest": "b4daedbeef2e8e66be43d1641516f7246f339ae50fb0fc2236b43e34a69d95f1",
       "review_status": "auto_evidence"
     },
     {
@@ -1316,7 +1316,7 @@
         "caribbean_food"
       ],
       "dietary_tags": [],
-      "record_digest": "446cc2a98dd55bfbaca49400ed2d369ed791d2932f85d7f42f95b69db507931f",
+      "record_digest": "fcde160dfb42b32c0e9903875c7e2089975e39be839298e53cd0faae2a13d281",
       "review_status": "auto_evidence"
     },
     {
@@ -1335,7 +1335,7 @@
         "haitian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "de0fc95d7f214837b7ded87cf8c1549e1925ce5402e44856c9d1545f84829789",
+      "record_digest": "16624169b16cfb3d0c19fb752e92bbaea7519ac3442817143a6c309b22463557",
       "review_status": "auto_evidence"
     },
     {
@@ -1353,7 +1353,7 @@
         "dominican_food"
       ],
       "dietary_tags": [],
-      "record_digest": "792af5fffadfc0da11d65eadc680a34742fe183c5dfe2cdf1224190d5b9d3aa6",
+      "record_digest": "f7683249c9dfa3e1ad90adb11fa9a531985047a1d3248c6d1aaa37319552e280",
       "review_status": "auto_evidence"
     },
     {
@@ -1371,7 +1371,7 @@
         "caribbean_food"
       ],
       "dietary_tags": [],
-      "record_digest": "4ea9d331c4c4c5c2d8c0fbd92f0c12d0113334d0d273a6a13efdefda93ed742f",
+      "record_digest": "b1918f123b657d0f1e65f4b2ff83d9bdf38678e17ee75acd85e0429a97281680",
       "review_status": "auto_evidence"
     },
     {
@@ -1389,7 +1389,7 @@
         "italian_grocery"
       ],
       "dietary_tags": [],
-      "record_digest": "c12abddfaf0e10b8c47e53e045091c43a4fff9d368fc38d79f80922a6faac4f6",
+      "record_digest": "f7f4f81a60133376528bffed75a6154eda3607b8faead33dceba89b976f6c46a",
       "review_status": "auto_evidence"
     },
     {
@@ -1407,7 +1407,7 @@
         "sri_lankan_food"
       ],
       "dietary_tags": [],
-      "record_digest": "58fe44839a23f33eb2febfcfa85629079fc0e4c10615572d2e988983861739de",
+      "record_digest": "7b87f9a8624cdd8b2b5821ee2cebde68e9ce277beff50438b5648bc3a7551102",
       "review_status": "auto_evidence"
     },
     {
@@ -1425,7 +1425,7 @@
         "religious_goods"
       ],
       "dietary_tags": [],
-      "record_digest": "93acc40e34e7553ec2d91bb81b82de9d198639d1626c5af14efac841b6995516",
+      "record_digest": "e9e7ff01562c23c8c3be1a9edda72cc41f8aceb7a09d71ea461055aa546d0453",
       "review_status": "auto_evidence"
     },
     {
@@ -1443,7 +1443,7 @@
         "russian_grocery"
       ],
       "dietary_tags": [],
-      "record_digest": "fbb92261ada33a52e99c4be2dbc151fdef9e586ebe761fdeafd939b0f335785f",
+      "record_digest": "72312a5e60efda58d08e0f82629643a722feaf4673c31cb5208c36333576feb3",
       "review_status": "auto_evidence"
     },
     {
@@ -1461,7 +1461,7 @@
         "taiwanese_food"
       ],
       "dietary_tags": [],
-      "record_digest": "4d2a720e04c27cbc8516d6ff134c7eaecc9139459c2746f9eea2c8225fc16d7a",
+      "record_digest": "4338e56be40f597c50b658e7f98a9bc98227c9530143470fdcf6a556bf35557d",
       "review_status": "auto_evidence"
     },
     {
@@ -1479,7 +1479,7 @@
         "cultural_sweets"
       ],
       "dietary_tags": [],
-      "record_digest": "5700801ebfc2ecdde969766585ec6fc479992b2e07159552724e010a8d4b892f",
+      "record_digest": "d83e7c81b424486b9a0403b5642d4a1d56ccaaa98a4d1b978c0029f02f1d9e32",
       "review_status": "auto_evidence"
     },
     {
@@ -1498,7 +1498,7 @@
         "south_asian_food"
       ],
       "dietary_tags": [],
-      "record_digest": "2471618a86a3d5bc04a8d4ed8f5d7ecc0289285a0ab2d04e3ea7dcdc7b747c11",
+      "record_digest": "7f24f89ff65bc78f501aa8c55ba04bdcd75754ebdfde730e59690019972af265",
       "review_status": "auto_evidence"
     },
     {
@@ -1517,15 +1517,15 @@
         "pakistani_clothing"
       ],
       "dietary_tags": [],
-      "record_digest": "e7a86299277dea3c156d25dd76dc8fa372c7a533f14ae109d63f8a5a666c5df8",
+      "record_digest": "bea4e42b592476e6d5f9b3ff4c1d91e66228397d9c10b3206e86c14bbeeb42ec",
       "review_status": "auto_evidence"
     }
   ],
   "contract": "nycif.culture-feed.v1",
   "feed_version": "2026-07-30",
-  "generated_at": "2026-07-30T11:56:50.266737+00:00",
-  "input_business_count": 36,
-  "manifest_digest": "c91b41e0f8eac6ec2700c2b8088881a545e1d400946e83e98a38f2ae941d7f5d",
+  "generated_at": "2026-07-30T12:35:19.859158+00:00",
+  "input_business_count": 37,
+  "manifest_digest": "719996d9e701b4ca9f6f84e6cceac76fbc8b86dd6a955eec44d81bd39390a345",
   "matches": [
     {
       "area_context_evidence": [
@@ -1557,7 +1557,7 @@
       "match_id": "cbm-99b03d3d6561d18f3bd984b4",
       "matched_tag": "kosher_food",
       "reason_code": "ACCEPTED_VERIFIED_CERTIFICATION",
-      "record_digest": "e632e57be83ae98ec8eae3e6902f55821453ce5ea8a031b965020b0d27c98a89",
+      "record_digest": "dfef9a68177f9b0932910d4310e24ba04e02f5ccdce0bc768520ff67aa23bd91",
       "relevance_score": 1.0,
       "review_required": false
     },
@@ -1601,7 +1601,7 @@
       "match_id": "cbm-0402a1c988e89435bbfe7719",
       "matched_tag": "caribbean_bakery",
       "reason_code": "ACCEPTED_REVIEWED_CULTURAL_TAG",
-      "record_digest": "0a8dba74c68696e671a3b83e83490bc5736fd3a8313413f475a0dd449e97ea21",
+      "record_digest": "7601750db4b4883bac2da46a91212159163beb1dab5e4d1100f9a087356a205e",
       "relevance_score": 0.9,
       "review_required": false
     },
@@ -1634,7 +1634,7 @@
       "match_id": "cbm-65f65c95d1f6a93ee4a848a7",
       "matched_tag": "halal_food",
       "reason_code": "ACCEPTED_VERIFIED_CERTIFICATION",
-      "record_digest": "2ae1d6bb27e9b3cfc601c1d11830f208a4843fd912c1afaf9d6af22d77eab61a",
+      "record_digest": "b725c8128e25a871cfca4ec733c277b8e71910b32543ee351db16796edd9c879",
       "relevance_score": 0.9,
       "review_required": false
     },
@@ -1667,7 +1667,7 @@
       "match_id": "cbm-bcde74582861af2dbd02da3e",
       "matched_tag": "halal_grocery",
       "reason_code": "ACCEPTED_VERIFIED_CERTIFICATION",
-      "record_digest": "4d956792a3783293ffeb871b7a7d6a99924be898d8d850c070d0bda072137c60",
+      "record_digest": "35b400045e9a87d171d04529185aacaec8b060236b375318c9d6ca5d349feaae",
       "relevance_score": 0.9,
       "review_required": false
     },
@@ -1721,7 +1721,7 @@
       "match_id": "cbm-05febee6655a6dab46f72aa7",
       "matched_tag": "polish_grocery",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "fb6240d28dfa96c8ef6409a2c232731bd2434d97cc0c50b0657a72a1c12b3e49",
+      "record_digest": "2997949b78362181fcbc344d247957824e65241abc80e40763c92bfcc076f1da",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1743,7 +1743,7 @@
       "match_id": "cbm-08c510006e1b5bf548adbebb",
       "matched_tag": "cultural_sporting_goods",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "c999949ae598d91b5fe85c34a7b08bc8ff474b46ec02c995fb2db586d2014e34",
+      "record_digest": "70f7a1d46bfcc941b7fcc263f6c67105fd1d2651ad36c627d3ae2de111d56a09",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1765,7 +1765,7 @@
       "match_id": "cbm-1008b2d2b2ace7a9f1f9eddc",
       "matched_tag": "cultural_sweets",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "dd3da4a01c1c13fd5150a0b00b6d7a173e8da7c9e0ca71af6e1e9c77246f7e29",
+      "record_digest": "4e4655bc4d7f231fd41883136b349e234684af3c5480222f9e674fc291d5753a",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1799,7 +1799,7 @@
       "match_id": "cbm-132d63c387186b401a3fd614",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "3eee1d230cc37535a58be8511662e2e113168bffbb2ac85529bbd7925036c898",
+      "record_digest": "d302ca94efab17e98757d9c78085c37f4f24c9053175137d42d88353ffb49191",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1832,7 +1832,7 @@
       "match_id": "cbm-16bbb13e50dd2d803fc6cc9a",
       "matched_tag": "thai_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "d1670db11da35955fbb253c2004da377cbadb542534a9dcfed151a465f543fb7",
+      "record_digest": "191104461cca704009614b39f4b52a4d394a9dbef43253af4445f15422998ae0",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1890,7 +1890,7 @@
       "match_id": "cbm-1a1bfb9e2d325b8c37c124c7",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "01373f80a241df80a2543c0d5c20a3da14d18f6c31edf2c22ff962f50c634810",
+      "record_digest": "374d845771358c2afa4fe8dfecce9537401600ad01ef15e77a6561c6b4890a64",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1932,7 +1932,7 @@
       "match_id": "cbm-1acc6525138b427b72ce81cd",
       "matched_tag": "guyanese_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "e5f86ddd486f80ab87a590d85de40c72f3fd62eb649d6bba85b06d14472fc5ab",
+      "record_digest": "9e5ea645e65e02f0d8fa121b9d1aa06ca625a59751b1729a39960bf1561de5b3",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1954,7 +1954,7 @@
       "match_id": "cbm-2c4605d3ed413cf7d67b19dc",
       "matched_tag": "cultural_music_media",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "1ff234ec569275142e3b2f086e279ee2347fdcc0ad4ca342d4c5e4075ee46b72",
+      "record_digest": "480bfa2fae4a6b72147a1c8859a3837dd2395a80e7cd8bec7055aa368acc192c",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -1994,7 +1994,7 @@
       "match_id": "cbm-2f7bcbe810f9185aa2943f2a",
       "matched_tag": "sri_lankan_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "e7b3eaf02e00c32eae9e33179b03a9ab705e0d71e0aa51c6eb570d876a230d6d",
+      "record_digest": "8276e56daea3c88167add891472b36258c467797409cbdf6ee07289c9690a3ee",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2028,7 +2028,7 @@
       "match_id": "cbm-3a1cd7404864c04e87b35fdf",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "ee7f48743f1e7169f6ff89bceb6f4cfdce88fb7d31cc343adc0eac3afcbc42ac",
+      "record_digest": "cf9e3067ffebb9970a1451785e78e9c8def8fa9a30322eb8d012031e26b3fef0",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2060,7 +2060,7 @@
       "match_id": "cbm-3a4498d9b597094fb62b3c41",
       "matched_tag": "taiwanese_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "64899e9a749931d56474906fc8c747f9c792f864d7ed1e722229336fb0eb4ed0",
+      "record_digest": "613609b061b381d27c3360125cc86dbd479167d01a2dd884c198321aa863788c",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2122,7 +2122,7 @@
       "match_id": "cbm-3e0eb868ffcac487ea77e8df",
       "matched_tag": "dominican_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "c71304144fb827c3652afb143eb3cad3c2200cb4c5fda9957b46c05b1d8bd31c",
+      "record_digest": "46ab8b4d6601efd029faa035af111f07f2e78bb6253df44c1b1960fa451864b3",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2144,7 +2144,7 @@
       "match_id": "cbm-40f273b4372b29025cd997a1",
       "matched_tag": "religious_goods",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "34d923efba5d0bee5916158039380f02db904d2eb5a6f2000ba5a0c2dfb410be",
+      "record_digest": "98fa461aacc005f3177d2f0b8ca0d0226140517a93f2b04137537d9dc44413f6",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2184,7 +2184,7 @@
       "match_id": "cbm-4189b9db63e4d76797b706c2",
       "matched_tag": "haitian_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "8252d2f137aa776eef1aba0ab5311fe7223469b60f437cdc3e3ae327e728e982",
+      "record_digest": "e5ac479c2798042527e146e983e01554a4e923e9d04f8fd2bafda67b03dc8cf0",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2238,7 +2238,7 @@
       "match_id": "cbm-438523142132c9e3f71b99c7",
       "matched_tag": "russian_grocery",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "f89518f706b02f19344b8615fba5f991f4bd660fd129f41d6f7ad823391558ec",
+      "record_digest": "2f5c627220e987ee8d491de1459f2a64c76d126d60d4087cd470cf69216e8322",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2271,7 +2271,7 @@
       "match_id": "cbm-46d379728fb5fb882a19e800",
       "matched_tag": "bukharian_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "2b71a1a45c62b055abdb183d88ff4f2a5bb846bce02763f8e19ac1e9d8c5ed24",
+      "record_digest": "f30d45d9be788c2ec77e13d73b0b12538e13fd37c35bdea3d67baf69621dcfc0",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2305,7 +2305,7 @@
       "match_id": "cbm-4a7dd4abe3841fb5ec6871b0",
       "matched_tag": "italian_bakery",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "81464f72bef1d8949c74be7d04fe34fe62cdd1c3bf5075349a497eb6ef766cbf",
+      "record_digest": "ce555c0ed46c1df822f39bdd87b8b03b131f5a8097d5e4865456026543ea0c27",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2347,7 +2347,7 @@
       "match_id": "cbm-583660ffd25e8c472be59d22",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "e7db88c0169761107c5c5dc5591c6e34ffc36668c44e5c6e775bd0a4d1bf2504",
+      "record_digest": "2d12afeee732e63bd7cd936ae4f5845f8ede93fd79beaed414096ed2de1607be",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2369,7 +2369,7 @@
       "match_id": "cbm-711e19f8e518acbf1955f5dc",
       "matched_tag": "cultural_music_media",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "a4cc7f07819ac4a1979ee7aca51de525a05482f73ea8a51e630ca4a17efc59bd",
+      "record_digest": "2113050255956f0c631212a587db96632ce5db126b27af6056568514f71002e5",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2402,7 +2402,7 @@
       "match_id": "cbm-89fd5846cf997a2b68954c5b",
       "matched_tag": "south_asian_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "4d4776caea50217cb81697d197d123239c4b2a952bf37431a8ff644a46033d90",
+      "record_digest": "7ed846e52b600d46327bd334df780943888f57f9db935ef55f21922b8f53bb28",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2456,7 +2456,7 @@
       "match_id": "cbm-94e90644ef031487232fad1d",
       "matched_tag": "polish_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "e6e00be0d07e0d7029412d821c0bf26813b57a07a6956de353fabba198bb22ab",
+      "record_digest": "c46cd11d52b184dd028b323b701edbe3ab9b7b589d754225513fba43d5f33c94",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2478,7 +2478,7 @@
       "match_id": "cbm-97c81d01fc17601836bdacf9",
       "matched_tag": "cultural_music_media",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "7e9d2c63fa58254b2a054d9fd6531e9a26f1ad066d33656227408729859d841a",
+      "record_digest": "10a9cca74c0962c7624327f01c5eebdaf0ef1ef004d067bfa8db73e0255120c0",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2544,7 +2544,7 @@
       "match_id": "cbm-9f51a2803e0c65607ffa4c8f",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "dfc133e0f2b280c64fc06f96b67b8bae4c3dbf1c194a35b914cb3b867b7e109c",
+      "record_digest": "6177142e3c2780dd40f6e54850e68ff5ce0b10401006d5748beab3e2d7acf004",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2580,7 +2580,7 @@
       "match_id": "cbm-a14b0eaed903c7dd6d0e774e",
       "matched_tag": "pakistani_clothing",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "bee4a8bf279e264c6c101f630a073c8692864bac6aaab278398713e686c3364d",
+      "record_digest": "bd676df155d8e68471ecfee6f4112022d7036db528ac56c5876d1d58a9e15569",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2638,7 +2638,7 @@
       "match_id": "cbm-c713f61f05d6311f622c33ee",
       "matched_tag": "caribbean_food",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "7c95d324d5ba04cb1b4ae06c1e4d73f3390d3ef5ffd174c776b5b97ebb95782f",
+      "record_digest": "32ed7f6052fb64b5a2e5468d301ee4d2bdc9bd9640d6f9329da10b05a3091aa8",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2660,7 +2660,7 @@
       "match_id": "cbm-c9c0e560a00ee0002a39a7c4",
       "matched_tag": "cultural_sweets",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "44fa0735cbfd95becc9174b096bbfacad386b605d909853699c1dbe0b0970398",
+      "record_digest": "04a09b0308399495f9c8cbd2e3997d71587b0258404b877d6423cb486e813abf",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2682,7 +2682,7 @@
       "match_id": "cbm-cdb4743fc700d1c9f670796c",
       "matched_tag": "cultural_clothing",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "7ae358329a379eeee9d1a0d8d325eae2d8de7827be3bf4f671154cb9bcd73344",
+      "record_digest": "870521e8dee3badacc3f60dfe64587451aa71d5f888f021da97f14e8f7919e34",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2704,7 +2704,7 @@
       "match_id": "cbm-da9dadb4038de41a779d0dd7",
       "matched_tag": "cultural_clothing",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "225840ce31568a18cd650219b7b674fcb6c5c3082ca0df8cc90c1f94fd83e69e",
+      "record_digest": "9ba770cfe28e44de063f21ab720fa9e600a250226860f9de82744f6ea634a00a",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2738,7 +2738,7 @@
       "match_id": "cbm-ee10fb4f5fb0d81d8ad80cb5",
       "matched_tag": "italian_grocery",
       "reason_code": "ACCEPTED_DIRECT_CATEGORY_MATCH",
-      "record_digest": "1d67f24f43f7dc405a122065d4722dcdf2af2270f07d8d117acd04a635b39ffb",
+      "record_digest": "454416b6ae845a55c576d8ffbc71d3f1e6970b710428543272eea526d1b6efee",
       "relevance_score": 0.8,
       "review_required": false
     },
@@ -2778,7 +2778,7 @@
       "match_id": "cbm-48d8d3689f09f4e2a85eb02a",
       "matched_tag": "himalayan_food",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "0ae381e02d02973dd8aeff69a6d8679e728397cdd2fc0c7ea554e6967df50ddc",
+      "record_digest": "a2dc9f3f116a0f8bcbdfe162d3fe5db39593afa0149aa772f2e38b176e94df87",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -2810,7 +2810,7 @@
       "match_id": "cbm-4bb81745d2d75d147519d66e",
       "matched_tag": "soul_food",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "8fbaa0d75ce5a97c75a3b8ab4132f820d5568ebe67818bc2289324344a62cbcb",
+      "record_digest": "f1c19854115066eb7aca8b56ee41983554c5e6a3b53e5065b1317d838dc69837",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -2832,7 +2832,7 @@
       "match_id": "cbm-6a32847bc911cdcaab5b5ada",
       "matched_tag": "cultural_sweets",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "e83afe681e52eccd6e50cb9c832099dc3346b4f84620597f95d117331329c8f6",
+      "record_digest": "d6edefdeb82a64103f51e0a07e5f1e599748df33ded2f5e8a0d48c678f7ad277",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -2897,7 +2897,7 @@
       "match_id": "cbm-714f32985d61d5b5b998b8a4",
       "matched_tag": "pakistani_food",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "341169172a3f98cb0621ad94642ab35d4e44714df6257757f778830a5e066bba",
+      "record_digest": "4d8244a771f392b1e1521931a15d260e918116f7f6a828993b33c91b2c241ae9",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -2954,7 +2954,7 @@
       "match_id": "cbm-9a1f348584c619d3e53e7cf0",
       "matched_tag": "south_asian_grocery",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "51e2da32a90f33cdee450218bc73eee73445d060c51351d9d51b80cef208528f",
+      "record_digest": "fc8a9dba51e92475939b010299baac45d7dda2148adde0028fe810067cd13d22",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -2976,7 +2976,7 @@
       "match_id": "cbm-de701e069fbab40c7d85a01d",
       "matched_tag": "cultural_clothing",
       "reason_code": "REVIEW_LOW_CONFIDENCE_AREA_MATCH",
-      "record_digest": "cb6f6c93b2a1753ae69bf7ad603bc71a34c72532da94354dfb3926a91269f632",
+      "record_digest": "76df270ee91eec456a063d926760f2d05901f09a81a00ec8433a58de9c34bd29",
       "relevance_score": 0.7,
       "review_required": true
     },
@@ -3034,7 +3034,7 @@
       "match_id": "cbm-2408abf0f20fa8bb998972ff",
       "matched_tag": "caribbean_food",
       "reason_code": "REVIEW_AMBIGUOUS_BUSINESS_DESCRIPTION",
-      "record_digest": "dafef68fae5a8c3166d04ad2ced1a0f7c287c295c70a47c6ca270ec57c9c055d",
+      "record_digest": "ff90d39277c2d03d4839c6af8c496689eeea80c4ab68e2e4515a2945bef7cabd",
       "relevance_score": 0.6,
       "review_required": true
     },
@@ -3091,22 +3091,62 @@
       "match_id": "cbm-70b2604884d5bbd482fa1fa2",
       "matched_tag": "pakistani_food",
       "reason_code": "REVIEW_AMBIGUOUS_BUSINESS_DESCRIPTION",
-      "record_digest": "2903a09455a9b6f51235745e664986f3107de9e07599cfb52ad0484de5d6f419",
+      "record_digest": "4205f32e4201bc40cf8f7dc469bef9c94c303ca17f1725e46d104afd447e8816",
       "relevance_score": 0.5,
       "review_required": true
     }
   ],
+  "name_lead_places": [
+    {
+      "area_id": "acp-ccb69f37e474f900517807cf",
+      "area_name": "Astoria (Greek corridor)",
+      "borough": null,
+      "community_district": "QN01",
+      "coordinates": {
+        "lat": 40.766,
+        "lng": -73.917
+      },
+      "hinted_tag": "greek_food",
+      "name": "Athens Corner Bakery",
+      "name_tokens": [
+        "athens"
+      ],
+      "note": "Possible match by business name only. Unverified \u2014 not a cultural classification. Needs observable evidence to be confirmed.",
+      "place_id": "biz-d009ac3e0e0f82bc1874b727",
+      "place_type": "name_match_unverified",
+      "status": "unverified_name_match"
+    },
+    {
+      "area_id": "acp-39448d33b7f540edf257611b",
+      "area_name": "Belmont / Arthur Avenue (Little Italy of the Bronx)",
+      "borough": null,
+      "community_district": "BX06",
+      "coordinates": {
+        "lat": 40.8544,
+        "lng": -73.8875
+      },
+      "hinted_tag": "italian_food",
+      "name": "Sample Roma Deli",
+      "name_tokens": [
+        "roma "
+      ],
+      "note": "Possible match by business name only. Unverified \u2014 not a cultural classification. Needs observable evidence to be confirmed.",
+      "place_id": "biz-ab8c7571d31af446d34c1e5c",
+      "place_type": "name_match_unverified",
+      "status": "unverified_name_match"
+    }
+  ],
   "scoring_version": "culture-scoring.v1",
   "terminal_accounting": {
-    "accounted_business_count": 36,
+    "accounted_business_count": 37,
     "by_disposition": {
       "ACCEPTED": 23,
       "BLOCKED": 2,
       "REJECTED": 2,
-      "REVIEW_REQUIRED": 5,
+      "REVIEW_REQUIRED": 6,
       "UNCLASSIFIED": 4
     },
-    "input_business_count": 36
+    "input_business_count": 37
   },
   "universal_places": [
     {

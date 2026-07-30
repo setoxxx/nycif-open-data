@@ -136,6 +136,7 @@ export async function bootstrap() {
     listEl: document.querySelector("#culture-list"),
     viewAllButton: document.querySelector("#culture-view-all"),
     closeButton: document.querySelector("#culture-close"),
+    nameMatchToggle: document.querySelector("#culture-namematch"),
     map: mapView.getMap(),
     cultureLabel: "Culture",
     eventsLabel: "Events",

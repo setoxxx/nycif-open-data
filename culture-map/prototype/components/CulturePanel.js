@@ -42,6 +42,7 @@ export function createCulturePanel(options) {
     listEl,
     viewAllButton,
     closeButton,
+    nameMatchToggle = null,
     map = null,
     // Environment switch: entering Culture hides the Events environment; the
     // toggle button relabels so users know they can switch back.
@@ -57,6 +58,8 @@ export function createCulturePanel(options) {
   const neighborhoodLayer = hasLeaflet ? L.layerGroup() : null;
   // Universal amenities (pet stores + pet parks) shown in every neighborhood.
   const universalLayer = hasLeaflet ? L.layerGroup() : null;
+  // Unverified name-match candidates — clearly-distinct "possible" pins.
+  const nameMatchLayer = hasLeaflet ? L.layerGroup() : null;
   let feed = null;
   let areaId = null;
   let hoodLabels = [];
@@ -80,8 +83,10 @@ export function createCulturePanel(options) {
     onEnterCulture();
     if (businessLayer && map) businessLayer.addTo(map);
     if (universalLayer && map) universalLayer.addTo(map);
+    if (nameMatchLayer && map) nameMatchLayer.addTo(map);
     if (neighborhoodLayer && map) neighborhoodLayer.addTo(map);
     renderUniversal();
+    renderNameMatches();
     renderNeighborhoodLabels();
     if (map) {
       map.on("moveend zoomend", declutterLabels);
@@ -103,6 +108,8 @@ export function createCulturePanel(options) {
     if (businessLayer && map) map.removeLayer(businessLayer);
     if (universalLayer) universalLayer.clearLayers();
     if (universalLayer && map) map.removeLayer(universalLayer);
+    if (nameMatchLayer) nameMatchLayer.clearLayers();
+    if (nameMatchLayer && map) map.removeLayer(nameMatchLayer);
     if (map) map.off("moveend zoomend", declutterLabels);
     hoodLabels = [];
     if (neighborhoodLayer) neighborhoodLayer.clearLayers();
@@ -123,6 +130,7 @@ export function createCulturePanel(options) {
     setStatus("ready");
     if (!panel.hidden) {
       renderUniversal();
+      renderNameMatches();
       renderNeighborhoodLabels();
       if (map) requestAnimationFrame(declutterLabels);
       render();
@@ -172,6 +180,27 @@ export function createCulturePanel(options) {
           `<strong>${escapeHtml(place.name || "")}</strong><br>${isPark ? "Pet park / dog run" : "Pet store"} · for everyone`,
         )
         .addTo(universalLayer);
+    }
+  }
+
+  // Unverified name-match candidates as clearly-distinct dashed amber "?" pins.
+  // Never styled like a verified business; the popup states it is unconfirmed.
+  function renderNameMatches() {
+    if (!nameMatchLayer || !map || !feed) return;
+    nameMatchLayer.clearLayers();
+    if (nameMatchToggle && !nameMatchToggle.checked) return;
+    for (const place of feed.name_lead_places || []) {
+      const c = place.coordinates;
+      if (!c || c.lat == null || c.lng == null) continue;
+      const icon = L.divIcon({ className: "culture-namematch-pin", html: "?", iconSize: [22, 22], iconAnchor: [11, 11] });
+      L.marker([c.lat, c.lng], { icon, keyboard: false })
+        .bindPopup(
+          `<strong>${escapeHtml(place.name || "")}</strong><br>` +
+            `<em>Possible match — unverified</em><br>` +
+            `Name suggests: ${escapeHtml(tagLabel(place.hinted_tag))}<br>` +
+            `Not a confirmed cultural business — needs evidence.`,
+        )
+        .addTo(nameMatchLayer);
     }
   }
 
@@ -395,6 +424,7 @@ export function createCulturePanel(options) {
   toggleButton.addEventListener("click", toggle);
   if (closeButton) closeButton.addEventListener("click", () => close());
   if (viewAllButton) viewAllButton.addEventListener("click", () => close());
+  if (nameMatchToggle) nameMatchToggle.addEventListener("change", renderNameMatches);
   if (areaSelect) {
     areaSelect.addEventListener("change", (event) => {
       areaId = event.target.value;

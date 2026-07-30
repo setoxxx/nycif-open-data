@@ -375,3 +375,17 @@ input, select {
   border-radius: 50%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
+
+/* Unverified name-match pins — deliberately distinct from verified businesses. */
+.culture-namematch-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 13px;
+  color: #a9791a;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px dashed #d9a41a;
+  border-radius: 50%;
+}
+.culture-namematch { display: flex; flex-flow: row; align-items: center; gap: 8px; font-weight: 600; color: var(--muted); margin: 8px 0; }
