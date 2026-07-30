@@ -176,6 +176,30 @@ export function businessesForArea(feed, areaId, selectedTags = []) {
   }));
 }
 
+// Best (highest-scoring) match for a business across ALL areas.
+export function bestMatchAnywhere(feed, businessId) {
+  const list = (feed.matches || [])
+    .filter((m) => m.business_id === businessId)
+    .sort((a, b) => b.relevance_score - a.relevance_score || a.match_id.localeCompare(b.match_id));
+  return list[0] || null;
+}
+
+// Every cultural tag present anywhere in the feed (for the "All neighborhoods" view).
+export function availableTagsAll(feed) {
+  const tags = new Set();
+  for (const m of feed.matches || []) if (m.matched_tag) tags.add(m.matched_tag);
+  return [...tags].sort();
+}
+
+// Every displayable business across all neighborhoods, optionally narrowed to
+// selected cultural tags — powers the "see them all" view.
+export function allDisplayBusinesses(feed, selectedTags = []) {
+  const selected = new Set(selectedTags);
+  return (feed.businesses || [])
+    .filter((b) => selected.size === 0 || (b.cultural_tags || []).some((t) => selected.has(t)))
+    .map((business) => ({ business, match: bestMatchAnywhere(feed, business.business_id) }));
+}
+
 export function reasonPhrase(code) {
   return (
     {

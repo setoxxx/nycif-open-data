@@ -6,12 +6,16 @@
 
 import {
   availableTagsForArea,
+  availableTagsAll,
+  allDisplayBusinesses,
   areaById,
   bestMatch,
   businessesForArea,
   reasonPhrase,
   tagLabel,
 } from "../services/culture.js";
+
+const ALL_AREAS = "__all__";
 
 const STATE_MESSAGES = {
   loading: "Loading Culture feed…",
@@ -231,13 +235,18 @@ export function createCulturePanel(options) {
   function populateAreas() {
     if (!feed || !areaSelect) return;
     areaSelect.innerHTML = "";
+    // Default view shows every business across all neighborhoods at once.
+    const all = document.createElement("option");
+    all.value = ALL_AREAS;
+    all.textContent = "All neighborhoods";
+    areaSelect.append(all);
     for (const area of feed.areas) {
       const option = document.createElement("option");
       option.value = area.area_id;
       option.textContent = area.geography_name;
       areaSelect.append(option);
     }
-    areaId = feed.areas.length ? feed.areas[0].area_id : null;
+    areaId = ALL_AREAS;
   }
 
   function renderCategories(tags) {
@@ -339,6 +348,25 @@ export function createCulturePanel(options) {
       setStatus("no_profile");
       return;
     }
+
+    // "All neighborhoods": show every business across the whole map at once.
+    if (areaId === ALL_AREAS) {
+      const tags = availableTagsAll(feed);
+      if (areaMeta) areaMeta.textContent = "All neighborhoods · every documented cultural business";
+      renderCategories(tags);
+      if (sourcesEl) sourcesEl.innerHTML = "";
+      if (explainEl) {
+        explainEl.textContent =
+          "Every culturally relevant licensed business across all mapped neighborhoods. Pick a neighborhood to focus, or filter by category. Verified = certification; Confirmed = advertised category in a strong area; Manually reviewed = editor-approved or lower-confidence.";
+      }
+      const entries = allDisplayBusinesses(feed, [...selectedTags]);
+      if (countEl) countEl.textContent = `${entries.length} business${entries.length === 1 ? "" : "es"} across the city`;
+      setStatus(entries.length ? "ready" : "no_results");
+      renderList(entries);
+      renderMarkers(entries);
+      return;
+    }
+
     const area = areaById(feed, areaId);
     const tags = availableTagsForArea(feed, areaId);
     if (!area || !tags.length) {
