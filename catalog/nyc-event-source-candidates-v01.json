@@ -1,0 +1,239 @@
+{
+  "schema": "nycif-nyc-event-source-candidates-v01",
+  "verified_at": "2026-08-10T21:33:00-04:00",
+  "authority_rule": "discovery_only_until_reviewed_source_contract_and_canonical_pipeline_acceptance",
+  "sources": [
+    {
+      "source_id": "nyc-permitted-events-tvpp-9vvx",
+      "name": "NYC Permitted Event Information",
+      "sector": "government_permitted_events",
+      "disposition": "ACTIVE_CANONICAL",
+      "platform": "socrata",
+      "stable_dataset_id": "tvpp-9vvx",
+      "currentness": "CURRENT_EXISTING_AUTHORITY",
+      "priority": 0
+    },
+    {
+      "source_id": "nyc-parks-upcoming-w3wp-dpdi",
+      "name": "NYC Parks Upcoming Events",
+      "sector": "parks_recreation",
+      "disposition": "ACTIVE_CANONICAL",
+      "platform": "socrata",
+      "stable_dataset_id": "w3wp-dpdi",
+      "currentness": "CURRENT_EXISTING_AUTHORITY",
+      "priority": 0
+    },
+    {
+      "source_id": "nyc-citywide-events-calendar",
+      "name": "NYC Citywide Events Calendar",
+      "sector": "government_programs",
+      "disposition": "ACTIVE_CANONICAL",
+      "platform": "nyc_api",
+      "api_root": "https://api.nyc.gov/calendar/",
+      "currentness": "CURRENT_EXISTING_AUTHORITY",
+      "priority": 0
+    },
+    {
+      "source_id": "nypl-events",
+      "name": "New York Public Library Events",
+      "sector": "library_community",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://www.nypl.org/events/calendar",
+      "platform": "web_calendar_unknown_structured_endpoint",
+      "currentness": "CURRENT_PUBLIC_2026_VERIFIED",
+      "priority": 1
+    },
+    {
+      "source_id": "bpl-events",
+      "name": "Brooklyn Public Library Events",
+      "sector": "library_community",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://www.bklynlibrary.org/calendar",
+      "platform": "web_calendar_calendar_export_present",
+      "currentness": "CURRENT_PUBLIC_2026_VERIFIED",
+      "priority": 1
+    },
+    {
+      "source_id": "qpl-events",
+      "name": "Queens Public Library Calendar",
+      "sector": "library_community",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://www.queenslibrary.org/calendar",
+      "platform": "web_calendar",
+      "currentness": "CURRENT_PUBLIC_2026_VERIFIED",
+      "priority": 1
+    },
+    {
+      "source_id": "cuny-events",
+      "name": "CUNY Events Calendar",
+      "sector": "college_university",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://events.cuny.edu/",
+      "platform": "central_university_calendar",
+      "currentness": "CURRENT_PUBLIC_2026_VERIFIED",
+      "priority": 1,
+      "public_access_filter_required": true
+    },
+    {
+      "source_id": "nyu-events",
+      "name": "NYU Events Calendar",
+      "sector": "college_university",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://events.nyu.edu/",
+      "platform": "web_calendar_nyu_engage_mix",
+      "currentness": "CURRENT_PUBLIC_2026_VERIFIED",
+      "priority": 1,
+      "public_access_filter_required": true
+    },
+    {
+      "source_id": "columbia-events",
+      "name": "Columbia University Public Events",
+      "sector": "college_university",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://events.columbia.edu/",
+      "platform": "institution_calendar",
+      "currentness": "REVERIFY_ENDPOINT_AND_CURRENT_WINDOW",
+      "priority": 1,
+      "public_access_filter_required": true
+    },
+    {
+      "source_id": "cornell-nyc-events",
+      "name": "Cornell NYC / Cornell Tech Public Events",
+      "sector": "college_university",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://events.cornell.edu/",
+      "platform": "localist",
+      "currentness": "CURRENT_PLATFORM_2026_VERIFIED",
+      "priority": 1,
+      "nyc_location_filter_required": true
+    },
+    {
+      "source_id": "nyc-council-calendar",
+      "name": "NYC Council Meetings and Hearings",
+      "sector": "civic_government",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://council.nyc.gov/",
+      "platform": "official_council_calendar",
+      "currentness": "CURRENT_OFFICIAL_SOURCE_REVERIFY_EXACT_FEED",
+      "priority": 1
+    },
+    {
+      "source_id": "nyc-community-boards",
+      "name": "NYC Community Board Public Calendars",
+      "sector": "civic_neighborhood",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://www.nyc.gov/site/communityboards/index.page",
+      "platform": "multi_source_board_calendars",
+      "currentness": "CURRENT_OFFICIAL_FAMILY_REQUIRES_BOARD_REGISTRY",
+      "priority": 1
+    },
+    {
+      "source_id": "lincoln-center-calendar",
+      "name": "Lincoln Center Events",
+      "sector": "culture_performance",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://www.lincolncenter.org/",
+      "platform": "first_party_calendar",
+      "currentness": "CURRENT_AUGUST_2026_VERIFIED",
+      "priority": 1
+    },
+    {
+      "source_id": "met-events",
+      "name": "The Metropolitan Museum of Art Events",
+      "sector": "museum_culture",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://www.metmuseum.org/events",
+      "platform": "first_party_calendar",
+      "currentness": "REVERIFY_CURRENT_WINDOW",
+      "priority": 2
+    },
+    {
+      "source_id": "moma-calendar",
+      "name": "MoMA Calendar",
+      "sector": "museum_culture",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://www.moma.org/calendar/",
+      "platform": "first_party_calendar",
+      "currentness": "REVERIFY_CURRENT_WINDOW",
+      "priority": 2
+    },
+    {
+      "source_id": "carnegie-hall-calendar",
+      "name": "Carnegie Hall Calendar",
+      "sector": "culture_performance",
+      "disposition": "QUALIFY_NOW",
+      "source_url": "https://www.carnegiehall.org/Calendar",
+      "platform": "first_party_calendar",
+      "currentness": "REVERIFY_CURRENT_WINDOW",
+      "priority": 2
+    },
+    {
+      "source_id": "msg-events",
+      "name": "Madison Square Garden Events",
+      "sector": "arena_sports_entertainment",
+      "disposition": "VENUE_LEAD",
+      "source_url": "https://www.msg.com/calendar",
+      "platform": "first_party_venue_calendar",
+      "currentness": "CURRENT_SOURCE_FAMILY_REVERIFY_WINDOW",
+      "priority": 2
+    },
+    {
+      "source_id": "barclays-events",
+      "name": "Barclays Center Events",
+      "sector": "arena_sports_entertainment",
+      "disposition": "VENUE_LEAD",
+      "source_url": "https://www.barclayscenter.com/events",
+      "platform": "first_party_venue_calendar",
+      "currentness": "CURRENT_SOURCE_FAMILY_REVERIFY_WINDOW",
+      "priority": 2
+    },
+    {
+      "source_id": "meetup-nyc",
+      "name": "Meetup NYC Public Events and Groups",
+      "sector": "social_hobby_professional",
+      "disposition": "DISCOVERY_ONLY",
+      "source_url": "https://www.meetup.com/find/us--ny--new-york/",
+      "platform": "meetup",
+      "currentness": "CURRENT_2026_PUBLIC_SURFACE_VERIFIED",
+      "priority": 3,
+      "terms_review_required": true,
+      "member_data_forbidden": true
+    },
+    {
+      "source_id": "mobilize-nyc",
+      "name": "Mobilize Public NYC Events",
+      "sector": "political_civic_advocacy",
+      "disposition": "DISCOVERY_ONLY",
+      "source_url": "https://www.mobilize.us/",
+      "platform": "mobilize",
+      "currentness": "CURRENT_2026_PUBLIC_EVENTS_VERIFIED",
+      "priority": 3,
+      "supporter_data_forbidden": true
+    },
+    {
+      "source_id": "action-network-nyc",
+      "name": "Action Network Public NYC Events",
+      "sector": "political_civic_advocacy",
+      "disposition": "DISCOVERY_ONLY",
+      "source_url": "https://actionnetwork.org/",
+      "platform": "action_network",
+      "currentness": "CURRENT_2026_PUBLIC_EVENTS_VERIFIED",
+      "priority": 3,
+      "supporter_data_forbidden": true
+    }
+  ],
+  "required_next_fields": [
+    "stable_source_event_id",
+    "retrieval_method",
+    "pagination_proof",
+    "source_updated_semantics",
+    "cancellation_amendment_semantics",
+    "public_access_semantics",
+    "location_provenance",
+    "rights_terms_state",
+    "schema_fingerprint",
+    "freshness_sla",
+    "last_successful_live_fetch",
+    "next_freshness_deadline"
+  ]
+}
