@@ -1,0 +1,24 @@
+name: Actions Public Canary
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/actions-public-canary.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Prove hosted runner execution
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "NYCIF_ACTIONS_PUBLIC_CANARY=PASS"
+          uname -a
