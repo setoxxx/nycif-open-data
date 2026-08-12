@@ -38,6 +38,11 @@ jobs:
                   'pullRequest': '173',
                   'ps': '100',
               }),
+              'issues_pr172_control': ('issues/search', {
+                  'componentKeys': 'setoxxx_nycif-national-pilot',
+                  'pullRequest': '172',
+                  'ps': '100',
+              }),
               'quality_gate_pr154': ('qualitygates/project_status', {
                   'projectKey': 'setoxxx_nycif-national-pilot',
                   'pullRequest': '154',
@@ -53,6 +58,7 @@ jobs:
               'purpose': 'read-only public Sonar API comparison for private national-pilot PRs',
               'candidate_sha': '7060cf6733d9bd206ca78e3c279c85434fb3c024',
               'candidate_pr': 173,
+              'known-finding-control_pr': 172,
               'historical_comparator_pr': 154,
               'calls': {},
           }
