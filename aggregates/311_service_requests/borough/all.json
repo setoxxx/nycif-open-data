@@ -1,16 +1,16 @@
 {
   "boundary": "borough",
   "counts": {
-    "BK": 6690732,
-    "BX": 4754731,
-    "MN": 4492046,
-    "QN": 5368950,
-    "SI": 938729
+    "BK": 6694670,
+    "BX": 4756776,
+    "MN": 4494162,
+    "QN": 5371748,
+    "SI": 939149
   },
   "dataset_id": "erm2-nwe9",
   "dataset_name": "311 Service Requests",
   "dataset_slug": "311_service_requests",
-  "generated_at": "2026-09-01T14:12:45+00:00",
+  "generated_at": "2026-09-02T13:45:10+00:00",
   "period": "all",
   "raw_values": {
     "BK": "BROOKLYN",
@@ -21,5 +21,5 @@
   },
   "schema_version": 1,
   "source_query": "https://data.cityofnewyork.us/resource/erm2-nwe9.json?%24select=borough%2C+count%28%2A%29+as+count&%24group=borough&%24order=count+DESC&%24limit=50000",
-  "total_count": 22245188
+  "total_count": 22256505
 }
