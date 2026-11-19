@@ -1,0 +1,49 @@
+{
+  "schema": "nycif-borg-event-discovery-lexicon-v01",
+  "generated_at_local": "2026-08-10T21:40:00-04:00",
+  "jurisdiction": "NYC",
+  "purpose": "Discovery query expansion only. Terms generate leads and never establish event existence, public eligibility, date/time, venue identity, or map authority.",
+  "seed_terms": {
+    "general": [
+      "event", "events", "happening", "things to do", "calendar", "program", "programming", "schedule", "what's on", "tonight", "today", "this weekend"
+    ],
+    "social": [
+      "social", "mixer", "meetup", "hangout", "kickback", "afterparty", "watch party", "game night", "community night", "dance social", "salsa social", "listening party", "release party"
+    ],
+    "performance": [
+      "open mic", "open-mic", "showcase", "jam session", "live set", "DJ set", "concert", "gig", "performance", "recital", "screening", "outdoor movie", "film night", "storytelling", "story-oke"
+    ],
+    "markets_and_popups": [
+      "pop-up", "popup", "market", "vendor market", "makers market", "flea", "bazaar", "night market", "street fair", "festival", "food festival", "sample sale"
+    ],
+    "community": [
+      "drop-in", "workshop", "clinic", "class", "community meeting", "town hall", "public meeting", "forum", "teach-in", "volunteer day", "cleanup", "block party", "open house"
+    ],
+    "campus": [
+      "student club", "campus event", "lecture", "colloquium", "panel", "symposium", "club meeting", "student organization", "public lecture", "campus screening"
+    ],
+    "civic_political": [
+      "canvass", "phone bank", "rally", "campaign event", "club meeting", "chapter meeting", "organizing meeting", "candidate forum", "debate", "community board", "civic association"
+    ],
+    "fitness_recreation": [
+      "run club", "walk", "group ride", "rideout", "pickup", "pick-up game", "fitness class", "yoga", "dance class", "tournament", "league night"
+    ],
+    "art_culture": [
+      "gallery opening", "opening reception", "artist talk", "exhibition", "installation", "temporary art", "book launch", "reading", "zine fair", "art fair"
+    ],
+    "value_signals": [
+      "free", "cheap", "pay what you wish", "pay-what-you-wish", "suggested donation", "no cover", "free RSVP", "ticketed", "registration required"
+    ]
+  },
+  "adaptive_rules": {
+    "unknown_term_action": "research_current_public_usage_before_adding",
+    "term_promotion_requires": [
+      "observed_on_multiple_current_public_event_pages_or_one_authoritative_platform_taxonomy",
+      "documented_meaning_in_event_context",
+      "no_private_or_identity_targeting_semantics"
+    ],
+    "venue_recursion": "repeated venue or authoritative venue ID creates a venue-investigation lead",
+    "organizer_recursion": "public organizer pages may seed additional event/calendar discovery",
+    "publication_authority": false
+  }
+}
